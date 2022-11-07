@@ -1,0 +1,82 @@
+{
+  "epaper_items" : [
+    {
+      "id": 1,
+      "pub_date" : "12月12日 星期四",
+      "pub_thumbnail_url" : "./dist/images/epaper/zb-single-epaper.png",
+      "target_url" : "javascript:;"
+    },
+    {
+      "id": 2,
+      "pub_date" : "12月13日 星期五",
+      "pub_thumbnail_url" : "./dist/images/epaper/zb-single-epaper.png",
+      "target_url" : "javascript:;"
+    },
+    {
+      "id": 3,
+      "pub_date" : "12月14日 星期六",
+      "pub_thumbnail_url" : "./dist/images/epaper/zb-single-epaper.png",
+      "target_url" : "javascript:;"
+    },
+    {
+      "id": 4,
+      "pub_date" : "12月15日 星期天",
+      "pub_thumbnail_url" : "./dist/images/epaper/zb-single-epaper.png",
+      "target_url" : "javascript:;"
+    },
+    {
+      "id": 5,
+      "pub_date" : "12月16日 星期一",
+      "pub_thumbnail_url" : "./dist/images/epaper/zb-single-epaper.png",
+      "target_url" : "javascript:;"
+    },
+    {
+      "id": 6,
+      "pub_date" : "12月17日 星期二",
+      "pub_thumbnail_url" : "./dist/images/epaper/zb-single-epaper.png",
+      "target_url" : "javascript:;"
+    },
+    {
+      "id": 7,
+      "pub_date" : "12月18日 星期三",
+      "pub_thumbnail_url" : "./dist/images/epaper/zb-single-epaper.png",
+      "target_url" : "javascript:;"
+    },
+    {
+      "id": 8,
+      "pub_date" : "12月19日 星期四",
+      "pub_thumbnail_url" : "./dist/images/epaper/zb-single-epaper.png",
+      "target_url" : "javascript:;"
+    },
+    {
+      "id": 9,
+      "pub_date" : "12月20日 星期六",
+      "pub_thumbnail_url" : "./dist/images/epaper/zb-single-epaper.png",
+      "target_url" : "javascript:;"
+    },
+    {
+      "id": 10,
+      "pub_date" : "12月21日 星期五",
+      "pub_thumbnail_url" : "./dist/images/epaper/zb-single-epaper.png",
+      "target_url" : "javascript:;"
+    },
+    {
+      "id": 11,
+      "pub_date" : "12月22日 星期六",
+      "pub_thumbnail_url" : "./dist/images/epaper/zb-single-epaper.png",
+      "target_url" : "javascript:;"
+    },
+    {
+      "id": 12,
+      "pub_date" : "12月23日 星期天",
+      "pub_thumbnail_url" : "./dist/images/epaper/zb-single-epaper.png",
+      "target_url" : "javascript:;"
+    },
+    {
+      "id": 13,
+      "pub_date" : "12月23日 星期天",
+      "pub_thumbnail_url" : "./dist/images/epaper/zb-single-epaper.png",
+      "target_url" : "javascript:;"
+    }
+  ]
+}

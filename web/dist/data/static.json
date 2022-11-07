@@ -1,0 +1,1790 @@
+{
+	"article_videoseries_items": [
+		{
+			"title_program": "《祖孙PK大挑战》",
+			"title_episode": "Gabby vs 阿公",
+			"episode_number": "第一集",
+			"tn": "https://via.placeholder.com/300x200?text=Episode",
+			"is_active": false
+		},
+		{
+			"title_program": "《祖孙PK大挑战》",
+			"title_episode": "Kaidon vs 爷爷",
+			"episode_number": "第二集",
+			"tn": "https://via.placeholder.com/300x200?text=Episode",
+			"is_active": false
+		},
+		{
+			"title_program": "《祖孙PK大挑战》",
+			"title_episode": "咏恩 vs 阿嫲",
+			"episode_number": "第三集",
+			"tn": "https://via.placeholder.com/300x200?text=Episode",
+			"is_active": false
+		},
+		{
+			"title_program": "《祖孙PK大挑战》",
+			"title_episode": "忆瑄 vs 阿嫲",
+			"episode_number": "第四集",
+			"tn": "https://via.placeholder.com/300x200?text=Episode",
+			"is_active": false
+		},
+		{
+			"title_program": "《祖孙PK大挑战》",
+			"title_episode": "其平 vs 外公",
+			"episode_number": "第五集",
+			"tn": "https://via.placeholder.com/300x200?text=Episode",
+			"is_active": true
+		}
+	],
+	"aside_breakingnews_items": [
+		{
+			"category": "中港台",
+			"published_date": "2小时前",
+			"description": "张柏芝传与新加坡富豪生子",
+			"tn": "",
+			"is_premium": false
+		},
+		{
+			"category": "新加坡",
+			"published_date": "3小时前",
+			"description": "携46万元离境未申报 27岁男子判罚款",
+			"tn": "",
+			"is_premium": false
+		},
+		{
+			"category": "新加坡",
+			"published_date": "3小时前",
+			"description": "猪肉砍一半胸口一阵痛 “猪肉西施”",
+			"tn": "",
+			"is_premium": false
+		},
+		{
+			"category": "国际",
+			"published_date": "4小时前",
+			"description": "英媒：威廉和哈里王子兄弟不和 父亲",
+			"tn": "",
+			"is_premium": false
+		},
+		{
+			"category": "新加坡",
+			"published_date": "4小时前",
+			"description": "柔佛州务大臣登上停留在新加坡海域",
+			"tn": "",
+			"is_premium": false
+		},
+		{
+			"category": "国际",
+			"published_date": "4小时前",
+			"description": "加媒：一名加拿大公民在北京被拘留",
+			"tn": "",
+			"is_premium": false
+		}
+	],
+	"aside_most_shared_items": [
+		{
+			"title": "单日",
+			"slug": "day",
+			"is_active": true,
+			"articles": [
+				{
+					"category": "中港台",
+					"published_date": "2小时前",
+					"description": "【潮什么】进军本地的网红美食究竟好不好吃？",
+					"tn": "",
+					"is_premium": false
+				},
+				{
+					"category": "新加坡",
+					"published_date": "3小时前",
+					"description": "廿四年后怀故人 ——说给李向",
+					"tn": "",
+					"is_premium": false
+				},
+				{
+					"category": "新加坡",
+					"published_date": "3小时前",
+					"description": "房价攀升 BTO等候久 年轻一族买房焦虑",
+					"tn": "",
+					"is_premium": false
+				},
+				{
+					"category": "国际",
+					"published_date": "4小时前",
+					"description": "生活家：减少+拒绝，知足方可环保常乐",
+					"tn": "",
+					"is_premium": false
+				},
+				{
+					"category": "新加坡",
+					"published_date": "4小时前",
+					"description": "柔佛州务大臣登上停留在新加坡海域",
+					"tn": "",
+					"is_premium": false
+				}
+			]
+		},
+		{
+			"title": "一周",
+			"slug": "week",
+			"is_active": false,
+			"articles": [
+				{
+					"category": "国际",
+					"published_date": "4小时前",
+					"description": "生活家：减少+拒绝，知足方可环保常乐",
+					"tn": "",
+					"is_premium": false
+				},
+				{
+					"category": "中港台",
+					"published_date": "2小时前",
+					"description": "【潮什么】进军本地的网红美食究竟好不好吃？",
+					"tn": "",
+					"is_premium": false
+				},
+				{
+					"category": "新加坡",
+					"published_date": "3小时前",
+					"description": "廿四年后怀故人 ——说给李向",
+					"tn": "",
+					"is_premium": false
+				},
+				{
+					"category": "新加坡",
+					"published_date": "3小时前",
+					"description": "房价攀升 BTO等候久 年轻一族买房焦虑",
+					"tn": "",
+					"is_premium": false
+				},
+				{
+					"category": "新加坡",
+					"published_date": "4小时前",
+					"description": "柔佛州务大臣登上停留在新加坡海域",
+					"tn": "",
+					"is_premium": false
+				}
+			]
+		}
+	],
+	"aside_popular_finance_tabs": [
+		{
+			"title": "单日",
+			"slug": "day",
+			"is_active": true,
+			"articles": [
+				{
+					"category": "新闻",
+					"published_date": "23/09/2018",
+					"description": "许宝琨：希望生态科技岛吸引更多新加坡创新企业",
+					"tn": "",
+					"is_premium": false
+				},
+				{
+					"category": "投资理财",
+					"published_date": "23/09/2018",
+					"description": "将注资凯发4亿元 阿联酋公司Utico提具约束力献议",
+					"tn": "",
+					"is_premium": false
+				},
+				{
+					"category": "房产",
+					"published_date": "23/09/2018",
+					"description": "分析师：私宅短期出租条例不放宽 料对酒店业务有推助作用",
+					"tn": "",
+					"is_premium": true
+				},
+				{
+					"category": "房产",
+					"published_date": "23/09/2018",
+					"description": "霸级公寓锦泰门第将开盘 金文泰私宅市场料重现活力",
+					"tn": "",
+					"is_premium": false
+				},
+				{
+					"category": "企业热讯",
+					"published_date": "23/09/2018",
+					"description": "奕丰集团或将中港业务独立上市",
+					"tn": "",
+					"is_premium": false
+				}
+			]
+		},
+		{
+			"title": "一周",
+			"slug": "week",
+			"is_active": false,
+			"articles": [
+				{
+					"category": "新闻",
+					"published_date": "17/09/2018",
+					"description": "李显龙总理：行动党立场虽已确定 王瑞杰是否接任总理须通过大选这关",
+					"tn": "",
+					"is_premium": false
+				}
+			]
+		}
+	],
+	"aside_popular_tabs": [
+		{
+			"title": "单日",
+			"slug": "day",
+			"is_active": true,
+			"articles": [
+				{
+					"category": "新闻",
+					"published_date": "23/09/2018",
+					"description": "扫走收银机3000元 杂菜饭头手拿钱跑路",
+					"tn": "",
+					"is_premium": false
+				},
+				{
+					"category": "娱乐",
+					"published_date": "23/09/2018",
+					"description": "51岁康康二度当爸 嫩妻为了余天选立委剖腹产",
+					"tn": "",
+					"is_premium": false
+				},
+				{
+					"category": "财经",
+					"published_date": "23/09/2018",
+					"description": "去年12月非石油出口跌8.5％ 远不如预期",
+					"tn": "",
+					"is_premium": true
+				},
+				{
+					"category": "即时",
+					"published_date": "23/09/2018",
+					"description": "英媒：威廉和哈里王子兄弟不和 父亲出面调解",
+					"tn": "",
+					"is_premium": false
+				},
+				{
+					"category": "新闻",
+					"published_date": "23/09/2018",
+					"description": "日本流行DNA相亲 对的人闻起来香香",
+					"tn": "",
+					"is_premium": false
+				}
+			]
+		},
+		{
+			"title": "一周",
+			"slug": "week",
+			"is_active": false,
+			"articles": [
+				{
+					"category": "新闻",
+					"published_date": "17/09/2018",
+					"description": "李显龙总理：行动党立场虽已确定 王瑞杰是否接任总理须通过大选这关",
+					"tn": "",
+					"is_premium": false
+				}
+			]
+		}
+	],
+	"aside_rec_items": [
+		{
+			"category": "",
+			"published_date": "30分钟前",
+			"description": "门挂出现淡米尔文翻译错误 加基武吉行动党支部主席",
+			"tn": "https://via.placeholder.com/300x200?text=Image",
+			"is_premium": false
+		},
+		{
+			"category": "",
+			"published_date": "23/09/2018",
+			"description": "工商总会：比前年增加近倍 近四成本地企业预计 未来一年经商环境将恶化",
+			"tn": "https://via.placeholder.com/300x200?text=Image",
+			"is_premium": false
+		},
+		{
+			"category": "",
+			"published_date": "23/09/2018",
+			"description": "脱欧协议惨败英镑不跌反升 分析师：或是短暂乐观假象",
+			"tn": "https://via.placeholder.com/300x200?text=Image",
+			"is_premium": true
+		},
+		{
+			"category": "",
+			"published_date": "23/09/2018",
+			"description": "“阿哥”曾当侍应生？看看李南星记忆力如何！",
+			"tn": "https://via.placeholder.com/300x200?text=Image",
+			"is_premium": false
+		}
+	],
+	"aside_video_finance_items": [
+		{
+			"category": "",
+			"published_date": "08/11/2018",
+			"description": "分析师：私宅短期出租条例不放宽 料对酒店业务有推助作用",
+			"tn": "",
+			"is_premium": false
+		}
+	],
+	"aside_video_items": [
+		{
+			"category": "",
+			"published_date": "08/11/2018",
+			"description": "第17届新加坡金字品牌奖颁奖礼 欢庆获奖举杯同贺",
+			"tn": "",
+			"is_premium": false
+		}
+	],
+	"aside_vote_items": [
+		{
+			"category": "",
+			"published_date": "",
+			"description": "不能购房，无法给予孩子舒适的成长环境",
+			"tn": "",
+			"id": 1217,
+			"votes": 137,
+			"percentage": "13.82%",
+			"is_premium": false
+		},
+		{
+			"category": "",
+			"published_date": "",
+			"description": "养育小孩成本太高，经济能力还不够",
+			"tn": "",
+			"id": 1218,
+			"votes": 539,
+			"percentage": "54.39%",
+			"is_premium": false
+		},
+		{
+			"category": "",
+			"published_date": "",
+			"description": "还年轻，不想太早被孩子“捆绑”",
+			"tn": "",
+			"id": 1219,
+			"votes": 107,
+			"percentage": "10.8%",
+			"is_premium": false
+		},
+		{
+			"category": "",
+			"published_date": "",
+			"description": "“不生族”，不认为一定要生小孩",
+			"tn": "",
+			"id": 1220,
+			"votes": 98,
+			"percentage": "9.89%",
+			"is_premium": false
+		},
+		{
+			"category": "",
+			"published_date": "",
+			"description": "为了事业，搁置生育计划",
+			"tn": "",
+			"id": 1221,
+			"votes": 110,
+			"percentage": "11.1%",
+			"is_premium": false
+		}
+	],
+	"inline_rec_items": [
+		{
+			"category": "生活",
+			"published_date": "01/11/2018",
+			"description": "【亚细安·新足迹】印尼蜡染布时髦变身",
+			"tn": "https://via.placeholder.com/300x200?text=Image",
+			"is_premium": false
+		},
+		{
+			"category": "生活",
+			"published_date": "06/11/2018",
+			"description": "【亚细安·新足迹】这道泰国菜肴 “小泰国”黄金坊也难找",
+			"tn": "",
+			"is_premium": false
+		}
+	],
+	"nav_item_beautyhealth": {
+		"name": "保健/美容",
+		"href": "#",
+		"sublinks": []
+	},
+	"nav_item_dialogue": {
+		"name": "言论",
+		"href": "#",
+		"sublinks": [
+			{
+				"name": "社论",
+				"href": "#"
+			},
+			{
+				"name": "评论",
+				"href": "#"
+			},
+			{
+				"name": "想法",
+				"href": "#"
+			},
+			{
+				"name": "交流站",
+				"href": "#"
+			}
+		]
+	},
+	"nav_item_entertainment": {
+		"name": "娱乐",
+		"href": "#",
+		"sublinks": [
+			{
+				"name": "明星",
+				"href": "#"
+			},
+			{
+				"name": "影视",
+				"href": "#"
+			},
+			{
+				"name": "音乐",
+				"href": "#"
+			},
+			{
+				"name": "韩流",
+				"href": "#"
+			},
+			{
+				"name": "送礼",
+				"href": "#"
+			}
+		]
+	},
+	"nav_item_finance": {
+		"name": "财经",
+		"href": "./listing.html",
+		"sublinks": [
+			{
+				"name": "新加坡股市",
+				"href": "#"
+			},
+			{
+				"name": "即时",
+				"href": "#"
+			},
+			{
+				"name": "新闻",
+				"href": "#"
+			},
+			{
+				"name": "投资理财",
+				"href": "./listing-sub.html"
+			},
+			{
+				"name": "房产",
+				"href": "#"
+			},
+			{
+				"name": "中小企业",
+				"href": "#"
+			},
+			{
+				"name": "财经人物",
+				"href": "#"
+			}
+		]
+	},
+	"nav_item_food": {
+		"name": "美食",
+		"href": "#",
+		"sublinks": []
+	},
+	"nav_item_interactive": {
+		"name": "互动新闻",
+		"href": "#",
+		"sublinks": []
+	},
+	"nav_item_life": {
+		"name": "生活",
+		"href": "#",
+		"sublinks": [
+			{
+				"name": "美食",
+				"href": "#"
+			},
+			{
+				"name": "热门",
+				"href": "#"
+			},
+			{
+				"name": "汽车与科技",
+				"href": "#"
+			},
+			{
+				"name": "生活补给站",
+				"href": "#"
+			},
+			{
+				"name": "时尚",
+				"href": "#"
+			},
+			{
+				"name": "旅行",
+				"href": "#"
+			},
+			{
+				"name": "心事家事",
+				"href": "#"
+			},
+			{
+				"name": "文化/艺术",
+				"href": "#"
+			},
+			{
+				"name": "专栏",
+				"href": "#"
+			},
+			{
+				"name": "深夜好读",
+				"href": "#"
+			},
+			{
+				"name": "生活贴士",
+				"href": "#"
+			},
+			{
+				"name": "星座运程",
+				"href": "#"
+			}
+		]
+	},
+	"nav_item_news": {
+		"name": "新闻",
+		"href": "#",
+		"is_active": false,
+		"sublinks": [
+			{
+				"name": "即时",
+				"href": "#",
+				"is_active": false
+			},
+			{
+				"name": "新加坡",
+				"href": "#",
+				"is_active": false
+			},
+			{
+				"name": "国际",
+				"href": "#",
+				"is_active": false
+			},
+			{
+				"name": "中港台",
+				"href": "#",
+				"is_active": false
+			},
+			{
+				"name": "东南亚",
+				"href": "#",
+				"is_active": false
+			}
+		]
+	},
+	"nav_item_podcast": {
+		"name": "早报播客",
+		"href": "#",
+		"sublinks": []
+	},
+	"nav_item_primary": {
+		"name": "",
+		"href": "#",
+		"sublinks": [
+			{
+				"name": "订户专区",
+				"href": "/premium",
+				"css_class": "is-active"
+			},
+			{
+				"name": "联合晚报",
+				"href": "https://www.zaobao.com.sg/publication/lian-he-wan-bao",
+				"css_class": ""
+			},
+			{
+				"name": "新明日报",
+				"href": "https://www.zaobao.com.sg/publication/xin-ming-ri-bao",
+				"css_class": ""
+			},
+			{
+				"name": "电子报",
+				"href": "#",
+				"css_class": ""
+			},
+			{
+				"name": "电子报",
+				"href": "#",
+				"css_class": ""
+			},
+			{
+				"name": "读者好康",
+				"href": "#",
+				"css_class": ""
+			}
+		]
+	},
+	"nav_item_special": {
+		"name": "专题",
+		"href": "#",
+		"sublinks": []
+	},
+	"nav_item_sport": {
+		"name": "体育",
+		"href": "#",
+		"sublinks": []
+	},
+	"nav_item_tiertiary": {
+		"name": "",
+		"href": "#",
+		"sublinks": [
+			{
+				"title": "早报活动",
+				"description": "“字述一年”投票今天截止 四方式供写業子要唆報晶開渉奔山椅続伴時",
+				"tn": "https://via.placeholder.com/480x300?text=Events",
+				"isBgImg": false,
+				"href_category": "#",
+				"href": "#",
+				"is_premium": false
+			},
+			{
+				"title": "深夜好读",
+				"description": "符诗专：侧记 台北金马影展勝込発清採演米際監気天闘簡造",
+				"tn": "https://via.placeholder.com/480x300?text=NightReads",
+				"isBgImg": false,
+				"href_category": "#",
+				"href": "#",
+				"is_premium": true
+			},
+			{
+				"title": "系列节目",
+				"description": "祖孙PK大挑战，通过游戏方式促进祖億記徴害存河将迎周先理巣常表更文",
+				"tn": "https://via.placeholder.com/480x300?text=Events",
+				"isBgImg": false,
+				"href_category": "#",
+				"href": "#",
+				"is_premium": false
+			},
+			{
+				"title": "星座运程",
+				"description": "今日: 恋爱运上升，会遇到个性温柔交変全監整告追彰勢心専金球",
+				"tn": "images/horoscope/sprite-horoscope-256.png",
+				"isBgImg": true,
+				"href_category": "#",
+				"href": "#",
+				"is_premium": false
+			}
+		]
+	},
+	"nav_item_travel": {
+		"name": "旅行",
+		"href": "#",
+		"sublinks": []
+	},
+	"nav_item_video": {
+		"name": "视频",
+		"href": "#",
+		"sublinks": [
+			{
+				"name": "新闻",
+				"href": "#"
+			},
+			{
+				"name": "娱乐",
+				"href": "#"
+			},
+			{
+				"name": "生活",
+				"href": "#"
+			},
+			{
+				"name": "系列节目",
+				"href": "#"
+			},
+			{
+				"name": "早报校园",
+				"href": "#"
+			},
+			{
+				"name": "直播",
+				"href": "#"
+			}
+		]
+	},
+	"weekly_higlights": [
+		{
+			"id": 1,
+			"title": "早报娱乐本周回顾",
+			"stats": "已个3,300个早报用户订阅",
+			"description": "出村告女流王黄门生们泉怎春了东，卜乍进长火假南菜跟寺良眼长造物向祖抓信，星久共，得猫饭问女多您才，朱爱鸟发同里美院笔",
+			"url": "media.jpg",
+			"tag": "zaobao_highlights"
+		},
+		{
+			"id": 2,
+			"title": "早报财经本周回顾",
+			"stats": "已个3,300个早报用户订阅",
+			"description": "出村告女流王黄门生们泉怎春了东，卜乍进长火假南菜跟寺良眼长造物向祖抓信，星久共，得猫饭问女多您才，朱爱鸟发同里美院笔",
+			"url": "finance.png",
+			"tag": "zaobao_highlights"
+		},
+		{
+			"id": 3,
+			"title": "早报体育本周回顾",
+			"stats": "已个3,300个早报用户订阅",
+			"description": "出村告女流王黄门生们泉怎春了东，卜乍进长火假南菜跟寺良眼长造物向祖抓信，星久共，得猫饭问女多您才，朱爱鸟发同里美院笔",
+			"url": "media.jpg",
+			"tag": "zaobao_highlights"
+		},
+		{
+			"id": 4,
+			"title": "早报每周精选言论 ",
+			"stats": "已个3,300个早报用户订阅",
+			"description": "出村告女流王黄门生们泉怎春了东，卜乍进长火假南菜跟寺良眼长造物向祖抓信，星久共，得猫饭问女多您才，朱爱鸟发同里美院笔",
+			"url": "media.jpg",
+			"tag": "zaobao_highlights"
+		},
+		{
+			"id": 5,
+			"title": "早报每周精选视频",
+			"stats": "已个3,300个早报用户订阅",
+			"description": "出村告女流王黄门生们泉怎春了东，卜乍进长火假南菜跟寺良眼长造物向祖抓信，星久共，得猫饭问女多您才，朱爱鸟发同里美院笔",
+			"url": "highlights.png",
+			"tag": "zaobao_highlights"
+		}
+	],
+	"zaobao_recommends": [
+		{
+			"id": 6,
+			"title": "早报深夜好读",
+			"stats": "已个3,300个早报用户订阅",
+			"description": "出村告女流王黄门生们泉怎春了东，卜乍进长火假南菜跟寺良眼长造物向祖抓信，星久共，得猫饭问女多您才，朱爱鸟发同里美院笔",
+			"url": "media.jpg",
+			"tag": "zaobao_recommends"
+		},
+		{
+			"id": 7,
+			"title": "早报播客",
+			"stats": "已个3,300个早报用户订阅",
+			"description": "出村告女流王黄门生们泉怎春了东，卜乍进长火假南菜跟寺良眼长造物向祖抓信，星久共，得猫饭问女多您才，朱爱鸟发同里美院笔",
+			"url": "media.jpg",
+			"tag": "zaobao_recommends"
+		},
+		{
+			"id": 8,
+			"title": "读者好康",
+			"stats": "已个3,300个早报用户订阅",
+			"description": "出村告女流王黄门生们泉怎春了东，卜乍进长火假南菜跟寺良眼长造物向祖抓信，星久共，得猫饭问女多您才，朱爱鸟发同里美院笔",
+			"url": "media.jpg",
+			"tag": "zaobao_recommends"
+		}
+	],
+	"zaobao_columns": [
+		{
+			"id": 9,
+			"title": "早报专栏：郑永年",
+			"stats": "已个3,300个早报用户订阅",
+			"description": "出村告女流王黄门生们泉怎春了东，卜乍进长火假南菜跟寺良眼长造物向祖抓信，星久共，得猫饭问女多您才，朱爱鸟发同里美院笔",
+			"url": "media.jpg",
+			"tag": "zaobao_columns"
+		},
+		{
+			"id": 10,
+			"title": "早报专栏：叶鹏飞",
+			"stats": "已个3,300个早报用户订阅",
+			"description": "出村告女流王黄门生们泉怎春了东，卜乍进长火假南菜跟寺良眼长造物向祖抓信，星久共，得猫饭问女多您才，朱爱鸟发同里美院笔",
+			"url": "media.jpg",
+			"tag": "zaobao_columns"
+		}
+	],
+	"outbrain1": [
+		{
+			"title": "一马案爆发后首次谈两人关系 纳吉：刘特佐或骗了我们",
+			"category": "专题",
+			"published_date": "23/09/2018",
+			"source": "",
+			"tn": "https://via.placeholder.com/300x200?text=OutbrainTn1"
+		},
+		{
+			"title": "被指拖欠数千万令吉 马六甲中资皇京港工程暂停",
+			"category": "专题",
+			"published_date": "23/09/2018",
+			"source": "",
+			"tn": "https://via.placeholder.com/300x200?text=OutbrainTn2"
+		},
+		{
+			"title": "韩咏梅：吃饭问题，该管到哪里？",
+			"category": "专题",
+			"published_date": "23/09/2018",
+			"source": "",
+			"tn": "https://via.placeholder.com/300x200?text=OutbrainTn3"
+		},
+		{
+			"title": "一马案爆发后首次谈两人关系 纳吉：刘特佐或骗了我们",
+			"category": "专题",
+			"published_date": "23/09/2018",
+			"source": "",
+			"tn": "https://via.placeholder.com/300x200?text=OutbrainTn4"
+		},
+		{
+			"title": "一马案爆发后首次谈两人关系 纳吉：刘特佐或骗了我们",
+			"category": "专题",
+			"published_date": "23/09/2018",
+			"source": "",
+			"tn": "https://via.placeholder.com/300x200?text=OutbrainTn5"
+		}
+	],
+	"outbrain2": [
+		{
+			"title": "Did you know that healthcare needs are",
+			"category": "",
+			"published_date": "",
+			"source": "Social Innovation Hub: Hitachi",
+			"tn": "https://via.placeholder.com/300x200?text=OutbrainTn1"
+		},
+		{
+			"title": "3 mistakes to avoid when expanding into a new",
+			"category": "",
+			"published_date": "",
+			"source": "Enterprise SG",
+			"tn": "https://via.placeholder.com/300x200?text=OutbrainTn2"
+		},
+		{
+			"title": "Share your life with the Galaxy A9’s revolutionary",
+			"category": "",
+			"published_date": "",
+			"source": "Healith Promotion Board",
+			"tn": "https://via.placeholder.com/300x200?text=OutbrainTn3"
+		},
+		{
+			"title": "Hold 11 currencies secirely in one card wallet.",
+			"category": "",
+			"published_date": "",
+			"source": "Straits Times",
+			"tn": "https://via.placeholder.com/300x200?text=OutbrainTn4"
+		},
+		{
+			"title": "Hold 11 currencies secirely in one card wallet.",
+			"category": "",
+			"published_date": "",
+			"source": "Straits Times",
+			"tn": "https://via.placeholder.com/300x200?text=OutbrainTn5"
+		}
+	],
+	"readers_club": [
+		{
+			"_score": null,
+			"_source": {
+				"tags": [
+					{
+						"id": 9982,
+						"name": "影视"
+					},
+					{
+						"id": 85311,
+						"name": "李克勤"
+					},
+					{
+						"id": 10066,
+						"name": "刘德华"
+					}
+				],
+				"articleurl": "https://www.zaobao.com/entertainment/story20221031-1328168",
+				"publish_on_zbcom": "1",
+				"display_title": "李克勤蝉联《好声音》冠军导师 李玟突删光节目贴文",
+				"body_cn": "<p>（综合讯）上周五（10月28日）晚播出的《2022中国好声音巅峰之夜》，最终由李克勤的学员梁玉莹夺得总冠军，李克勤也同时成为冠军导师，并由天王刘德华颁奖，抢尽风头！</p>\n\n<p>李克勤去年为《中国好声音》（简称《好声音》）第10季担任导师，首次出任即勇夺“总冠军导师”，今年再为节目出任导师。</p>\n\n<p>一路走来，李克勤战队虽然于最初的盲选阶段一波三折，但最后战队都能够完美成形，李克勤欣慰地说：“我的战队真的好完美，攻守兼备。”比赛胜出后，他笑说：“第一年拿我觉得是运气，第二年拿就是运气加敬老。”他感谢团队，如编曲的陈子龙，指自己的团队是“一条龙”服务，包括发型、形象设计等，也乘机感谢太太卢淑仪。</p>\n\n<p>李克勤坦言从不当自己是导师，跟学员们亦师亦友，凝聚战队团魂，“大家都没有分前辈后辈，都是一班享受音乐，喜欢音乐的朋友。除了工作，大家每天一起吃饭，从而建立起友情。”</p>\n\n<p>作为本季节目见证人，刘德华在节目伊始隔空献唱，来到总决赛，他亲临现场，不仅与本季全体学员一起高唱《中国人》，还在压轴献上两首金曲《一起走过的日子》和《忘情水》。</p>\n\n<h3><span class=\"ZBO_SubHeading\">李玟被爆在台上摔倒</span></h3>\n\n<p>然而总决赛刚结束，有网民发现另一导师李玟删除了关于《好声音》的所有微博。李玟也被发现在总决赛结束后，并未上台与其他导师和学员合影留念，而是与主持人沟通着什么似的。</p>\n\n<p>随后有爆料文说，因节目组在总决赛录制当天临时变动舞台，导致本就有脚伤的李玟在台上摔倒。她为了不影响学员王泽鹏的比赛，忍痛为选手唱完和声，比赛结束后李玟的工作人员与节目组大吵一架，让李玟最后失望地删掉所有关于节目的贴文，并且在录制结束的隔天就直接返回香港。</p>\n\n<p>事实上，李玟与《好声音》闹出纠纷并非首次。她在9月下旬曾被指认为比赛规则有失公平，在现场开呛导演组。这段视频在网上疯传，李玟后来发文强调，是因“爱学员心切”才会忍不住发声，并表示与导演组沟通后已解除了误会，也间接证明与节目组起争执的说法不假。</p><span style=\"font-size:1px\">&#28;</span><span style=\"font-size:1px\">&#28;</span>",
+				"copyright": "NONSPH",
+				"headline_cn": "李克勤蝉联《好声音》冠军导师 李玟突删光节目贴文",
+				"publish_on_zbsg": "1",
+				"publicationdate": "2022-10-31T05:00:00",
+				"expirydate": "2022-10-31T09:42:02",
+				"displaytime": "0500",
+				"sections": [
+					{
+						"section": [
+							{
+								"level": 1,
+								"name_cn": "娱乐",
+								"name_en": "Entertainment",
+								"code": "21"
+							}
+						]
+					}
+				],
+				"source": "联合早报",
+				"teaser": "　　上周五（10月28日）晚播出的《2022中国好声音巅峰之夜》，最终由李克勤的学员梁玉莹夺得总冠军，李克勤也同时成为冠军导师，并由天王刘德华颁奖，抢尽风头！李克勤去年为《中国好声音》（简称《好声音》）第10季担任导师，首次出任即勇夺“总冠军导师”，今年再为节目出任导师。",
+				"documentid": "1328168",
+				"print_flag": "1",
+				"content_preview": "<p>上周五（10月28日）晚播出的《2022中国好声音巅峰之夜》，最终由李克勤的学员梁玉莹夺得总冠军，李克勤也同时成为冠军导师，并由天王刘德华颁奖，抢尽风头！</p><p>李克勤去年为《中国好声音》（简称《好声音》）第10季担任导师，首次出任即勇夺“总冠军导师”，今年再为节目出任导师。</p><p>一路走来，李克勤战队虽然于最初的盲选阶段一波三折，但最后战队都能够完美成形，李克勤欣慰地说：“我的战队真的好完美，攻守兼备。”比赛胜出后，他笑说：“第一年拿我觉得是运气，第二年拿就是运气加敬老。”他感谢团队，如编曲的陈子龙，指自己的团队是“一条龙”服务，包括发型、形象设计等，也乘机感谢太太卢淑仪。</p>",
+				"language": "cn",
+				"updatedate": "2022-10-31T09:34:50",
+				"is_paid": 0,
+				"photogallery": [
+					{
+						"thumbnail": "https://static.zaobao.com/s3fs-public/styles/article_medium_crop/public/2022-10/ZB_1031_CJ_doc7ndx5z6l5bn1me6j0im8_29181200_tayck.jpg?VersionId=rWAADrfJSS.uQtNcs4JyK598EYS2Qwc6",
+						"height": "400",
+						"rotator": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/ZB_1031_CJ_doc7ndx5z6l5bn1me6j0im8_29181200_tayck.jpg?VersionId=DfTvW1c8w7gQR2KKC8WY3Vh0US0sc06t",
+						"width": "600",
+						"caption": "李克勤（右二）战队学员梁玉莹（左二）在《好声音》夺冠，刘德华（右一）现身颁奖。（互联网）",
+						"square": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/ZB_1031_CJ_doc7ndx5z6l5bn1me6j0im8_29181200_tayck.jpg?VersionId=DfTvW1c8w7gQR2KKC8WY3Vh0US0sc06t",
+						"large": "https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-10/ZB_1031_CJ_doc7ndx5z6l5bn1me6j0im8_29181200_tayck.jpg?VersionId=0UyxXzlzzsBokT7xzDEoN4.7R.qiSZUS"
+					},
+					{
+						"thumbnail": "https://static.zaobao.com/s3fs-public/styles/article_medium_crop/public/2022-10/ZB_1031_CJ_doc7ndxfll12plj4xin5mg_29183247_tayck.jpg?VersionId=GoUaPzbagInhoLbjM3QVPVWAEdOtR70d",
+						"height": "400",
+						"rotator": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/ZB_1031_CJ_doc7ndxfll12plj4xin5mg_29183247_tayck.jpg?VersionId=q0I99lKAi2OwQHNxouM1O9hCicwmAD04",
+						"width": "600",
+						"caption": "李玟（左）是《中国好声音》导师之一，网民爆料她和学员的舞台遭节目组临时调整。（互联图）",
+						"square": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/ZB_1031_CJ_doc7ndxfll12plj4xin5mg_29183247_tayck.jpg?VersionId=q0I99lKAi2OwQHNxouM1O9hCicwmAD04",
+						"large": "https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-10/ZB_1031_CJ_doc7ndxfll12plj4xin5mg_29183247_tayck.jpg?VersionId=E.ZaVBTaqXPkKyvveZHO9N1zI.zSJA1p"
+					}
+				],
+				"render_type": "NATIVE",
+				"metadata": {
+					"section_tag": "娱乐",
+					"queue_groupname": "rotator",
+					"queue_order": 1
+				},
+				"paid_mode": 0,
+				"freemium_details": true,
+				"exclusive": true,
+				"common": false
+			}
+		},
+		{
+			"_score": null,
+			"_source": {
+				"tags": [
+					{
+						"id": 10075,
+						"name": "音乐"
+					},
+					{
+						"id": 24227,
+						"name": "范玮琪"
+					}
+				],
+				"articleurl": "https://www.zaobao.com/entertainment/story20221031-1328170",
+				"publish_on_zbcom": "1",
+				"display_title": "范玮琪复出认“做错事” 继续当“王力宏的家人”",
+				"body_cn": "<p>（台北讯）离开歌坛两年多，台湾歌手范玮琪10月28日、29日复出办“恰如其分的自己”音乐会，她一开口就忍不住哽咽落泪，29日接受媒体访问，更难掩紧张心情。</p>\n\n<p>谈到之前的失言风波，她承认自己做错事，说：“这三年上帝给了我一个礼物，因为我做错事了嘛，因为那个错误，让我可以有三年的时间沉淀，重新跟自己和解，也回到学校，并当个全职妈妈，重新当个恰如其分的范玮琪，可以继续往前走。”</p>\n\n<p>范玮琪之前因为连续失言，和网民笔战等风波，导致她成为众矢之的。她在演唱会上坦言：“那时候人生很低谷，我做错了一件事，每个人都有瑕疵，要把挫折当成动力，创伤是拿来当作成长的动力。”</p>\n\n<p>范玮琪身形明显比过去消瘦，她透露，因为疫苗副作用，她打完三剂后暴瘦10公斤，还有掉头发、晕倒等后遗症，光是贫血晕眩，就导致她惨跌，下巴缝了15针。范玮琪苦笑，就连去打拳击她也因为肌肉量不足而呕吐，之后要找时间仔细检查。</p>\n\n<p>范玮琪这次重返舞台，王力宏也送上花篮，署名为Homeboy，并送上祝福：“今晚每个音符所带来的恩典，都是你从天堂摘下来的果实，好好享受这段得来不易的恰如其分的好时光。”范玮琪受访时说，王力宏过得很好，“别人的事情、私事我就不多说了，毕竟之前吃过很多闷亏。我想表达的是，我们会一直陪着他，当他的家人。”</p><span style=\"font-size:1px\">&#28;</span><span style=\"font-size:1px\">&#28;</span>",
+				"copyright": "NONSPH",
+				"headline_cn": "范玮琪复出认“做错事” 继续当“王力宏的家人”",
+				"publish_on_zbsg": "1",
+				"publicationdate": "2022-10-31T05:00:00",
+				"expirydate": "2022-10-31T09:42:02",
+				"displaytime": "0500",
+				"sections": [
+					{
+						"section": [
+							{
+								"level": 1,
+								"name_cn": "娱乐",
+								"name_en": "Entertainment",
+								"code": "21"
+							}
+						]
+					}
+				],
+				"source": "联合早报",
+				"teaser": "　　离开歌坛两年多，台湾歌手范玮琪10月28日、29日复出办“恰如其分的自己”音乐会，她一开口就忍不住哽咽落泪，29日接受媒体访问，更难掩紧张心情。",
+				"documentid": "1328170",
+				"print_flag": "1",
+				"content_preview": "<p>离开歌坛两年多，台湾歌手范玮琪10月28日、29日复出办“恰如其分的自己”音乐会，她一开口就忍不住哽咽落泪，29日接受媒体访问，更难掩紧张心情。</p><p>谈到之前的失言风波，她承认自己做错事，说：“这三年上帝给了我一个礼物，因为我做错事了嘛，因为那个错误，让我可以有三年的时间沉淀，重新跟自己和解，也回到学校，并当个全职妈妈，重新当个恰如其分的范玮琪，可以继续往前走。”</p>",
+				"language": "cn",
+				"updatedate": "2022-10-31T09:36:56",
+				"is_paid": 0,
+				"photogallery": [
+					{
+						"thumbnail": "https://static.zaobao.com/s3fs-public/styles/article_medium_crop/public/2022-10/ZB_1031_CJ_doc7ndy1301qxvyv6k63j7_29191928_tayck.jpg?VersionId=zPF952BmID9KXw7r8Ejvi6j9TU75jBO0&h=23b95980",
+						"height": "400",
+						"rotator": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/ZB_1031_CJ_doc7ndy1301qxvyv6k63j7_29191928_tayck.jpg?VersionId=YDJDSTHZ8rcDd7KJNyO.MEZYcMzm842Q&h=23b95980",
+						"width": "600",
+						"caption": "范玮琪复出举办音乐会。（黑天使制作图）",
+						"square": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/ZB_1031_CJ_doc7ndy1301qxvyv6k63j7_29191928_tayck.jpg?VersionId=YDJDSTHZ8rcDd7KJNyO.MEZYcMzm842Q&h=23b95980",
+						"large": "https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-10/ZB_1031_CJ_doc7ndy1301qxvyv6k63j7_29191928_tayck.jpg?VersionId=ax3O6XAASRrQ2QtKL.XwRhcySDLUnsPw"
+					}
+				],
+				"render_type": "NATIVE",
+				"metadata": {
+					"section_tag": "娱乐",
+					"queue_groupname": "rotator",
+					"queue_order": 1
+				},
+				"paid_mode": 0,
+				"freemium_details": false,
+				"exclusive": false,
+				"common": true
+			}
+		},
+		{
+			"_score": null,
+			"_source": {
+				"tags": [
+					{
+						"id": 9969,
+						"name": "明星"
+					},
+					{
+						"id": 12426,
+						"name": "白薇秀"
+					},
+					{
+						"id": 12425,
+						"name": "戚玉武"
+					}
+				],
+				"articleurl": "https://www.zaobao.com/entertainment/story20221031-1328169",
+				"publish_on_zbcom": "1",
+				"display_title": "白薇秀穿比基尼路边喝椰子水 粉丝赞：辣妈身材太不科学",
+				"body_cn": "<p>戚玉武和太太白薇秀不久前带着一对子女到泰国普吉岛旅游，白薇秀这两天在IG分享旅游照，先是一张自己穿着比基尼在路边摊喝椰子水的照片，贴文“在新加坡觉得椰子好贵不舍得喝，去到普吉岛几天也没舍得喝，后来在Phi Phi Island看到这个招牌才记得是这里的土产……马上来粒大的！”</p>\n\n<p>但粉丝的焦点不是椰子，而是白薇秀的好身材，纷纷留言“你的身材也太不科学了吧，生了两个吗？”“辣妈”“性感”“那腹肌”。</p>\n\n<p>白薇秀后来再分享一家人与大象近距离接触的照片，并提供一些旅游贴士，粉丝的焦点依旧是身材，这次是戚玉武的巧克力腹肌，留言大赞“715的身材赞哟”，还有人说“我没有借口不去健身房了”。</p><span style=\"font-size:1px\">&#28;</span><span style=\"font-size:1px\">&#28;</span>",
+				"copyright": "SPH",
+				"byline_cn": "罗瑱玲",
+				"headline_cn": "白薇秀穿比基尼路边喝椰子水 粉丝赞：辣妈身材太不科学",
+				"publish_on_zbsg": "1",
+				"publicationdate": "2022-10-31T05:00:00",
+				"expirydate": "2022-10-31T10:09:05",
+				"sections": [
+					{
+						"section": [
+							{
+								"level": 1,
+								"name_cn": "娱乐",
+								"name_en": "Entertainment",
+								"code": "21"
+							}
+						]
+					}
+				],
+				"displaytime": "0500",
+				"byline": [
+					{
+						"id": "1064",
+						"name": "罗瑱玲"
+					}
+				],
+				"source": "联合早报",
+				"teaser": "　　戚玉武和太太白薇秀不久前带着一对子女到泰国普吉岛旅游，白薇秀这两天在IG分享旅游照，先是一张自己穿着比基尼在路边摊喝椰子水的照片，贴文“在新加坡觉得椰子好贵不舍得喝，去到普吉岛几天也没舍得喝，后来在Phi Phi Island看到这个招牌才记得是这里的土产……马上来粒大的！”但粉丝的焦点不是椰子，而是白薇秀的好身材，纷纷留言“你的身材也太不科学了吧，生了两个吗？”“辣妈”“性感”“那腹肌”。",
+				"documentid": "1328169",
+				"print_flag": "1",
+				"content_preview": "<p>戚玉武和太太白薇秀不久前带着一对子女到泰国普吉岛旅游，白薇秀这两天在IG分享旅游照，先是一张自己穿着比基尼在路边摊喝椰子水的照片，贴文“在新加坡觉得椰子好贵不舍得喝，去到普吉岛几天也没舍得喝，后来在Phi Phi Island看到这个招牌才记得是这里的土产……马上来粒大的！”</p><p>但粉丝的焦点不是椰子，而是白薇秀的好身材，纷纷留言“你的身材也太不科学了吧，生了两个吗？”“辣妈”“性感”“那腹肌”。</p>",
+				"language": "cn",
+				"updatedate": "2022-10-31T10:01:12",
+				"is_paid": 0,
+				"photogallery": [
+					{
+						"thumbnail": "https://static.zaobao.com/s3fs-public/styles/article_medium_crop/public/2022-10/ZB_1031_CJ_doc7ndu2ujvikje1kxs9au_29150329_tayck.jpg?VersionId=0.1oWsAELXGoF508TJnumSz4U3wpbAu9&h=ca7791ee",
+						"height": "400",
+						"rotator": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/ZB_1031_CJ_doc7ndu2ujvikje1kxs9au_29150329_tayck.jpg?VersionId=ib.mbeUZI85wyGrVDm81GtgZ7wmPiAEc&h=ca7791ee",
+						"width": "600",
+						"caption": "白薇秀大方秀出自己和老公戚玉武的好身材。（取自艺人IG）",
+						"square": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/ZB_1031_CJ_doc7ndu2ujvikje1kxs9au_29150329_tayck.jpg?VersionId=ib.mbeUZI85wyGrVDm81GtgZ7wmPiAEc&h=ca7791ee",
+						"large": "https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-10/ZB_1031_CJ_doc7ndu2ujvikje1kxs9au_29150329_tayck.jpg?VersionId=il7Nya9O2yXS9qCjyimhyVbv4isUz3nU"
+					},
+					{
+						"thumbnail": "https://static.zaobao.com/s3fs-public/styles/article_medium_crop/public/2022-10/ZB_1031_CJ_doc7ndu2ujjwmrku106gx6_29150320_tayck.jpg?VersionId=ymPeZ473rdCMZYdY02liKILI1HI4h8S6",
+						"height": "400",
+						"rotator": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/ZB_1031_CJ_doc7ndu2ujjwmrku106gx6_29150320_tayck.jpg?VersionId=3NlwCEW4XclcbtYtayfaz7C7.SfjpCdC",
+						"width": "600",
+						"caption": "穿着比基尼的白薇秀，身材看不出是两个孩子的妈。（取自艺人IG）",
+						"square": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/ZB_1031_CJ_doc7ndu2ujjwmrku106gx6_29150320_tayck.jpg?VersionId=3NlwCEW4XclcbtYtayfaz7C7.SfjpCdC",
+						"large": "https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-10/ZB_1031_CJ_doc7ndu2ujjwmrku106gx6_29150320_tayck.jpg?VersionId=R_rEXp2xRYO11qJD26yr8Fi2.lZoxKR_"
+					}
+				],
+				"render_type": "NATIVE",
+				"metadata": {
+					"section_tag": "娱乐",
+					"queue_groupname": "rotator",
+					"queue_order": 1
+				},
+				"paid_mode": 0,
+				"freemium_details": false,
+				"exclusive": false,
+				"common": false
+			}
+		},
+		{
+			"_score": null,
+			"_source": {
+				"tags": [
+					{
+						"id": 12425,
+						"name": "戚玉武"
+					},
+					{
+						"id": 12426,
+						"name": "白薇秀"
+					},
+					{
+						"id": 9982,
+						"name": "影视"
+					}
+				],
+				"articleurl": "https://www.zaobao.com/entertainment/story20221031-1328167",
+				"publish_on_zbcom": "1",
+				"display_title": "《武所不谈》虽找不到合作平台 戚玉武对作品有满足感",
+				"body_cn": "<p>八集清谈节目《武所不谈》找不到播出的合作平台，视帝戚玉武说：“不过我对我的作品感到骄傲，有很大的满足感。”</p>\n\n<p>戚玉武因为装修厨房而认识商家，有一回和商家老板吃饭聊得兴起，催生了《武所不谈》，邀请素人朋友一起边吃边天南地北地聊天。每集有不同素人，包括记者、电视编剧、电视剧导演、医生、律师、企业家、卖车的、卖海鲜的、校长、厨师与娱乐经纪人等，节目录制完后，他寻找播出平台却面对了挑战，他接受《联合早报》访问时坦承：“平台的反应是：都是素人。再来是平台没有播出这样的节目的先例。”</p>\n\n<p>寻找合作平台虽让他面临挑战，他却满意节目出来的素质与效果，他说：“找明星来谈演员生活的节目太多了，我不需要轧上一脚。”他认为娱乐圈真正的创造者很少，跟随者却很多，例如某种节目受欢迎，类似节目就会一窝蜂出来，他希望能创作出新鲜的节目，“每种行业的人都有各自的生活态度、想法，我希望让大家看与感受到，让我们的思考更加丰富。透过别人讲出他们的经历与感受，其实也给了我一个思考的机会。”</p>\n\n<h3><span class=\"ZBO_SubHeading\">节目采即兴聊天方式</span></h3>\n\n<p>《武所不谈》没有剧本，戚玉武认为自己不是主持人，嘉宾也不是嘉宾，而是大家聚在一起即兴的聊天，他说：“我也没要求他们谈自己的专业，而是找他们来聊生活或其他的。”</p>\n\n<p>他说节目的制作费不便宜，他没有设定一个谈话的主题，在开始录制前，还是有少许的紧张，万一聊不出什么该如何是好，不过也正是他没有限制框框，大家反而无所不谈，效果超乎他的想象。</p>\n\n<p>他透露自己是反传统，没有先去找播出平台，而是录制好节目后才去找平台，因为他不想受限而影响到自己的创作，最终找不到播出平台，也坦然承担后果，他说这些自己老早都想过。</p>\n\n<p>节目主要的赞助商是知名家电品牌Sub Zero and Wolf，戚玉武说对方给予他创作的空间，他很感激，“拿人家的钱去发挥自己的奇想去做节目，心里有点怕，尤其是谈话的提纲都没有，但我还是决定任性一次。现在看完成的这八集，很庆幸用了这样的方式来做，我对自己负了责，也对得起商家。”</p>\n\n<h3><span class=\"ZBO_SubHeading\">在YouTube播出 吸引不少人观看</span></h3>\n\n<p>《武所不谈》有别于过去清谈节目，戚玉武希望抛砖引玉吗？他说：“也没那么伟大。只是想把框框画大，而不是要打破，因为大家有既定的框框。我的节目不是要语不惊人死不休，只是想分享很真实、诚恳的体验与看法。我希望给市场不同的节目选择，而不是换汤不换药；我希望呈现出可能性，以后在制作其他作品例如拍短片等，也可以用不同的方式来做，希望能丰富本地的影视作品。”</p>\n\n<p>由戚玉武与白薇秀联合监制的《武所不谈》主场景是在一个高端的厨房，戚玉武与素人边享用美酒与厨师现场烹调出的佳肴边随性地聊天，10月24日已在YouTube播出第一集《新加坡电视、电影怎么了？影视行业还能行吗？还有未来吗？》，素人嘉宾是自由媒体人杨丽玲、记者李亦筠与本地电视编剧陈耀。</p>\n\n<p>短短四天超过3500人次浏览，戚玉武对网民的支持感到开心，“没想到短短几天吸引了不少人观看”。今天（10月31日）将播出第二集，素人来自哪个行业，戚玉武卖个关子，希望给读者一个惊喜。《武所不谈》每逢星期一晚上8时更新一集，读者可上YouTube免费观赏。</p><span style=\"font-size:1px\">&#28;</span><span style=\"font-size:1px\">&#28;</span>",
+				"copyright": "SPH",
+				"byline_cn": "李亦筠",
+				"headline_cn": "《武所不谈》虽找不到合作平台 戚玉武对作品有满足感",
+				"publish_on_zbsg": "1",
+				"publicationdate": "2022-10-31T05:00:00",
+				"expirydate": "2022-10-31T09:39:02",
+				"sections": [
+					{
+						"section": [
+							{
+								"level": 1,
+								"name_cn": "娱乐",
+								"name_en": "Entertainment",
+								"code": "21"
+							}
+						]
+					}
+				],
+				"displaytime": "0500",
+				"byline": [
+					{
+						"id": "4153",
+						"name": "李亦筠"
+					}
+				],
+				"source": "联合早报",
+				"teaser": "　　八集清谈节目《武所不谈》找不到播出的合作平台，视帝戚玉武说：“不过我对我的作品感到骄傲，有很大的满足感。”戚玉武因为装修厨房而认识商家，有一回和商家老板吃饭聊得兴起，催生了《武所不谈》，邀请素人朋友一起边吃边天南地北地聊天。",
+				"documentid": "1328167",
+				"print_flag": "1",
+				"content_preview": "<p>八集清谈节目《武所不谈》找不到播出的合作平台，视帝戚玉武说：“不过我对我的作品感到骄傲，有很大的满足感。”</p><p>戚玉武因为装修厨房而认识商家，有一回和商家老板吃饭聊得兴起，催生了《武所不谈》，邀请素人朋友一起边吃边天南地北地聊天。每集有不同素人，包括记者、电视编剧、电视剧导演、医生、律师、企业家、卖车的、卖海鲜的、校长、厨师与娱乐经纪人等，节目录制完后，他寻找播出平台却面对了挑战，他接受《联合早报》访问时坦承：“平台的反应是：都是素人。再来是平台没有播出这样的节目的先例。”</p>",
+				"language": "cn",
+				"updatedate": "2022-10-31T09:33:56",
+				"is_paid": 0,
+				"photogallery": [
+					{
+						"thumbnail": "https://static.zaobao.com/s3fs-public/styles/article_medium_crop/public/2022-10/ZB_1031_CJ_doc7ncza76vqypmjpmgkpt_28233349_tayck.jpg?VersionId=0CrUVT3y.GX2n8nCIVNqJ_rqKhxVmnFk",
+						"height": "400",
+						"rotator": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/ZB_1031_CJ_doc7ncza76vqypmjpmgkpt_28233349_tayck.jpg?VersionId=DVdsFtYCoPjKc6CowqlMvJJSceP95EMI",
+						"width": "600",
+						"caption": "《武所不谈》监制白薇秀（右起）、戚玉武与自由媒体人杨丽玲交谈甚欢。（视频截图）",
+						"square": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/ZB_1031_CJ_doc7ncza76vqypmjpmgkpt_28233349_tayck.jpg?VersionId=DVdsFtYCoPjKc6CowqlMvJJSceP95EMI",
+						"large": "https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-10/ZB_1031_CJ_doc7ncza76vqypmjpmgkpt_28233349_tayck.jpg?VersionId=kSaxj3V1FpoPaIZirRPVP_Sgh3D1AurD"
+					}
+				],
+				"render_type": "NATIVE",
+				"metadata": {
+					"section_tag": "娱乐",
+					"queue_groupname": "rotator",
+					"queue_order": 1
+				},
+				"paid_mode": 0,
+				"freemium_details": true,
+				"exclusive": false,
+				"common": true
+			}
+		},
+		{
+			"_score": null,
+			"_source": {
+				"tags": [
+					{
+						"id": 15397,
+						"name": "高庚杓"
+					},
+					{
+						"id": 20213,
+						"name": "韩国电影"
+					},
+					{
+						"id": 9982,
+						"name": "影视"
+					}
+				],
+				"articleurl": "https://www.zaobao.com/entertainment/story20221031-1328166",
+				"publish_on_zbcom": "1",
+				"display_title": "高庚杓超想“一夕致富” 若中头奖会买楼",
+				"body_cn": "<p>图片由tvN提供</p>\n\n<p>戏里捡到500多万元的头等奖彩票，戏外的高庚杓（也译高根杓）在拍片期间买的彩票也中奖，只不过奖金少了很多零……</p>\n\n<p>韩星高庚杓在喜剧电影《6/45命运搏彩》（简称《6/45》）中体验喜极生悲的感觉，所饰演的阿兵哥千禹在军营捡到中了57亿韩元（约565万新元）的头等奖彩票，他幻想退伍后的梦想生活，不料风一吹，彩票飞过了军事分界线，飘到朝鲜去了。片中，韩国和朝鲜士兵为一张彩票“搏斗”。</p>\n\n<h3><span class=\"ZBO_SubHeading\">增重10公斤让角色讨喜</span></h3>\n\n<p>高庚杓在电邮访问中说：“这是一个关于韩国和朝鲜的士兵们为了找到彩票而相遇的喜剧。”谈到“千禹”，他认为诠释角色的重点在于不能让观众讨厌，千禹积极寻找彩票，面对窘境的反应必须纯真与天真浪漫。</p>\n\n<p>为了让外形更讨喜，他多吃宵夜、炸鸡、比萨、炸酱面等，成功增重10公斤，体重达到89公斤，“为了让千禹的角色看起来不那么讨人厌，我故意增了重，让他看起来更圆润和单纯一些。不知道观众怎么想，希望大家喜欢他。”他笑说，增肥时幸福，减肥时辛苦。为了减肥，他经常到汉江跑步和游泳，不吃宵夜不喝酒，瘦了7公斤。</p>\n\n<p>现实生活中，高庚杓会买彩票。他在拍片期间投入3万韩元（约30新元）买彩票，更中奖了。至于奖金金额，他笑说：“结果我赢了5000韩元（约5新元）。”</p>\n\n<p>高庚杓非常希望拥有“一夕致富”的运气，不讳言说：“蛮想不劳而获的。”如果他中了头奖，他会如何善用奖金？高庚杓笑说：“我想买一栋楼。即使可能需要加上少许贷款，也要用奖金买一栋好楼。”</p>\n\n<h3><span class=\"ZBO_SubHeading\">电影频发笑弹成票房黑马</span></h3>\n\n<p>《6/45》频频发放笑弹，这得归功全卡司的喜剧表演默契。电影8月底在韩国上映，上映第二周就登票房冠军，目前暂列2022年韩国票房第七名，被称作小兵立大功的黑马电影。</p>\n\n<p>除了高庚杓，演员包括扮演朝鲜兵的李伊庚、李淳元和金珉晧，以及负责领取彩票奖金的“韩国兵”郭东延等。</p>\n\n<p>高庚杓说：“可能因为电影整体（欢愉的）氛围，所有人都非常愉快地享受拍摄。虽然也有比较辛苦的拍摄行程，但我们总是充满欢笑和热闹。拍摄期其实不长，但我们都对彼此产生了很多感情，可以说每个人都是片场的‘氛围担当’。”</p>\n\n<p>自韩国长寿剧《土豆星球2013QR3》后，高庚杓将近八年没拍喜剧。他觉得，喜剧可传达积极正面的情感，演员拍摄时心情不沉重，但要把喜剧拍好是有难度的，“相比其他剧种，我拍喜剧的时候须要思考的事情最多。虽然困难，但能带来成就感。如果很多观众觉得有趣，我会觉得很感激。”</p>\n\n<p>导演朴奎泰继2007年的作品《飞吧！水班长》之后，相隔15年再次执导喜剧。</p>\n\n<p>高庚杓觉得朴导是一个很开明，有包容心，乐于听取演员意见的导演，“跟他合作的时候，我体会到彩排的重要性，从中产生的意见和反馈能帮助我们一步一步达成完美场面。导演的能力很重要，他带领得很好，我们才能够拍出非常愉快和精彩的场面。”</p>\n\n<p>《6/45命运搏彩》11月1日起可在星和视界的自选影院和新电信的随选电影购买观看。高庚杓说：“希望观看电影的大家，会度过幸福愉快的时光。”</p><span style=\"font-size:1px\">&#28;</span><span style=\"font-size:1px\">&#28;</span>",
+				"copyright": "SPH",
+				"byline_cn": "蔡欣盈",
+				"headline_cn": "高庚杓超想“一夕致富” 若中头奖会买楼",
+				"publish_on_zbsg": "1",
+				"publicationdate": "2022-10-31T05:00:00",
+				"expirydate": "2022-10-31T09:39:02",
+				"sections": [
+					{
+						"section": [
+							{
+								"level": 1,
+								"name_cn": "娱乐",
+								"name_en": "Entertainment",
+								"code": "21"
+							}
+						]
+					}
+				],
+				"displaytime": "0500",
+				"byline": [
+					{
+						"id": "7365",
+						"name": "蔡欣盈"
+					}
+				],
+				"source": "联合早报",
+				"teaser": "　　戏里捡到500多万元的头等奖彩票，戏外的高庚杓（也译高根杓）在拍片期间买的彩票也中奖，只不过奖金少了很多零……韩星高庚杓在喜剧电影《6/45命运搏彩》（简称《6/45》）中体验喜极生悲的感觉，所饰演的阿兵哥千禹在军营捡到中了57亿韩元（约565万新元）的头等奖彩票，他幻想退伍后的梦想生活，不料风一吹，彩票飞过了军事分界线，飘到朝鲜去了。",
+				"documentid": "1328166",
+				"print_flag": "1",
+				"content_preview": "<p>戏里捡到500多万元的头等奖彩票，戏外的高庚杓（也译高根杓）在拍片期间买的彩票也中奖，只不过奖金少了很多零……</p><p>韩星高庚杓在喜剧电影《6/45命运搏彩》（简称《6/45》）中体验喜极生悲的感觉，所饰演的阿兵哥千禹在军营捡到中了57亿韩元（约565万新元）的头等奖彩票，他幻想退伍后的梦想生活，不料风一吹，彩票飞过了军事分界线，飘到朝鲜去了。片中，韩国和朝鲜士兵为一张彩票“搏斗”。</p>",
+				"language": "cn",
+				"updatedate": "2022-10-31T09:32:53",
+				"is_paid": 0,
+				"photogallery": [
+					{
+						"thumbnail": "https://static.zaobao.com/s3fs-public/styles/article_medium_crop/public/2022-10/ZB_1031_CJ_doc7ndg514rlthyfyfrcrd_28232934_tayck.jpg?VersionId=wqsgNZIQktATOosoJLqWLi58LI2YTfIZ",
+						"height": "400",
+						"rotator": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/ZB_1031_CJ_doc7ndg514rlthyfyfrcrd_28232934_tayck.jpg?VersionId=N44qQB9cNAKafGC5KpPfx5OmHQnNUwoo",
+						"width": "600",
+						"caption": "高庚杓为阿兵哥角色增重，他笑说增肥时幸福，减肥时辛苦。",
+						"square": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/ZB_1031_CJ_doc7ndg514rlthyfyfrcrd_28232934_tayck.jpg?VersionId=N44qQB9cNAKafGC5KpPfx5OmHQnNUwoo",
+						"large": "https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-10/ZB_1031_CJ_doc7ndg514rlthyfyfrcrd_28232934_tayck.jpg?VersionId=29Pl5QtPDOvWO0NLrKICGBhy8oroVcoI"
+					},
+					{
+						"thumbnail": "https://static.zaobao.com/s3fs-public/styles/article_medium_crop/public/2022-10/ZB_1031_CJ_doc7ndg5162s5c1f33ysm9p_28232944_tayck.jpg?VersionId=kYX62_x_2oTDzc0aXJtVWaigeRA_90vT",
+						"height": "400",
+						"rotator": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/ZB_1031_CJ_doc7ndg5162s5c1f33ysm9p_28232944_tayck.jpg?VersionId=uskgmcnxWIIibfPCPze678rMnQrF6qtW",
+						"width": "600",
+						"caption": "高庚杓（左）饰演的韩国兵和李伊庚饰演的朝鲜兵，因为一张彩票相遇。",
+						"square": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/ZB_1031_CJ_doc7ndg5162s5c1f33ysm9p_28232944_tayck.jpg?VersionId=uskgmcnxWIIibfPCPze678rMnQrF6qtW",
+						"large": "https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-10/ZB_1031_CJ_doc7ndg5162s5c1f33ysm9p_28232944_tayck.jpg?VersionId=pX3O6zlMPlWqdLH8n4q.jmPqc4D3E.WS"
+					}
+				],
+				"render_type": "NATIVE",
+				"metadata": {
+					"section_tag": "娱乐",
+					"queue_groupname": "rotator",
+					"queue_order": 1
+				},
+				"paid_mode": 0,
+				"freemium_details": true,
+				"exclusive": false,
+				"common": true
+			}
+		},
+		{
+			"_score": null,
+			"_source": {
+				"tags": [
+					{
+						"id": 9969,
+						"name": "明星"
+					},
+					{
+						"id": 24515,
+						"name": "汪明荃"
+					},
+					{
+						"id": 28970,
+						"name": "罗家英"
+					}
+				],
+				"articleurl": "https://www.zaobao.com/entertainment/story20221030-1327920",
+				"publish_on_zbcom": "1",
+				"body_cn": "<p><span><span><span><span><span><span>港星汪明荃与罗家英夫妻档近日首次合体拍摄银行广告，两人星期五（28日）出席记者发布会，汪明荃借机“控诉”老公家用给太少。</span></span></span></span></span></span></p>\n\n<p><span><span><span><span><span><span>广告中，汪明荃扮演精明理财的太太，罗家英则表情丰富走搞笑路线。据香港媒体报道，汪明荃与罗家英透露当初并不知道他们会接拍同一个广告。罗家英表示，他们向来工作和财政都独立，鲜少过问或干涉对方的工作，再加上这次的广告是由不同人接洽、签了保密协议，到场拍摄时才知道对象竟是枕边人。</span></span></span></span></span></span></p>\n\n<p><span><span><span><span><span><span>汪明荃也补充，平日都是亲自去银行处理财务事项，不会交由丈夫帮忙处理。夫妻俩坚持财政独立，连出外旅行也是各自支付机票、酒店、食宿等费用。</span></span></span></span></span></span></p>\n\n<p><span><span><span><span><span><span>汪明荃也趁机撒娇“投诉”老公外快赚得多，但家用却从未加过，“我不知道他酬劳多少，因为有保密合约，我连他身家数字有多少也不知道，只是看他拍片说几句话就有钱收。但我们结婚后，他都给我一样数目的家用，多年没加过，当然有少许不满意啦！”</span></span></span></span></span></span></p>\n\n<p><span><span><span><span><span><span>罗家英则笑称在老婆面前最好扮穷，多年来一直有象征式给家用，还说自己早已学会网上理财，但不打算教老婆用，甚至笑说：“阿姐很笨，我怕教她会变成吵架收场，为维护夫妻感情，还是能免则免。”</span></span></span></span></span></span></p><span style=\"font-size:1px\">&#28;</span><span style=\"font-size:1px\">&#28;</span>",
+				"headline_cn": "罗家英被汪明荃爆料家用给太少 “这么多年没加过”",
+				"publish_on_zbsg": "1",
+				"publicationdate": "2022-10-30T13:33:22",
+				"expirydate": "2022-10-30T13:45:06",
+				"displaytime": "1333",
+				"sections": [
+					{
+						"section": [
+							{
+								"level": 1,
+								"name_cn": "娱乐",
+								"name_en": "Entertainment",
+								"code": "21"
+							}
+						]
+					}
+				],
+				"source": "早报数码",
+				"teaser": "　　港星汪明荃与罗家英夫妻档近日首次合体拍摄银行广告，两人星期五（28日）出席记者发布会，汪明荃借机“控诉”老公家用给太少。广告中，汪明荃扮演精明理财的太太，罗家英则表情丰富走搞笑路线。",
+				"documentid": "1327920",
+				"print_flag": "0",
+				"content_preview": "<p>港星汪明荃与罗家英夫妻档近日首次合体拍摄银行广告，两人星期五（28日）出席记者发布会，汪明荃借机“控诉”老公家用给太少。</p><p>广告中，汪明荃扮演精明理财的太太，罗家英则表情丰富走搞笑路线。据香港媒体报道，汪明荃与罗家英透露当初并不知道他们会接拍同一个广告。罗家英表示，他们向来工作和财政都独立，鲜少过问或干涉对方的工作，再加上这次的广告是由不同人接洽、签了保密协议，到场拍摄时才知道对象竟是枕边人。</p>",
+				"language": "cn",
+				"updatedate": "2022-10-30T13:37:06",
+				"is_paid": 0,
+				"photogallery": [
+					{
+						"thumbnail": "https://static.zaobao.com/s3fs-public/styles/article_medium_crop/public/2022-10/313340729_668620341295342_6298796326909521861_n.jpg?VersionId=7TfajcDqqykHiH884VsLR0VM4SDVBhQ6&h=667d4f78",
+						"height": "400",
+						"rotator": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/313340729_668620341295342_6298796326909521861_n.jpg?VersionId=53FKqr_RWjoXa3rJrbG35hy3pnsQVRLl&h=667d4f78",
+						"width": "600",
+						"caption": "汪明荃及罗家英首次合体拍广告。（取自艺人脸书）",
+						"square": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/313340729_668620341295342_6298796326909521861_n.jpg?VersionId=53FKqr_RWjoXa3rJrbG35hy3pnsQVRLl&h=667d4f78",
+						"large": "https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-10/313340729_668620341295342_6298796326909521861_n.jpg?VersionId=PH6XEsEENfvZeqZe69e8yMy3SGk9q93O&h=85064b16"
+					}
+				],
+				"render_type": "NATIVE",
+				"metadata": {
+					"section_tag": "娱乐",
+					"queue_groupname": "rotator",
+					"queue_order": 1
+				},
+				"paid_mode": 0,
+				"freemium_details": true
+			}
+		},
+		{
+			"_score": null,
+			"_source": {
+				"tags": [
+					{
+						"id": 9969,
+						"name": "明星"
+					},
+					{
+						"id": 10849,
+						"name": "段伟明"
+					}
+				],
+				"articleurl": "https://www.zaobao.com/entertainment/story20221030-1327926",
+				"publish_on_zbcom": "1",
+				"recommended_articles": [
+					{
+						"id": "1317444",
+						"name": "【视频】截肢后回家踏出第一步 段伟明：我没有放弃"
+					},
+					{
+						"id": "1316888",
+						"name": "等了10多年 段伟明父女聚首破冰"
+					}
+				],
+				"body_cn": "<p>人间有温情，义肢中心主动找上门，欲为<a href=\"https://www.zaobao.com/keywords/duan-wei-ming\" >段伟明</a>免费装义肢；截肢后仍获片约邀请，本地监制力邀拍英语剧！</p>  <p>段伟明因患有糖尿病，左脚伤势受到细菌感染接受截肢手术，他挨过了人生最难熬的日子，但意志坚强、并没有因此沮丧放弃，他告诉《新明日报》：“自从患病，深切感受周遭人士的关心与送暖，那么多人支持我，我更不能放弃自己。”</p>  <p>联系上伟明时，他坐着轮椅上巴刹，说话时中气回来了，他欣慰放话，伤口应已恢复了八九成。</p>  <h3>不敢再“铁齿”</h3>  <p>截肢后，伟明宅家尝试慢活，自己清洗伤口、敷药、包扎，三四个星期就去复诊一次，“但被切除的部分仍像‘豆腐’，一将伤脚架起来就会疼痛，行动必须非常小心，经历大病不敢再‘铁齿’，发现不可以不会再硬来。”</p>  <p>因养伤在家，伟明积极学习照顾自己，他有电动车、轮椅，在家也使用拐杖活动，包括做家务、整理物件，努力学习平衡身体，不让自己摔跤。</p><aside class=\"inline-recommend\"><h4>延伸阅读</h4><ul class=\"post-list\"><li class=\"post-item\"><a href=\"zb://id/1317444\" class=\"egg-white\"><div class=\"dessert\"></a><div class=\"post-detail\"><a href=\"zb://id/1317444\" class=\"post-title\">【视频】截肢后回家踏出第一步 段伟明：我没有放弃</a></div></li><li class=\"post-item\"><a href=\"zb://id/1316888\" class=\"egg-white\"><div class=\"dessert\"></a><div class=\"post-detail\"><a href=\"zb://id/1316888\" class=\"post-title\">等了10多年 段伟明父女聚首破冰</a></div></li></ul></aside>  <p>伟明的半生过得像过山车，曲折坎坷，但他自嘲骨头硬，不轻易向现实低头，截肢消息见报后，引来各个阶层人士关注，当中有义肢中心透过他朋友，主动与他联系，欲赞助他左腿接上义肢，方便他日后继续回归社会，恢复正常生活。</p>  <p>伟明向记者透露最新进展，“该义肢中心的负责人联系上我，隔天就亲自上门来，解释赞助义肢的程序须通过那些程序，首先必须通过主治医生证明我截肢是由于糖尿病所导致，有了正式的医药报告推荐，再向有关机构申请义肢赞助经费。”</p>  <h3>望能继续拍戏</h3>  <p>伟明仍希望能继续拍戏，他选择装上轻巧、较具活动伸缩性的义肢，像伤残运动员所采用的义肢材质，诉求已获同意。</p>  <p>据悉，该义肢价值约7700元，若能成功申请，对伟明来说绝对是一大喜讯，“不过，申请程序得一步一步来，不能心急。”他说。</p> <figure class=\"image-placeholder\"><img src=\"https://static.zaobao.com/s3fs-public/2022-10/20223010_enews_smduanweiming2.jpg?VersionId=ZfHDLLwMjjsO8m36XxsEZ9xOiJKSQjlJ\" alt=\"\" width=\"672\" height=\"800\"/><figcaption>段伟明演活咖啡叔。(受访者提供）</figcaption></figure><h3>截肢经历搬上荧幕 现身说法</h3>  <p>“咖啡叔”段伟明糖尿病截肢题材将成为电视剧题材，由他现身说法。</p>  <p>当年《芝麻绿豆》里的“咖啡仔”饱经岁月沧桑之后，已成为不折不扣的“咖啡叔”，他参与《128 Circle》第二季演出，当时剧集聚焦在疫情下的小贩中心，讲述伟明离开咖啡摊位后的退休生活，由于深受欢迎，《128 Circle》将开拍第三季，制作人李天仁同样找伟明参演。</p>  <p>“李天仁知道我截肢时非常意外与惊讶，当他找我演出《128 Circle》第三季，我反问他，我还可以吗？”他感恩、感激，但也很无奈，“现在走路都有问题，怎么去演戏？”装上义肢之前，有心无力。</p>  <p>其实，伟明的演技融入多年生活历练，轻易就能打动人心。</p>  <p>与天仁电话聊时，伟明随口提了“咖啡叔”的后续命运，可将个人患糖尿病截肢事件搬上荧光幕，呼吁糖尿病患者切勿对病情掉以轻心，他也希望能通过自身经历，与有类似遭遇的病患共勉，无论环境再怎么艰难，都必须砥砺前行。</p>  <p>“李天仁听了说OK，不过，一切细节得稍后再谈，急不来。”</p>  <h3>朋友送5000元救济</h3>  <p>除了李天仁，也有业者邀伟明拍短片，人间处处有温情，并没有因为他少了半截脚而遗忘他。</p>  <p>远在澳大利亚，一名认识数十年的朋友，得悉他生活捉襟见肘，托人送上5000元，“我说无法立即还钱啊，对方回我一句‘没有要你还，你先保住自己吧’，哎，这样的朋友哪里找！”</p>  <p>“邻居见到我天天打招呼，也有人关心我现在怎么生活，我说可以啊，省着点用喔。”</p><span style=\"font-size:1px\">&#28;</span><span style=\"font-size:1px\">&#28;</span>",
+				"byline_cn": "陈韵红",
+				"headline_cn": "义肢待赞助 片约送上门 段伟明：我还可以吗？",
+				"publish_on_zbsg": "1",
+				"publicationdate": "2022-10-30T14:26:48",
+				"expirydate": "2022-10-30T15:27:03",
+				"displaytime": "1426",
+				"sections": [
+					{
+						"section": [
+							{
+								"level": 1,
+								"name_cn": "娱乐",
+								"name_en": "Entertainment",
+								"code": "21"
+							}
+						]
+					}
+				],
+				"byline": [
+					{
+						"id": "9102",
+						"name": "陈韵红"
+					}
+				],
+				"source": "新明日报",
+				"teaser": "　　人间有温情，义肢中心主动找上门，欲为段伟明免费装义肢；截肢后仍获片约邀请，本地监制力邀拍英语剧！段伟明因患有糖尿病，左脚伤势受到细菌感染接受截肢手术，他挨过了人生最难熬的日子，但意志坚强、并没有因此沮丧放弃，他告诉《新明日报》：“自从患病，深切感受周遭人士的关心与送暖，那么多人支持我，我更不能放弃自己。",
+				"documentid": "1327926",
+				"print_flag": "0",
+				"content_preview": "<p>人间有温情，义肢中心主动找上门，欲为段伟明免费装义肢；截肢后仍获片约邀请，本地监制力邀拍英语剧！</p><p>段伟明因患有糖尿病，左脚伤势受到细菌感染接受截肢手术，他挨过了人生最难熬的日子，但意志坚强、并没有因此沮丧放弃，他告诉《新明日报》：“自从患病，深切感受周遭人士的关心与送暖，那么多人支持我，我更不能放弃自己。”</p>",
+				"language": "cn",
+				"updatedate": "2022-10-30T14:48:50",
+				"is_paid": 0,
+				"photogallery": [
+					{
+						"thumbnail": "https://static.zaobao.com/s3fs-public/styles/article_medium_crop/public/2022-10/20223010_enews_smduanweiming1.jpg?VersionId=Whvi7q5B.zMeG_Juszo09aVfxeaKH4CI&h=4dc9c6ef",
+						"height": "400",
+						"rotator": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/20223010_enews_smduanweiming1.jpg?VersionId=01HwRkvp6..isXtWUCHGjFrrh21UDZ08&h=4dc9c6ef",
+						"width": "600",
+						"caption": "段伟明宅家尝试慢活。（受访者提供）",
+						"square": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/20223010_enews_smduanweiming1.jpg?VersionId=01HwRkvp6..isXtWUCHGjFrrh21UDZ08&h=4dc9c6ef",
+						"large": "https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-10/20223010_enews_smduanweiming1.jpg?VersionId=qeQFbjFgHYLa_KwE7uXB.fGBX8z9UDZx"
+					}
+				],
+				"render_type": "WEBVIEW",
+				"metadata": {
+					"section_tag": "娱乐",
+					"queue_groupname": "rotator",
+					"queue_order": 1
+				},
+				"paid_mode": 0,
+				"freemium_details": false
+			}
+		},
+		{
+			"_score": null,
+			"_source": {
+				"tags": [
+					{
+						"id": 10080,
+						"name": "韩流"
+					}
+				],
+				"articleurl": "https://www.zaobao.com/entertainment/story20221030-1327912",
+				"publish_on_zbcom": "1",
+				"body_cn": "<p><span><span><span><span><span><span>韩国首尔梨泰院<a href=\"https://www.zaobao.com/realtime/world/story20221030-1327879\" >星期六（10月29日）爆发严重踩踏事故</a>，造成至少151人死亡，82人受伤。许多韩星星期日（10月30日）在社媒上转发“Pray for Itaewon”（为梨泰院祈祷）的黑白照哀悼事故遇难者，韩国3大电视台也宣布取消播放综艺节目。</span></span></span></span></span></span></p>\n\n<p><span><span><span><span><span><span>韩国影后金憓秀（Kim Hye-soo ）星期日早上在IG限时动态分享梨泰院事故相关报道，并附上首尔市失踪人口申报电话及汉南洞居民中心3楼设有失踪者申报处等消息，帮忙协寻失踪者。韩国足球选手孙兴慜也发文表示哀悼。</span></span></span></span></span></span></p>\n<figure class=\"image-placeholder\"><img src=\"https://static.zaobao.com/s3fs-public/2022-10/313023582_643932780597185_5233038087525435798_n-horz.jpg?VersionId=ql2Q.LFt_2fdT1E79i8tc0bsbkrfB2tU\" alt=\"\" width=\"1177\" height=\"570\"/><figcaption>韩国影后金憓秀帮助寻找事故失踪者。（截自艺人IG）</figcaption></figure><figure class=\"image-placeholder\"><img src=\"https://static.zaobao.com/s3fs-public/2022-10/wechat_screenshot_20221030115312.png?VersionId=.KttqoKM3hU_ExyFFLmzPLD8vvc.8ioy\" alt=\"\" width=\"1126\" height=\"786\"/><figcaption>韩国足球选手孙兴慜在社媒上发文表示哀悼。（截自IG）</figcaption></figure><p><span><span><span><span><span><span>韩国3大电视台KBS、MBC及SBS都将停播星期日所有的综艺节目如《Running Man》《两天一夜》《蒙面歌王》《人气歌谣》《TV动物农场》《全知干预视角：特别篇》等。其他电视台也停播星期日早上的节目，改为播放事故相关的新闻。</span></span></span></span></span></span></p>\n\n<p><span><span><span><span><span><span>另外，SM娱乐星期六深夜发出公告，宣布取消原定于星期日晚上举行的万圣节变装派对“SMTOWN WONDERLAND 2022”。</span></span></span></span></span></span></p>\n\n<p><span><span><span><span><span><span>原定于星期日在釜山举行的“2022 Busan One Asia Festival”也确定取消。</span></span></span></span></span></span></p>\n<figure class=\"image-placeholder\"><img src=\"https://static.zaobao.com/s3fs-public/2022-10/wechat_screenshot_20221030115824-vert.jpg?VersionId=t80_IW.J1SoHUx6ejg4Iyh6HpWqFxyMP\" alt=\"\" width=\"418\" height=\"678\"/><figcaption>SM娱乐取消万圣节派对。（互联网）</figcaption></figure><span style=\"font-size:1px\">&#28;</span><span style=\"font-size:1px\">&#28;</span>",
+				"headline_cn": "韩星为“梨泰院踩踏事故”哀悼 3大电视台停播综艺节目 ",
+				"publish_on_zbsg": "1",
+				"publicationdate": "2022-10-30T12:02:23",
+				"expirydate": "2022-10-30T12:24:01",
+				"displaytime": "1202",
+				"sections": [
+					{
+						"section": [
+							{
+								"level": 1,
+								"name_cn": "娱乐",
+								"name_en": "Entertainment",
+								"code": "21"
+							}
+						]
+					}
+				],
+				"source": "早报数码",
+				"teaser": "　　韩国首尔梨泰院星期六（10月29日）爆发严重踩踏事故，造成至少151人死亡，82人受伤。许多韩星星期日（10月30日）在社媒上转发“Pray for Itaewon”（为梨泰院祈祷）的黑白照哀悼事故遇难者，韩国3大电视台也宣布取消播放综艺节目。",
+				"documentid": "1327912",
+				"print_flag": "0",
+				"content_preview": "<p>韩国首尔梨泰院星期六（10月29日）爆发严重踩踏事故，造成至少151人死亡，82人受伤。许多韩星星期日（10月30日）在社媒上转发“Pray for Itaewon”（为梨泰院祈祷）的黑白照哀悼事故遇难者，韩国3大电视台也宣布取消播放综艺节目。</p><p>韩国影后金憓秀（Kim Hye-soo ）星期日早上在IG限时动态分享梨泰院事故相关报道，并附上首尔市失踪人口申报电话及汉南洞居民中心3楼设有失踪者申报处等消息，帮忙协寻失踪者。韩国足球选手孙兴慜也发文表示哀悼。</p>",
+				"language": "cn",
+				"updatedate": "2022-10-30T12:17:49",
+				"is_paid": 0,
+				"photogallery": [
+					{
+						"thumbnail": "https://static.zaobao.com/s3fs-public/styles/article_medium_crop/public/2022-10/page_70.jpg?VersionId=EM5znGHte9SV6RLYKYNCIa0WbAXEQ0Sm",
+						"height": "400",
+						"rotator": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/page_70.jpg?VersionId=BdU9j.TTtfF92pFOIGoNY5HXbRxm.0PB",
+						"width": "600",
+						"caption": "韩星纷纷在社媒为“梨泰院踩踏事故”哀悼，SM娱乐取消了原定于星期日举行的万圣节派对。（互联网）",
+						"square": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/page_70.jpg?VersionId=BdU9j.TTtfF92pFOIGoNY5HXbRxm.0PB",
+						"large": "https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-10/page_70.jpg?VersionId=2qjlISfVOgwVjCYuJibceA7GGP906X8C"
+					}
+				],
+				"render_type": "NATIVE",
+				"metadata": {
+					"section_tag": "娱乐",
+					"queue_groupname": "rotator",
+					"queue_order": 1
+				},
+				"paid_mode": 0,
+				"freemium_details": false
+			}
+		},
+		{
+			"_score": null,
+			"_source": {
+				"tags": [
+					{
+						"id": 9969,
+						"name": "明星"
+					}
+				],
+				"articleurl": "https://www.zaobao.com/entertainment/story20221030-1327908",
+				"publish_on_zbcom": "1",
+				"recommended_articles": [
+					{
+						"id": "1297807",
+						"name": "Makiyo挺7个月孕肚当街吞云吐雾 乱丢烟蒂恐被罚款"
+					},
+					{
+						"id": "1274367",
+						"name": "喜上加喜 Makiyo证实怀孕5个月 “520”注册结婚"
+					}
+				],
+				"body_cn": "<p><span><span><span><span><span><span>38岁的台湾艺人Makiyo（本名川岛茉树代）星期六（10月29日）晚上剖腹产下虎宝宝。</span></span></span></span></span></span></p>\n\n<p><span><span><span><span><span><span>Makiyo星期日（10月30日）早上在社交媒体脸书上报喜讯写道：“我白白胖胖、健康又很有力气的儿子来到我身边了，哭得超大声，胖姐说跟我小时候一样吵，不过看到儿子很健康，真的很开心”。她还幽默说“感恩造物主”，笑说儿子“好险不像爸爸”。</span></span></span></span></span></span></p>\n\n<p><span><span><span><span><span><span>Makiyo透露，儿子重2860公克、身高49公分。怀孕时期变胖许多的她也说：“做完月子，我要立马去老公的健康管理中心，我终于可以瘦回以前的43公斤了。”</span></span></span></span></span></span></p>\n\n<p><span><span><span><span><span><span>之前Makiyo怀孕7、8个月时曾被台湾媒体拍到在路边抽烟。后来她在范玮琪及辛龙苦劝下戒烟，如今总算平安生下健康宝宝。</span></span></span></span></span></span></p>\n\n<p><span><span><span><span><span><span>Makiyo今年5月20日与</span></span></span></span></span></span>小3岁男友注册结婚。</p>\n<figure class=\"image-placeholder\"><img src=\"https://static.zaobao.com/s3fs-public/2022-10/wechat_screenshot_20221030111431.png?VersionId=PCSB2lqw7DbK8f9osqZVSC9w6lZ5V2y6\" alt=\"\" width=\"677\" height=\"323\"/><figcaption>Makiyo在社媒上报喜讯。（截自艺人脸书）</figcaption></figure><aside class=\"inline-recommend\"><h4>延伸阅读</h4><ul class=\"post-list\"><li class=\"post-item\"><a href=\"zb://id/1297807\" class=\"egg-white\"><div class=\"dessert\"></a><div class=\"post-detail\"><a href=\"zb://id/1297807\" class=\"post-title\">Makiyo挺7个月孕肚当街吞云吐雾 乱丢烟蒂恐被罚款</a></div></li><li class=\"post-item\"><a href=\"zb://id/1274367\" class=\"egg-white\"><div class=\"dessert\"></a><div class=\"post-detail\"><a href=\"zb://id/1274367\" class=\"post-title\">喜上加喜 Makiyo证实怀孕5个月 “520”注册结婚</a></div></li></ul></aside><span style=\"font-size:1px\">&#28;</span><span style=\"font-size:1px\">&#28;</span>",
+				"headline_cn": "Makiyo剖腹生子 首晒母子合照：好险不像爸爸",
+				"publish_on_zbsg": "1",
+				"publicationdate": "2022-10-30T11:16:01",
+				"expirydate": "2022-10-30T11:27:02",
+				"displaytime": "1116",
+				"sections": [
+					{
+						"section": [
+							{
+								"level": 1,
+								"name_cn": "娱乐",
+								"name_en": "Entertainment",
+								"code": "21"
+							}
+						]
+					}
+				],
+				"source": "早报数码",
+				"teaser": "　　38岁的台湾艺人Makiyo（本名川岛茉树代）星期六（10月29日）晚上剖腹产下虎宝宝。Makiyo星期日（10月30日）早上在社交媒体脸书上报喜讯写道：“我白白胖胖、健康又很有力气的儿子来到我身边了，哭得超大声，胖姐说跟我小时候一样吵，不过看到儿子很健康，真的很开心”。",
+				"documentid": "1327908",
+				"print_flag": "0",
+				"content_preview": "<p>38岁的台湾艺人Makiyo（本名川岛茉树代）星期六（10月29日）晚上剖腹产下虎宝宝。</p><p>Makiyo星期日（10月30日）早上在社交媒体脸书上报喜讯写道：“我白白胖胖、健康又很有力气的儿子来到我身边了，哭得超大声，胖姐说跟我小时候一样吵，不过看到儿子很健康，真的很开心”。她还幽默说“感恩造物主”，笑说儿子“好险不像爸爸”。</p>",
+				"language": "cn",
+				"updatedate": "2022-10-30T11:20:40",
+				"is_paid": 0,
+				"photogallery": [
+					{
+						"thumbnail": "https://static.zaobao.com/s3fs-public/styles/article_medium_crop/public/2022-10/page_69.jpg?VersionId=N9ISj0Yqx8eiDgDk4smZ8XQnfGq.iLMs",
+						"height": "400",
+						"rotator": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/page_69.jpg?VersionId=T871GtbCpFSVeRm3yCW1RqFH1uVBcyzj",
+						"width": "600",
+						"caption": "Makiyo在脸书上晒出与儿子的合照。（取自艺人脸书）",
+						"square": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/page_69.jpg?VersionId=T871GtbCpFSVeRm3yCW1RqFH1uVBcyzj",
+						"large": "https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-10/page_69.jpg?VersionId=9zuAyxHPz_sUjfP8UIEYCnJlJInm2pKr"
+					}
+				],
+				"render_type": "WEBVIEW",
+				"metadata": {
+					"section_tag": "娱乐",
+					"queue_groupname": "rotator",
+					"queue_order": 1
+				},
+				"paid_mode": 0,
+				"freemium_details": false
+			}
+		},
+		{
+			"_score": null,
+			"_source": {
+				"tags": [
+					{
+						"id": 9969,
+						"name": "明星"
+					},
+					{
+						"id": 14329,
+						"name": "中国剧"
+					},
+					{
+						"id": 25886,
+						"name": "杨颖"
+					},
+					{
+						"id": 18810,
+						"name": "杨幂"
+					},
+					{
+						"id": 21883,
+						"name": "迪丽热巴"
+					},
+					{
+						"id": 18811,
+						"name": "刘诗诗"
+					},
+					{
+						"id": 14944,
+						"name": "唐嫣"
+					}
+				],
+				"articleurl": "https://www.zaobao.com/entertainment/story20221029-1327772",
+				"publish_on_zbcom": "1",
+				"recommended_articles": [
+					{
+						"id": "1305641",
+						"name": "中国剧为绕过限集令 正流行一剧两播"
+					},
+					{
+						"id": "1310367",
+						"name": "娱乐吃瓜：当金主要做女主 这些明星也当过富婆的绿叶 "
+					}
+				],
+				"body_cn": "<p>（北京讯）最近有中国网民整理了一份“超过3个月未进组的艺人”名单，唐嫣、杨颖、张翰等演员赫然在列。</p>  <p>受冠病疫情影响，2019至2020年，本就因“天价片酬”“阴阳合同”事件而愁云惨雾的中国影视行业，几乎进入了“寒冬”。</p>  <p>2019年前3季度，全国拍摄制作电视剧备案数量比2018年同期减少27%，横店影视城的开机率同比锐减45%。剧组停摆、演员停工，亏损持续扩大，据统计疫情爆发后，横店接待的剧组数量锐减：2018年全年接待剧组370个，2019年共接待304个剧组，2020年共接待310个。</p>  <p>直到疫情逐步得到控制后，亚洲最大的的影视城——横店影视城才恢复了元气。剧组陆续复工，近8000个“横漂”演员回归。据统计，2021年，横店共接待剧组398个。</p>  <p>虽然横店已迎来“开机潮”，但影视行业并未完全回暖。官方数据显示，截至2022年9月，全国重点网络影视剧拍摄备案公示的剧目共680部。和2021年同期相比的911部减少了231部，同比降幅25.4%。</p><aside class=\"inline-recommend\"><h4>延伸阅读</h4><ul class=\"post-list\"><li class=\"post-item\"><a href=\"zb://id/1305641\" class=\"egg-white\"><div class=\"dessert\"></a><div class=\"post-detail\"><a href=\"zb://id/1305641\" class=\"post-title\">中国剧为绕过限集令 正流行一剧两播</a></div></li><li class=\"post-item\"><a href=\"zb://id/1310367\" class=\"egg-white\"><div class=\"dessert\"></a><div class=\"post-detail\"><a href=\"zb://id/1310367\" class=\"post-title\">娱乐吃瓜：当金主要做女主 这些明星也当过富婆的绿叶 </a></div></li></ul></aside>  <p>在这种情况下，小演员落得“无戏可拍”的处境也相对可以理解。</p>  <p>所以，很多粉丝都会催偶像进组。尤其是战斗力极强的85花粉丝。85花中，刘诗诗足足2年没有进组拍戏的消息，直到本月，粉丝才等到了《一念关山》官宣；唐嫣在《燕云台》后也一直没有新剧播出，工作室公布的行程也少得可怜；杨幂则在4个月未进新剧组之后接拍了《狐妖小红娘月红篇》。</p>  <p>但不进组就意味着在家闲着吗？未必。</p> <figure class=\"image-placeholder\"><img src=\"https://static.zaobao.com/s3fs-public/2022-10/capture_2.jpg?VersionId=wMetFCaEpqxu2F848YYjLAw7PWs_04Px\" alt=\"\" width=\"967\" height=\"630\"/><figcaption>网民记录演员多久未进组。（互联网）</figcaption></figure><h3>忙跨界转型</h3>  <p>有些人在忙着“跨界转型”。</p>  <p>19个月没进组的吴谨言，今年参加了音乐竞演综艺《乘风破浪3》。据老板于正爆料，吴谨言为了参加节目婉拒了电视剧《薄冰》。但可惜的是，最后的总决赛之夜，吴谨言以第11名的成绩被淘汰，没能成团。节目结束后，吴谨言又去演了中国国家话剧院原创文献话剧《抗战中的文艺》。</p>  <p>唐嫣则接拍了王家卫执导的《繁花》，与胡歌、马伊琍、辛芝蕾等演员搭档。由于该剧拍摄时做了保密工作，大家也不太清楚拍摄进度。但毕竟是王家卫担任总导演和监制的重磅作品，唐嫣或许能凭借它成功转型。</p>  <h3>忙综艺和真人秀</h3>  <p>有些人忙着参加综艺和真人秀。</p>  <p>8个月没进组的程潇，既参加了女子齐舞舞社竞技真人秀节目《了不起！舞社》，又参加蒙面类舞蹈竞演节目《蒙面舞王第三季》、街舞选拔类综艺《这！就是街舞第五季》，虽然没有演戏，但综艺行程不少。</p>  <p>毕雯珺发布了自己的新专辑，参加了《萌探探探案2》，李一桐也加盟了包括《美好年华研习社》《这十年追光者》《星星的约定》在内的不少综艺。</p>  <h3>忙着解决“烦心事”</h3>  <p>还有一些艺人不进组，可能是因为“烦心事”还未厘清。</p>  <p>今年5月，宋威龙起诉了自己的经纪公司，也就是于正持股并担任监事的东阳欢娱影视文化有限公司。深陷合约纠纷的宋威龙，短期内估计无法进组拍戏了。</p><span style=\"font-size:1px\">&#28;</span><span style=\"font-size:1px\">&#28;</span>",
+				"headline_cn": "“超过3个月未进组艺人”名单曝 偶像失业粉丝着急",
+				"publish_on_zbsg": "1",
+				"publicationdate": "2022-10-29T19:11:29",
+				"expirydate": "2022-10-29T22:06:01",
+				"displaytime": "1911",
+				"sections": [
+					{
+						"section": [
+							{
+								"level": 1,
+								"name_cn": "娱乐",
+								"name_en": "Entertainment",
+								"code": "21"
+							}
+						]
+					}
+				],
+				"source": "早报数码",
+				"teaser": "　　最近有中国网民整理了一份“超过3个月未进组的艺人”名单，唐嫣、杨颖、张翰等演员赫然在列。受冠病疫情影响，2019至2020年，本就因“天价片酬”“阴阳合同”事件而愁云惨雾的中国影视行业，几乎进入了“寒冬”。",
+				"documentid": "1327772",
+				"print_flag": "0",
+				"content_preview": "<p>最近有中国网民整理了一份“超过3个月未进组的艺人”名单，唐嫣、杨颖、张翰等演员赫然在列。</p><p>受冠病疫情影响，2019至2020年，本就因“天价片酬”“阴阳合同”事件而愁云惨雾的中国影视行业，几乎进入了“寒冬”。</p><p>2019年前3季度，全国拍摄制作电视剧备案数量比2018年同期减少27%，横店影视城的开机率同比锐减45%。剧组停摆、演员停工，亏损持续扩大，据统计疫情爆发后，横店接待的剧组数量锐减：2018年全年接待剧组370个，2019年共接待304个剧组，2020年共接待310个。</p>",
+				"language": "cn",
+				"updatedate": "2022-10-29T21:58:57",
+				"is_paid": 0,
+				"photogallery": [
+					{
+						"thumbnail": "https://static.zaobao.com/s3fs-public/styles/article_medium_crop/public/2022-10/page_68.jpg?VersionId=6pjUq1KIToY8UAbCsdtstpbNrkZ3WtPs",
+						"height": "400",
+						"rotator": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/page_68.jpg?VersionId=pxpfNUYcf9CGrKw3Z__VYSEPEuZmYhcO",
+						"width": "600",
+						"caption": "程潇（左起）、宋云龙、刘诗诗未进剧组已有多时，引起粉丝关注。（互联网）",
+						"square": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/page_68.jpg?VersionId=pxpfNUYcf9CGrKw3Z__VYSEPEuZmYhcO",
+						"large": "https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-10/page_68.jpg?VersionId=eksJqiBzHSveNHNj0CXO06zObmGuYdvU"
+					}
+				],
+				"render_type": "WEBVIEW",
+				"metadata": {
+					"section_tag": "娱乐",
+					"queue_groupname": "rotator",
+					"queue_order": 1
+				},
+				"paid_mode": 0,
+				"freemium_details": false
+			}
+		},
+		{
+			"_score": null,
+			"_source": {
+				"tags": [
+					{
+						"id": 9982,
+						"name": "影视"
+					},
+					{
+						"id": 59690,
+						"name": "中国综艺节目"
+					},
+					{
+						"id": 15502,
+						"name": "真人秀"
+					},
+					{
+						"id": 23148,
+						"name": "何猷君"
+					}
+				],
+				"articleurl": "https://www.zaobao.com/entertainment/story20221029-1327768",
+				"publish_on_zbcom": "1",
+				"recommended_articles": [
+					{
+						"id": "1283127",
+						"name": "网民爆料出轨 何猷君连发12道问题辟谣"
+					},
+					{
+						"id": "1210124",
+						"name": "生首胎后“骨盆一直开着” 奚梦瑶生二宝网友喊心疼"
+					}
+				],
+				"body_cn": "<p>已故澳门赌王何鸿燊四房儿子何猷君的太太奚梦瑶，最近参加中国综艺节目《做家务的男人4》，在节目中大爆与丈夫的夫妻生活秘闻，还对他诸多挑剔，引起热议。</p>\n\n<p>何猷君于2019与大陆名模奚梦瑶结婚，婚后相继诞下一子一女，奚梦瑶转为照顾家庭，鲜少公开露面。最近，她加入大陆观察类生活真人秀《做家务的男人4》，内容引起关注。</p>\n\n<p>奚梦瑶除了批评老公当年向她求婚时安排的仪式土味浓郁，又吐槽老公不会做家务。她爆料丈夫不会做饭，“连电饭锅也不会用，只会开冰箱……只能叫外卖！”她还说，何猷君吃完外卖的剩饭垃圾也不会清理，只会放在一边等人收拾，更形容他“真的脏到不行”。</p>\n<figure class=\"image-placeholder\"><img src=\"https://static.zaobao.com/s3fs-public/2022-10/page_67.jpg?VersionId=tjrrmtG8M9Z.6OL.A873Aei0dcHN0H9o\" alt=\"\" width=\"600\" height=\"600\"/><figcaption>何猷君当年向奚梦瑶公开求婚，让她蒙眼被带入会场、扮演被他英雄救美的公主，自己模仿谢霆锋演唱，又当众下跪。（视频截图）</figcaption></figure><p>在之前的一集节目中，她则投诉何猷君当年求婚的策划“特别烂”。2019年，何猷君费尽心思，在上海自家商场上清了三层楼，并且使用了9万9999朵玫瑰花布置，还改变了电玩游戏桥段，上演英雄救美。他最后模仿谢霆锋，露肌肉弹唱摇滚歌曲《活着Viva》。表情结束后，他又换上白色西装当起“白马王子”跪地求婚。据说这个求婚仪式他筹备了一个多月，整个高调仪式还请来不少明星见证。</p>\n\n<p>这场求婚当年闪瞎外界，但原来奚梦瑶并不满意。有网民同意说，整个求婚仪式“土味十足”，场面尴尬，难怪奚梦瑶不喜欢。不过也有网民认为看得出何猷君精心策划，真诚又可爱，直言有好多女性根本没有被求婚过，所以奚梦瑶已经很幸福。两派网民相持不下。</p><aside class=\"inline-recommend\"><h4>延伸阅读</h4><ul class=\"post-list\"><li class=\"post-item\"><a href=\"zb://id/1283127\" class=\"egg-white\"><div class=\"dessert\"></a><div class=\"post-detail\"><a href=\"zb://id/1283127\" class=\"post-title\">网民爆料出轨 何猷君连发12道问题辟谣</a></div></li><li class=\"post-item\"><a href=\"zb://id/1210124\" class=\"egg-white\"><div class=\"dessert\"></a><div class=\"post-detail\"><a href=\"zb://id/1210124\" class=\"post-title\">生首胎后“骨盆一直开着” 奚梦瑶生二宝网友喊心疼</a></div></li></ul></aside><span style=\"font-size:1px\">&#28;</span><span style=\"font-size:1px\">&#28;</span>",
+				"byline_cn": "洪铭铧",
+				"headline_cn": "何猷君被妻上综艺吐槽：不会收拾垃圾“还很脏”",
+				"publish_on_zbsg": "1",
+				"publicationdate": "2022-10-29T17:35:15",
+				"expirydate": "2022-10-29T22:09:01",
+				"displaytime": "1735",
+				"sections": [
+					{
+						"section": [
+							{
+								"level": 1,
+								"name_cn": "娱乐",
+								"name_en": "Entertainment",
+								"code": "21"
+							}
+						]
+					}
+				],
+				"byline": [
+					{
+						"id": "5756",
+						"name": "洪铭铧"
+					}
+				],
+				"source": "早报数码",
+				"teaser": "　　已故澳门赌王何鸿燊四房儿子何猷君的太太奚梦瑶，最近参加中国综艺节目《做家务的男人4》，在节目中大爆与丈夫的夫妻生活秘闻，还对他诸多挑剔，引起热议。",
+				"documentid": "1327768",
+				"print_flag": "0",
+				"content_preview": "<p>已故澳门赌王何鸿燊四房儿子何猷君的太太奚梦瑶，最近参加中国综艺节目《做家务的男人4》，在节目中大爆与丈夫的夫妻生活秘闻，还对他诸多挑剔，引起热议。</p><p>何猷君于2019与大陆名模奚梦瑶结婚，婚后相继诞下一子一女，奚梦瑶转为照顾家庭，鲜少公开露面。最近，她加入大陆观察类生活真人秀《做家务的男人4》，内容引起关注。</p>",
+				"language": "cn",
+				"updatedate": "2022-10-29T22:01:02",
+				"is_paid": 0,
+				"photogallery": [
+					{
+						"thumbnail": "https://static.zaobao.com/s3fs-public/styles/article_medium_crop/public/2022-10/pfppc1qnjoo04zusbwtwdbjr_8efyy_xxxuahccbmh0.jpg?VersionId=grKqSAoS.p5S0xhsvWIaltnJ7evXbqN4&h=2ae69520",
+						"height": "400",
+						"rotator": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/pfppc1qnjoo04zusbwtwdbjr_8efyy_xxxuahccbmh0.jpg?VersionId=OKgGA6fCTEwj_NINckY3eZ22yR3tiQMy&h=2ae69520",
+						"width": "600",
+						"caption": "奚梦瑶（左）上综艺力数丈夫的不是。（取自艺人Instagram）",
+						"square": "https://static.zaobao.com/s3fs-public/styles/article_large_crop/public/2022-10/pfppc1qnjoo04zusbwtwdbjr_8efyy_xxxuahccbmh0.jpg?VersionId=OKgGA6fCTEwj_NINckY3eZ22yR3tiQMy&h=2ae69520",
+						"large": "https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-10/pfppc1qnjoo04zusbwtwdbjr_8efyy_xxxuahccbmh0.jpg?VersionId=LuorZsxWemtLves7Nf9jsPXoR.V2ppfU"
+					}
+				],
+				"render_type": "WEBVIEW",
+				"metadata": {
+					"section_tag": "娱乐",
+					"queue_groupname": "rotator",
+					"queue_order": 1
+				},
+				"paid_mode": 0,
+				"freemium_details": false
+			}
+		}
+	],
+	"search_result_items": [
+		{
+			"category": "评论",
+			"published_date": "23/09/2018",
+			"title": "陈企业、陈延毅：财政预算须应对莫测未来",
+			"blurb": "上周，我参加了匈牙利央行在布达佩斯举办的一次国际会议。各国央行行长就央行的有效作用展开了激烈辩论。当市场失灵时，政…",
+			"tn": "https://via.placeholder.com/600x400?text=ResultTn1"
+		},
+		{
+			"category": "即时",
+			"published_date": "23/09/2018",
+			"title": "行动党市镇会未来10年提升1.7万部组屋电梯",
+			"blurb": "15个行动党市镇理事会将在未来十年，提升全岛各区1万7000部组屋电梯。15个由人民行动党管理的市镇会今早（1月28日）发文告宣布，电梯工…",
+			"tn": "https://via.placeholder.com/600x400?text=ResultTn2"
+		},
+		{
+			"category": "评论",
+			"published_date": "23/09/2018",
+			"title": "行动党市镇会未来10年提升1.7万部组屋电梯",
+			"blurb": "15个行动党市镇理事会将在未来十年，提升全岛各区1万7000部组屋电梯。15个由人民行动党管理的市镇会今早（1月28日）发文告宣布，电梯工…",
+			"tn": "https://via.placeholder.com/600x400?text=ResultTn3"
+		},
+		{
+			"category": "评论",
+			"published_date": "23/09/2018",
+			"title": "行动党市镇会未来10年提升1.7万部组屋电梯",
+			"blurb": "15个行动党市镇理事会将在未来十年，提升全岛各区1万7000部组屋电梯。15个由人民行动党管理的市镇会今早（1月28日）发文告宣布，电梯工…",
+			"tn": "https://via.placeholder.com/600x400?text=ResultTn4"
+		},
+		{
+			"category": "评论",
+			"published_date": "23/09/2018",
+			"title": "行动党市镇会未来10年提升1.7万部组屋电梯",
+			"blurb": "15个行动党市镇理事会将在未来十年，提升全岛各区1万7000部组屋电梯。15个由人民行动党管理的市镇会今早（1月28日）发文告宣布，电梯工…",
+			"tn": "https://via.placeholder.com/600x400?text=ResultTn5"
+		},
+		{
+			"category": "评论",
+			"published_date": "23/09/2018",
+			"title": "陈企业、陈延毅：财政预算须应对莫测未来",
+			"blurb": "上周，我参加了匈牙利央行在布达佩斯举办的一次国际会议。各国央行行长就央行的有效作用展开了激烈辩论。当市场失灵时，政…",
+			"tn": "https://via.placeholder.com/600x400?text=ResultTn1"
+		},
+		{
+			"category": "即时",
+			"published_date": "23/09/2018",
+			"title": "行动党市镇会未来10年提升1.7万部组屋电梯",
+			"blurb": "15个行动党市镇理事会将在未来十年，提升全岛各区1万7000部组屋电梯。15个由人民行动党管理的市镇会今早（1月28日）发文告宣布，电梯工…",
+			"tn": "https://via.placeholder.com/600x400?text=ResultTn2"
+		},
+		{
+			"category": "评论",
+			"published_date": "23/09/2018",
+			"title": "行动党市镇会未来10年提升1.7万部组屋电梯",
+			"blurb": "15个行动党市镇理事会将在未来十年，提升全岛各区1万7000部组屋电梯。15个由人民行动党管理的市镇会今早（1月28日）发文告宣布，电梯工…",
+			"tn": "https://via.placeholder.com/600x400?text=ResultTn3"
+		},
+		{
+			"category": "评论",
+			"published_date": "23/09/2018",
+			"title": "行动党市镇会未来10年提升1.7万部组屋电梯",
+			"blurb": "15个行动党市镇理事会将在未来十年，提升全岛各区1万7000部组屋电梯。15个由人民行动党管理的市镇会今早（1月28日）发文告宣布，电梯工…",
+			"tn": "https://via.placeholder.com/600x400?text=ResultTn4"
+		},
+		{
+			"category": "评论",
+			"published_date": "23/09/2018",
+			"title": "行动党市镇会未来10年提升1.7万部组屋电梯",
+			"blurb": "15个行动党市镇理事会将在未来十年，提升全岛各区1万7000部组屋电梯。15个由人民行动党管理的市镇会今早（1月28日）发文告宣布，电梯工…",
+			"tn": "https://via.placeholder.com/600x400?text=ResultTn5"
+		}
+	]
+}

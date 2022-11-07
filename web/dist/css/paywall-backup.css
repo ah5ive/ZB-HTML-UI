@@ -1,0 +1,284 @@
+/*! paywall start here here */
+.paywall-container {
+  width: 100%;
+  position: relative;
+}
+
+.paywall-container::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 230px;
+  margin-top: -230px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(12.3%, #fff), color-stop(89.6%, rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(bottom, #fff 12.3%, rgba(255, 255, 255, 0) 89.6%);
+  background: linear-gradient(0deg, #fff 12.3%, rgba(255, 255, 255, 0) 89.6%);
+}
+
+.paywall-container a {
+  color: #a50034;
+  border-bottom: 0.5px solid #a50034;
+}
+
+.paywall-container .paywall-content-container {
+  padding: 30px 15px 0;
+  background-color: #fff8f8;
+}
+
+.paywall-container .paywall-content-container p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.paywall-container .paywall-content-container h1 {
+  margin: 0;
+}
+
+.paywall-container .paywall-content-container .paywall-header {
+  text-align: center;
+}
+
+.paywall-container .paywall-content-container .paywall-header p {
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  line-height: 137%;
+}
+
+.paywall-container .paywall-content-container .paywall-header h1 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 125%;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.paywall-container .paywall-content-container .paywall-header h4 {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.paywall-container .paywall-content-container .paywall-plan {
+  background-color: #ffffff;
+  padding: 25px 25px 20px;
+  margin: 0 0 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+}
+
+.paywall-container .paywall-content-container .paywall-plan.recommended-plan {
+  border: 1px solid #ff8bc6;
+  -webkit-box-shadow: 0 0 10px rgba(103, 103, 103, 0.25);
+  box-shadow: 0 0 10px rgba(103, 103, 103, 0.25);
+  position: relative;
+}
+
+.paywall-container .paywall-content-container .paywall-plan.recommended-plan .recommended {
+  position: absolute;
+  top: -10px;
+  background-color: #ff8bc6;
+  border-radius: 10px;
+  padding: 4px 12px;
+}
+
+.paywall-container .paywall-content-container .paywall-plan.recommended-plan .recommended .description {
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 0;
+  line-height: 100%;
+}
+
+.paywall-container .paywall-content-container .paywall-plan .paywall-content {
+  display: block;
+}
+
+.paywall-container .paywall-content-container .paywall-plan .paywall-content .paywall-plan-description {
+  text-align: center;
+}
+
+.paywall-container .paywall-content-container .paywall-plan .paywall-content .paywall-plan-description h3 {
+  font-size: 19px;
+  font-size: 1.9rem;
+  line-height: 150%;
+}
+
+.paywall-container .paywall-content-container .paywall-plan .paywall-content .paywall-plan-description h3.red {
+  color: #a50034;
+}
+
+.paywall-container .paywall-content-container .paywall-plan .paywall-content .paywall-plan-description h3 .duration {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.paywall-container .paywall-content-container .paywall-plan .paywall-content .paywall-cta-container {
+  text-align: center;
+}
+
+.paywall-container .paywall-content-container .paywall-plan .paywall-content .paywall-cta-container p.caption {
+  padding-top: 10px;
+  font-size: 12px;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.paywall-container .paywall-content-container .paywall-plan .paywall-content .paywall-cta-container .cta {
+  width: auto;
+  border-radius: 100px;
+  padding: 5px 20px;
+}
+
+.paywall-container .paywall-content-container .paywall-plan .paywall-content .paywall-cta-container .cta.cta-solid-red p {
+  color: #ffffff;
+  margin: 0;
+  line-height: unset;
+}
+
+.paywall-container .paywall-content-container .paywall-plan .paywall-content .paywall-cta-container .cta.cta-bordered {
+  height: auto;
+}
+
+.paywall-container .paywall-content-container .paywall-plan .paywall-content .paywall-cta-container .cta.cta-bordered p {
+  color: #a50034;
+  margin: 0;
+  line-height: unset;
+}
+
+.paywall-container .paywall-content-container .paywall-compare-chart .paywall-compare-header {
+  padding: 5px 0;
+  text-align: center;
+  border-top: 1px solid #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.paywall-container .paywall-content-container .paywall-compare-chart .paywall-compare-header h4 {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #000000;
+}
+
+.paywall-container .paywall-content-container .paywall-compare-chart .paywall-compare-header img {
+  width: 11px;
+  height: auto;
+  margin-left: 8px;
+}
+
+.paywall-container .paywall-content-container .paywall-compare-chart .paywall-compare-header a {
+  border: none;
+}
+
+.paywall-container .paywall-content-container .paywall-compare-chart .paywall-compare-header .paywall-toggle {
+  position: relative;
+  margin-left: 5px;
+}
+
+.paywall-container .paywall-content-container .paywall-compare-chart .paywall-compare-header .arrow {
+  border: solid #9e9e9e;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.paywall-container .paywall-content-container .paywall-compare-chart .paywall-compare-header .arrow.down {
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  top: -10px;
+}
+
+.paywall-container .paywall-content-container .paywall-compare-chart .paywall-compare-header .arrow.up {
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  position: absolute;
+  top: -5px;
+}
+
+.paywall-container .paywall-content-container .paywall-compare-chart .paywall-compare-content {
+  border-top: 1px solid #eaeaea;
+  padding-bottom: 30px;
+}
+
+.paywall-container .paywall-content-container .paywall-compare-chart .paywall-compare-content .paywall-compare-table {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.paywall-container .paywall-content-container .paywall-compare-chart .paywall-compare-content .paywall-compare-table tr th:nth-child(n + 2),.paywall-container .paywall-content-container .paywall-compare-chart .paywall-compare-content .paywall-compare-table tr td:nth-child(n + 2) {
+  text-align: center;
+}
+
+.paywall-container .paywall-content-container {
+    padding: 30px 30px 0;
+  }
+
+/* 768 */
+@media (min-width: 768px) {
+  .paywall-container .paywall-content-container {
+    padding: 30px 30px 0;
+  }
+
+  .paywall-container .paywall-content-container .paywall-plan .paywall-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .paywall-container .paywall-content-container .paywall-plan .paywall-content .paywall-plan-description {
+    text-align: left;
+  }
+
+  .paywall-container .paywall-content-container .paywall-plan .paywall-content .paywall-cta-container {
+    width: 23%;
+  }
+
+  .paywall-container .paywall-content-container .paywall-plan .paywall-content .paywall-cta-container .cta {
+    width: 100%;
+  }
+
+  .paywall-container .paywall-content-container .paywall-compare-chart .paywall-compare-content .paywall-compare-table {
+    width: 338px;
+  }
+}
+
+@media (min-width: 992px) {
+  .paywall-container .paywall-content-container .paywall-plan .paywall-content .paywall-cta-container {
+    width: 31%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .paywall-container .paywall-content-container .paywall-plan .paywall-content .paywall-cta-container {
+    width: 20%;
+  }
+
+}
+
+@media (min-width: 1680px) {
+  .paywall-container .paywall-content-container .paywall-plan .paywall-content .paywall-cta-container {
+    width: 16%;
+  }
+}
+
+/*! paywall ends here */

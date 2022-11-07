@@ -1,0 +1,364 @@
+.sec .sec-epaper {
+  background-color: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  padding: 0 25px;
+}
+
+.page-epaper .epaper-content-deskstop {
+  text-align: center;
+  display: none;
+  margin-bottom: 30px;
+}
+
+.page-epaper .epaper-content-deskstop .link-underline {
+  font-size: 22px;
+  color: #a50034;
+  margin-bottom: 20px;
+}
+
+.page-epaper .epaper-content-deskstop img {
+  width: 100%;
+}
+
+.page-epaper .epaper-content-mobile {
+  display: block;
+  margin: 0 auto 15px;
+  padding: 0 15px;
+}
+
+.page-epaper .epaper-content-mobile img {
+  width: 100%;
+}
+
+.page-epaper .epaper {
+  display: inline-block;
+  text-align: center;
+  min-height: 712px;
+  min-width: 300px;
+  margin-bottom: 30px;
+}
+
+.page-epaper .epaper:first-child {
+  margin-right: 15px;
+}
+
+.page-epaper .epaper:last-child {
+  margin-left: 15px;
+}
+
+.page-epaper .epaper .epaper-header {
+  padding: 30px 48px 0;
+  height: 300px;
+}
+
+.page-epaper .epaper .epaper-header.epaper-zb {
+  background-color: #a50034;
+}
+
+.page-epaper .epaper .epaper-header.epaper-sm {
+  background-color: #ff1339;
+}
+
+.page-epaper .epaper .epaper-header.epaper-wb {
+  background-color: #0098de;
+}
+
+.page-epaper .epaper .epaper-header.epaper-uweekly {
+  background-color: #00a5c0;
+}
+
+.page-epaper .epaper .epaper-content {
+  height: auto;
+  padding-top: 18%;
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.page-epaper .epaper .epaper-content h3 {
+  font-size: 18px;
+  color: #464646;
+  font-weight: 500;
+}
+
+.page-epaper .epaper .epaper-content ul {
+  text-align: left;
+  margin: 0 auto 24px;
+  list-style-image: url("./../images/icon/red-tick.svg");
+  padding: 0 46px 0 61px;
+}
+
+.page-epaper .epaper .epaper-content ul li p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.page-epaper .epaper .epaper-content .epaper-cta-container {
+  margin: 0 17px;
+  border-top: 1px solid #eaeaea;
+  position: relative;
+  padding-bottom: 26px;
+  padding-top: 60px;
+}
+
+.page-epaper .epaper .epaper-content .epaper-cta-container .epaper-flag {
+  background-image: url(./../images/icon/promolabel.png);
+  background-position: center center;
+  background-size: contain;
+  width: 159px;
+  position: absolute;
+  height: 60px;
+  background-repeat: no-repeat;
+  left: -32px;
+  padding-top: 20px;
+  top: -13px;
+}
+
+.page-epaper .epaper .epaper-content .epaper-cta-container .epaper-flag h4 {
+  font-size: 1.5rem;
+  margin-left: -20px;
+  letter-spacing: 2px;
+}
+
+.page-epaper .epaper .epaper-content .epaper-cta-container .epaper-flag.subscriber {
+  background-image: url(./../images/icon/promolabel_subscriber.png);
+}
+
+.page-epaper .epaper .epaper-content .epaper-cta-container .epaper-banner {
+  padding-bottom: 30px;
+}
+
+.page-epaper .epaper .epaper-content .epaper-cta-container .epaper-banner img {
+  width: 100%;
+}
+
+.page-epaper .epaper .epaper-content .epaper-cta-container .epaper-cta {
+  position: relative;
+}
+
+.page-epaper .epaper .epaper-content .epaper-cta-container .epaper-cta h3 {
+  padding-bottom: 20px;
+  font-weight: normal;
+  line-height: 140%;
+}
+
+.page-epaper .epaper .epaper-content .epaper-cta-container .epaper-cta .epaper-qr-code {
+  margin: 0 auto;
+}
+
+.page-epaper .epaper .epaper-content .epaper-cta-container .epaper-cta .epaper-qr-code img {
+  width: 50%;
+  height: auto;
+}
+
+.page-epaper .epaper .epaper-content .epaper-cta-container .epaper-cta .epaper-unit {
+  font-size: 14px;
+}
+
+.page-epaper .epaper .epaper-content .epaper-cta-container .epaper-cta .epaper-tag {
+  font-size: 1rem;
+  letter-spacing: 0.07px;
+  padding: 2px 8px;
+  line-height: normal;
+  height: 20px;
+  display: block;
+  position: absolute;
+  width: 60px;
+  top: -14px;
+  right: 0;
+  z-index: 1;
+}
+
+.page-epaper .epaper .epaper-content .epaper-cta-container .epaper-cta .cta.cta-solid.cta-solid-red {
+  border-radius: 100px;
+  padding: 5px 20px;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-header {
+  height: auto;
+  padding-top: 30px;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-header p {
+  margin-bottom: 0;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-header .epaper-img {
+  padding-top: 20px;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-content {
+  padding-top: 20px;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-cta-container {
+  border: none;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-cta-container .epaper-cta {
+  margin-top: 0;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .epaper-carousel {
+  padding: 0 40px 26px;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .epaper-carousel .slick-prev,.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .epaper-carousel .slick-next {
+  top: 33%;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .epaper-carousel .slick-prev {
+  left: 11px;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .epaper-carousel .slick-next {
+  right: 11px;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .epaper-carousel[dir='rtl'] .slick-prev {
+  left: 11px !important;
+  right: auto !important;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .single-epaper {
+  display: inline-block;
+  width: 100px;
+  padding: 0 6px;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .single-epaper .epaper-image-holder {
+  display: block;
+  -webkit-box-shadow: 4px 5px 5px -4px rgba(0, 0, 0, 0.42);
+  box-shadow: 4px 5px 5px -4px rgba(0, 0, 0, 0.42);
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .single-epaper .epaper-date.zb {
+  background-color: #a50034;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .single-epaper .epaper-date.shinmin {
+  background-color: #ff1339;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .single-epaper .epaper-date.uweekly {
+  background-color: #00a5c0;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .single-epaper .epaper-date p {
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .single-epaper img {
+  width: 100%;
+}
+
+.page-epaper .epaper-img {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .sec .sec-epaper::-webkit-scrollbar,.sec .sec-epaper -ms-overflow-style,.sec .sec-epaper scrollbar-width {
+    display: none;
+  }
+
+  .page-epaper .epaper-content-deskstop {
+    display: block;
+  }
+
+  .page-epaper .epaper-content-mobile {
+    display: none;
+  }
+
+  .page-epaper .epaper .epaper-header {
+    padding: 30px 10% 0;
+    height: 350px;
+  }
+
+  .page-epaper .epaper .epaper-content {
+    padding-top: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .sec .sec-epaper {
+    padding: 30px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .page-epaper .epaper:first-child {
+    margin-right: 30px;
+  }
+
+  .page-epaper .epaper:last-child {
+    margin-left: 30px;
+  }
+
+  .page-epaper .epaper .epaper-header {
+    padding: 30px 48px 0;
+    height: 41%;
+  }
+
+  .page-epaper .epaper .epaper-content ul {
+    margin: 0 auto 30px;
+  }
+
+  .page-epaper .epaper .epaper-content .epaper-cta-container .epaper-cta .epaper-qr-code img {
+    width: 200px;
+  }
+
+  .page-epaper .epaper .epaper-content .epaper-cta-container .epaper-cta .epaper-tag {
+    right: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sec .sec-epaper {
+    padding: 30px 0 67px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .page-epaper .epaper {
+    width: 400px;
+    height: auto;
+  }
+
+  .page-epaper .epaper .epaper-header {
+    padding: 40px 65px 0;
+    height: 37%;
+  }
+
+  .page-epaper .epaper .epaper-content {
+    padding-top: 33%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-epaper .epaper .epaper-header {
+    padding: 40px 65px 0;
+    height: 406px;
+  }
+
+  .page-epaper .epaper .epaper-content {
+    padding-top: 16%;
+  }
+}
+
+/*# sourceMappingURL=zb-epaper.css.map */
