@@ -290,12 +290,7 @@
           <div class="topnavbar-content">
             <div class="topnavbar-header js-topnavbar-header">
               <div class="mobile-text-links">
-                <ul class="mobile-text-links-list">
-                  <li class="mobile-text-links-item is-active"><a href="#">职总课程助技师半专业人士掌握基本1</a></li>
-                  <li class="mobile-text-links-item"><a href="#">掌握基本职总课程助技师半专业人士12</a></li>
-                  <li class="mobile-text-links-item"><a href="#">助技师半职总课程专业人士掌握基本123</a></li>
-                  <li class="mobile-text-links-item"><a href="#">人士掌职总课程助技师半专业握基本1234</a></li>
-                </ul>
+                <ul class="mobile-text-links-list"></ul>
               </div><a class="logotype" href="./">
                 <svg class="svg svg-logotype" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 415.018 131.271" enable-background="new 0 0 415.018 131.271" xml:space="preserve">
                   <script xmlns=""></script>
@@ -571,19 +566,18 @@
         <section class="sec">
           <div class="container">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="reader-promo-container">
                 <!-- readers-club-promo START HERE-->
                 <div class="readers-club-promo">
-                  <figure class="single-promo" id="promo-0"><img src="https://via.placeholder.com/390x306?text=promo-1"/></figure>
-                  <figure class="single-promo" id="promo-1"><img src="https://via.placeholder.com/390x306?text=promo-2"/></figure>
-                  <figure class="single-promo" id="promo-2"><img src="https://via.placeholder.com/390x306?text=promo-3"/></figure>
-                  <figure class="single-promo" id="promo-3"><img src="https://via.placeholder.com/390x306?text=promo-4"/></figure>
-                  <figure class="single-promo" id="promo-4"><img src="https://via.placeholder.com/390x306?text=promo-5"/></figure>
-                  <figure class="single-promo" id="promo-5"><img src="https://via.placeholder.com/390x306?text=promo-6"/></figure>
+                  <figure class="single-promo" id="promo-0"><img src="https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-09/ZB_0922_CJ_doc7mud4j6u5kmqtfykiw7_21165127_chiangcf.jpg"/></figure>
+                  <figure class="single-promo" id="promo-1"><img src="https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-09/ZB_0922_CJ_doc7mud4j6u5kmqtfykiw7_21165127_chiangcf.jpg"/></figure>
+                  <figure class="single-promo" id="promo-2"><img src="https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-09/ZB_0922_CJ_doc7mud4j6u5kmqtfykiw7_21165127_chiangcf.jpg"/></figure>
+                  <figure class="single-promo" id="promo-3"><img src="https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-09/ZB_0922_CJ_doc7mud4j6u5kmqtfykiw7_21165127_chiangcf.jpg"/></figure>
+                  <figure class="single-promo" id="promo-4"><img src="https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-09/ZB_0922_CJ_doc7mud4j6u5kmqtfykiw7_21165127_chiangcf.jpg"/></figure>
+                  <figure class="single-promo" id="promo-5"><img src="https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2022-09/ZB_0922_CJ_doc7mud4j6u5kmqtfykiw7_21165127_chiangcf.jpg"/></figure>
                 </div>
-                <!-- readers-club-promo ENDS HERE-->
               </div>
-              <div class="col-lg-8">
+              <div class="reader-dashboard-container">
                 <!-- readers-club-dashboard - START-->
                 <div class="readers-club-dashboard subscriber">
                   <div class="readers-club-header">
@@ -594,12 +588,13 @@
                     <ul class="readers-club-tablist nav nav-tabs" role="tablist">
                       <li class="nav-tabs"><a class="nav-link subscriber active" href="" id="subscriber-tab" data-toggle="tab" type="button" data-target="#subscriber" role="tab" aria-controls="subscriber" aria-selected="true">订户<span class="arrow-up"></span></a></li>
                       <li class="nav-tabs"><a class="nav-link" href="" id="registered-subscriber-tab" type="button" data-toggle="tab" data-target="#registered-subscriber" role="tab" aria-controls="registered-subscriber" aria-selected="false">注册用户<span class="arrow-down"></span></a></li>
-                      <li class="nav-tabs"><a class="nav-link" href="" id="visitor-tab" data-toggle="tab" type="button" data-target="#visitor" role="tab" aria-controls="visitor" aria-selected="false">访客<span class="arrow-down"></span></a></li>
+                      <li class="nav-tabs"><a class="nav-link visitor" href="" id="visitor-tab" data-toggle="tab" type="button" data-target="#visitor" role="tab" aria-controls="visitor" aria-selected="false">访客<span class="arrow-down"></span></a></li>
                     </ul>
                   </div>
-                  <div class="readers-club-content">
+                  <div class="readers-club-content readers-club-content-mobile">
                     <div class="tab-content">
-                      <div class="tab-pane fade show active" id="subscriber" role="tabpanel" aria-labelledby="subscriber-tab">
+                      <div class="tab-pane fade active show" id="subscriber" role="tabpanel" aria-labelledby="subscriber-tab">
+                        <div class="cta-cancel"><img src="./dist/images/icon/icon-dismiss.svg"/></div>
                         <div class="reader-club-benefits">
                           <ul class="benefits-listing">
                             <li><img src="./dist/images/icon/vip-enable.svg"/>
@@ -618,7 +613,7 @@
                               <p>一键收藏您<br/>喜爱的文章</p>
                             </li>
                             <li><img src="./dist/images/icon/customise-enable.svg"/>
-                              <p>栏目自设内容栏目<br/>(即将推出)</p>
+                              <p>自设内容栏目<br/>(即将推出)</p>
                             </li>
                             <li><img src="./dist/images/icon/newsletter-enable.svg"/>
                               <p>精选新闻<br/>电邮速递</p>
@@ -634,16 +629,17 @@
                         </div>
                       </div>
                       <div class="tab-pane fade" id="registered-subscriber" role="tabpanel" aria-labelledby="registered-subscriber-tab">
+                        <div class="cta-cancel"><img src="./dist/images/icon/icon-dismiss.svg"/></div>
                         <div class="reader-club-benefits">
                           <ul class="benefits-listing">
                             <li><img src="./dist/images/icon/vip-disabled.svg"/>
-                              <p>早报VIP会员<br/>专享福利</p>
+                              <p class="inactive">早报VIP会员<br/>专享福利</p>
                             </li>
                             <li><img src="./dist/images/icon/unlock-disabled.svg"/>
-                              <p>解锁早报订户<br/>专享内容*</p>
+                              <p class="inactive">解锁早报订户<br/>专享内容*</p>
                             </li>
                             <li><img src="./dist/images/icon/epaper-disabled.svg"/>
-                              <p>阅读长达两周<br/>的电子报*</p>
+                              <p class="inactive">阅读长达两周<br/>的电子报*</p>
                             </li>
                             <li><img src="./dist/images/icon/gift-enable.svg"/>
                               <p>早报会员<br/>专享福利</p>
@@ -652,7 +648,7 @@
                               <p>一键收藏您<br/>喜爱的文章</p>
                             </li>
                             <li><img src="./dist/images/icon/customise-enable.svg"/>
-                              <p>栏目自设内容栏目<br/>(即将推出)</p>
+                              <p>自设内容栏目<br/>(即将推出)</p>
                             </li>
                             <li><img src="./dist/images/icon/newsletter-enable.svg"/>
                               <p>精选新闻<br/>电邮速递</p>
@@ -668,28 +664,29 @@
                         </div>
                       </div>
                       <div class="tab-pane fade" id="visitor" role="tabpanel" aria-labelledby="visitor-tab">
+                        <div class="cta-cancel"><img src="./dist/images/icon/icon-dismiss.svg"/></div>
                         <div class="reader-club-benefits">
                           <ul class="benefits-listing">
                             <li><img src="./dist/images/icon/vip-disabled.svg"/>
-                              <p>早报VIP会员<br/>专享福利</p>
+                              <p class="inactive">早报VIP会员<br/>专享福利</p>
                             </li>
                             <li><img src="./dist/images/icon/unlock-disabled.svg"/>
-                              <p>解锁早报订户<br/>专享内容*</p>
+                              <p class="inactive">解锁早报订户<br/>专享内容*</p>
                             </li>
                             <li><img src="./dist/images/icon/epaper-disabled.svg"/>
-                              <p>阅读长达两周<br/>的电子报*</p>
+                              <p class="inactive">阅读长达两周<br/>的电子报*</p>
                             </li>
                             <li><img src="./dist/images/icon/gift-disabled.svg"/>
-                              <p>早报会员<br/>专享福利</p>
+                              <p class="inactive">早报会员<br/>专享福利</p>
                             </li>
                             <li><img src="./dist/images/icon/bookmark-disabled.svg"/>
-                              <p>一键收藏您<br/>喜爱的文章</p>
+                              <p class="inactive">一键收藏您<br/>喜爱的文章</p>
                             </li>
                             <li><img src="./dist/images/icon/customise-disabled.svg"/>
-                              <p>栏目自设内容栏目<br/>(即将推出)</p>
+                              <p class="inactive">自设内容栏目<br/>(即将推出)</p>
                             </li>
                             <li><img src="./dist/images/icon/newsletter-disabled.svg"/>
-                              <p>精选新闻<br/>电邮速递</p>
+                              <p class="inactive">精选新闻<br/>电邮速递</p>
                             </li>
                             <li><img src="./dist/images/icon/freearticle-enable.svg"/>
                               <p>阅读免费<br/>文章</p>
@@ -1031,6 +1028,17 @@
                     </ul>
                   </div>
                   <!-- group - END-->
+                  <!-- pagination - START-->
+                  <div class="pagination" data-index="1" data-total="30">
+                    <div class="row no-gutters align-items-center row-pagination">
+                      <div class="col-auto mr-auto"><a class="pagination-link pagination-link-prev" href="#"><i class="fas fa-caret-left"></i><span>上一页</span></a></div>
+                      <div class="col-auto d-none d-md-block">
+                        <ul class="pagination-list row justify-content-center"></ul>
+                      </div>
+                      <div class="col-auto ml-auto"><a class="pagination-link pagination-link-next" href="#"><span>下一页</span><i class="fas fa-caret-right"></i></a></div>
+                    </div>
+                  </div>
+                  <!-- pagination - END-->
                 </div>
                 <!-- content-primary - END-->
               </div>
@@ -1116,17 +1124,6 @@
                     </div>
                   </div>
                   <!-- group - END-->
-                  <!-- pagination - START-->
-                  <div class="pagination" data-index="1" data-total="30">
-                    <div class="row no-gutters align-items-center row-pagination">
-                      <div class="col-auto mr-auto"><a class="pagination-link pagination-link-prev" href="#"><i class="fas fa-caret-left"></i><span>上一页</span></a></div>
-                      <div class="col-auto d-none d-md-block">
-                        <ul class="pagination-list row justify-content-center"></ul>
-                      </div>
-                      <div class="col-auto ml-auto"><a class="pagination-link pagination-link-next" href="#"><span>下一页</span><i class="fas fa-caret-right"></i></a></div>
-                    </div>
-                  </div>
-                  <!-- pagination - END-->
                 </div>
                 <!-- content-primary - END-->
               </div>

@@ -1,9 +1,40 @@
 "use strict";
 
 App.page = function () {// console.log('page listing')
-};
+}; // var count = 0
+
 
 App.page.readersClub = function () {
+  // browser size reaction
+  $(window).on('load', function () {
+    // check browser width
+    if ($(window).width() < 992) {
+      $('#subscriber-tab').removeClass('active');
+      $('#subscriber-tab').children().removeClass('arrow-up').addClass('arrow-down');
+    }
+  });
+  $(window).on('resize', function () {
+    // check browser width
+    if ($(window).width() < 992) {
+      $('.readers-club-content-mobile').removeAttr('style'); // iterate
+
+      $('.nav-link').each(function (i, item) {
+        if ($(item).hasClass('active')) {
+          // let tabPane = $(item).attr('data-target')
+          $('.readers-club-content-mobile').css('display', 'block');
+        }
+      });
+    } else {
+      $('.tab-pane').each(function (i, tabcontent) {
+        if ($(tabcontent).hasClass('active show')) {
+          var targetPane = '#' + $(tabcontent).attr('aria-labelledby');
+          $(targetPane).addClass('active');
+          $(targetPane).children().removeClass('arrow-down').addClass('arrow-up');
+        }
+      });
+    }
+  }); // resize
+
   $('#registered-subscriber-tab').on('click', function (e) {
     e.preventDefault();
     $('.readers-club-dashboard').addClass('resgisted-user');
@@ -15,6 +46,8 @@ App.page.readersClub = function () {
     }
   });
   $('#registered-subscriber-tab').on('show.bs.tab', function (e) {
+    $('.readers-club-content').show();
+
     if ($(e.target).find('arrow-down')) {
       $(e.target).children().removeClass('arrow-down');
       $(e.target).children().addClass('arrow-up');
@@ -32,7 +65,13 @@ App.page.readersClub = function () {
   }); // #subscriber-tab
 
   $('#subscriber-tab').on('click', function (e) {
-    e.preventDefault();
+    e.preventDefault(); // console.log(count)
+
+    if ($(e.target).find('arrow-down')) {
+      $(e.target).children().removeClass('arrow-down');
+      $(e.target).children().addClass('arrow-up');
+    }
+
     $('.readers-club-dashboard').addClass('subscriber');
 
     if ($('.readers-club-dashboard').hasClass('resgisted-user')) {
@@ -42,6 +81,8 @@ App.page.readersClub = function () {
     }
   });
   $('#subscriber-tab').on('show.bs.tab', function (e) {
+    $('.readers-club-content').show();
+
     if ($(e.target).find('arrow-down')) {
       $(e.target).children().removeClass('arrow-down');
       $(e.target).children().addClass('arrow-up');
@@ -69,6 +110,8 @@ App.page.readersClub = function () {
     }
   });
   $('#visitor-tab').on('show.bs.tab', function (e) {
+    $('.readers-club-content').show();
+
     if ($(e.target).find('arrow-down')) {
       $(e.target).children().removeClass('arrow-down');
       $(e.target).children().addClass('arrow-up');
@@ -91,7 +134,29 @@ App.page.readersClub = function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    infinite: true
+    infinite: true,
+    adaptiveHeight: true,
+    responsive: [{
+      breakpoint: 1440,
+      settings: {
+        adaptiveHeight: true
+      }
+    }]
+  }); // cancel
+
+  $('.cta-cancel').on('click', function () {
+    $('.tab-pane').each(function (i, tab) {
+      if ($(tab).hasClass('active show')) {
+        $(tab).removeClass('active show');
+        $('.readers-club-content-mobile').hide();
+        $('.nav-link').each(function (i, link) {
+          if ($(link).hasClass('active')) {
+            $(link).removeClass('active');
+            $(link).children().removeClass('arrow-up').addClass('arrow-down');
+          }
+        });
+      }
+    });
   }); // faq expand event
 
   $('#readers-faq').on('show.bs.collapse', function () {
@@ -99,7 +164,14 @@ App.page.readersClub = function () {
   });
   $('#readers-faq').on('hide.bs.collapse', function () {
     $('.cta-faq').html('显示<img src="./dist/images/icon/arrow-down.svg">');
-  }); // modal
+  }); // modal open close
+
+  $(document).on('click', 'body', function () {
+    if ($('body').hasClass('modal-open')) {
+      console.log('hello mpdal');
+      $('#readers-club-modal').modal('hide');
+    }
+  });
 };
 
 App.page();

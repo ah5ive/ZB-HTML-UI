@@ -13692,13 +13692,13 @@ input[type='search'] {
 }
 
 .label.label-premium.regular {
-  font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 20px;
   letter-spacing: 2px;
   border-radius: 10px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 20px;
 }
 
@@ -13761,28 +13761,28 @@ input[type='search'] {
 .label.label-common {
   background-color: #eaeaea;
   color: #464646;
-  font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 20px;
   letter-spacing: 2px;
   border-radius: 10px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 20px;
   border-radius: 13px;
-  padding: 0 6px;
+  padding: 0 10px;
 }
 
 .label.label-exclusive {
   background-color: #464646;
   color: #ffffff;
-  font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 20px;
   letter-spacing: 2px;
   border-radius: 10px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 20px;
 }
 
@@ -16514,6 +16514,8 @@ input[type='search'] {
 .heading-border.heading-border-primary h1,.heading-border.heading-border-primary h2 {
   color: #a50034;
   margin-bottom: 0;
+  padding-top: 38px;
+  padding-bottom: 10px;
 }
 
 .heading-border.heading-border-primary .divider {
@@ -19880,7 +19882,7 @@ input[type='search'] {
 
 .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs {
   border-bottom: none;
-  width: 99px;
+  width: 83px;
   position: relative;
   overflow: hidden;
 }
@@ -19894,6 +19896,7 @@ input[type='search'] {
   font-weight: 400;
   position: relative;
   width: 83px;
+  max-height: 34px;
   color: #9e9e9e;
   font-size: 12px;
   font-size: 1.2rem;
@@ -19968,6 +19971,20 @@ input[type='search'] {
   position: relative;
   top: -4px;
   margin-left: 4px;
+}
+
+.readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.visitor {
+  background: #f4f5f7;
+}
+
+.readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.visitor::before {
+  -webkit-box-shadow: 8px 8px 0 0 #f4f5f7;
+  box-shadow: 8px 8px 0 0 #f4f5f7;
+}
+
+.readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.visitor::after {
+  -webkit-box-shadow: -8px 8px 0 0 #f4f5f7;
+  box-shadow: -8px 8px 0 0 #f4f5f7;
 }
 
 .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link::before {
@@ -20045,10 +20062,11 @@ input[type='search'] {
   background: #ffffff;
   min-height: 233px;
   border-radius: 16px 16px 8px 8px;
+  position: relative;
 }
 
 .readers-club-dashboard .readers-club-content .reader-club-benefits {
-  padding: 30px 30px 0;
+  padding: 30px 16px;
   text-align: center;
 }
 
@@ -20059,12 +20077,17 @@ input[type='search'] {
 .readers-club-dashboard .readers-club-content .reader-club-benefits p.caption {
   font-size: 12px;
   font-size: 1.2rem;
+  color: #9e9e9e;
+}
+
+.readers-club-dashboard .readers-club-content .reader-club-benefits p.caption a {
+  color: #9e9e9e;
 }
 
 .readers-club-dashboard .readers-club-content .reader-club-benefits p a {
   font-size: 12px;
   font-size: 1.2rem;
-  border-bottom: 1px solid #464646;
+  border-bottom: 1px solid #9e9e9e;
 }
 
 .readers-club-dashboard .readers-club-content .reader-club-benefits p a:hover {
@@ -20086,7 +20109,8 @@ input[type='search'] {
 }
 
 .readers-club-dashboard .readers-club-content .reader-club-benefits .benefits-listing li {
-  width: 33%;
+  width: 27%;
+  margin: 0 8px;
   text-align: center;
 }
 
@@ -20097,10 +20121,13 @@ input[type='search'] {
   font-size: 1.2rem;
 }
 
+.readers-club-dashboard .readers-club-content .reader-club-benefits .benefits-listing li p.inactive {
+  color: #cccccc;
+}
+
 .readers-club-dashboard .readers-club-content .reader-club-benefits .readers-club-cta {
-  border-top: 1px dotted #464646;
+  border-top: 1px solid #eaeaea;
   padding-top: 24px;
-  padding-bottom: 40px;
   display: block;
 }
 
@@ -20116,6 +20143,23 @@ input[type='search'] {
   padding: 0 16px;
   min-width: 99px;
   margin-left: 0.875rem;
+}
+
+.readers-club-dashboard .readers-club-content.readers-club-content-mobile {
+  display: none;
+}
+
+.readers-club-dashboard .readers-club-content .cta-cancel {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+
+.readers-club-dashboard .readers-club-content .cta-cancel img {
+  width: 100%;
 }
 
 .readers-club-dashboard .reader-club-modal {
@@ -20150,7 +20194,12 @@ input[type='search'] {
   padding: 0;
   display: block;
   text-align: center;
+}
+
+.readers-club-dashboard .reader-club-modal .modal-dialog .modal-content .modal-header p {
   color: #ffffff;
+  border-bottom: 1px solid #cccccc;
+  display: inline-block;
 }
 
 .readers-club-dashboard .reader-club-modal .modal-dialog .modal-content .modal-body {
@@ -20169,15 +20218,20 @@ input[type='search'] {
   display: flex;
   -ms-flex-line-pack: center;
   align-content: center;
-  padding-bottom: 0.875rem;
+  padding-bottom: 16px;
 }
 
 .readers-club-dashboard .reader-club-modal .modal-dialog .modal-content .modal-body ul li .context {
-  padding-left: 0.875rem;
+  padding-left: 16px;
 }
 
 .readers-club-dashboard .reader-club-modal .modal-dialog .modal-content .modal-body ul li .context p {
   margin-bottom: 0;
+  color: #ffffff;
+}
+
+.readers-club-dashboard .reader-club-modal .modal-dialog .modal-content .modal-body ul li .context p.light-grey {
+  color: #cccccc;
 }
 
 .readers-club-dashboard .reader-club-modal .modal-dialog .modal-content .modal-footer {
@@ -20194,6 +20248,7 @@ input[type='search'] {
   font-size: 1.2rem;
   line-height: normal;
   letter-spacing: normal;
+  padding: 0 16px;
 }
 
 .readers-club-dashboard .reader-club-modal.show .modal-dialog .model-content {
@@ -20206,7 +20261,8 @@ input[type='search'] {
 .readers-club-promo {
   border-radius: 8px;
   overflow: hidden;
-  background: #cccccc;
+  height: auto;
+  aspect-ratio: 1.6 / 1;
 }
 
 .readers-club-promo .single-promo {
@@ -20214,10 +20270,10 @@ input[type='search'] {
   height: 100%;
   border-radius: 8px;
   text-align: center;
+  position: relative;
 }
 
 .readers-club-promo .single-promo img {
-  border-radius: 8px;
   width: 100%;
 }
 
@@ -20247,8 +20303,12 @@ input[type='search'] {
 }
 
 .sec.readers-club-faq .cta-faq img {
-  width: 19px;
+  width: 14px;
   margin-left: 8px;
+}
+
+.sec.readers-club-faq .readers-club-faq-content {
+  padding-top: 20px;
 }
 
 .sec.readers-club-faq .readers-club-faq-content .faq {
@@ -20266,6 +20326,10 @@ input[type='search'] {
 .sec.readers-club-faq .readers-club-faq-content .faq a:hover {
   text-decoration: none;
   border-bottom: 1px solid #a50034;
+}
+
+.sec.readers-club-faq .readers-club-faq-content .faq:last-child {
+  padding-bottom: 0;
 }
 
 .readers-club-gift {
@@ -20299,6 +20363,37 @@ input[type='search'] {
 .readers-club-mobile img {
   width: 30px;
   height: auto;
+}
+
+.reader-promo-container {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding: 0 15px;
+}
+
+.reader-dashboard-container {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding: 0 15px;
+}
+
+.reader-club-listing .nav-tabs {
+  border: none;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.reader-club-listing .nav-tabs .nav-tab .heading-border-sublink {
+  color: #9e9e9e;
+}
+
+.reader-club-listing .nav-tabs .nav-tab .heading-border-sublink.active {
+  color: #464646;
 }/*! paywall start here here *//*! paywall ends here *//*! home starts here */.page-home #app-cta {
   display: none;
 }
@@ -21104,6 +21199,12 @@ input[type='search'] {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .ps {
     overflow: auto !important;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs {
+    width: 99px;
   }
 }
 
@@ -22361,13 +22462,13 @@ input[type='search'] {
   }
 
   .overlay-microtransaction .label.label-premium {
-    font-size: 12px;
-    font-size: 1.2rem;
+    font-size: 13px;
+    font-size: 1.3rem;
     line-height: 20px;
     letter-spacing: 2px;
     border-radius: 10px;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
     height: 20px;
     margin-top: 5px;
   }
@@ -22429,26 +22530,13 @@ input[type='search'] {
     width: 130px;
   }
 
-  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link {
-    width: 114px;
-    font-size: 16px;
-    font-size: 1.6rem;
+  .readers-club-dashboard .readers-club-content .reader-club-benefits {
+    padding: 30px 30px 24px;
   }
 
-  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link .arrow-down {
-    display: none;
-  }
-
-  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber .arrow-down {
-    display: none;
-  }
-
-  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active .arrow-up {
-    display: none;
-  }
-
-  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.active .arrow-up {
-    display: none;
+  .readers-club-dashboard .readers-club-content .reader-club-benefits .benefits-listing {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
   }
 
   .readers-club-dashboard .reader-club-modal .modal-dialog {
@@ -23485,6 +23573,10 @@ input[type='search'] {
     order: 2;
   }
 
+  .heading-border.heading-border-primary h1,.heading-border.heading-border-primary h2 {
+    padding: 10px 0;
+  }
+
   .heading-border.heading-border-categories.header-newsletter-signup {
     margin-bottom: 30px;
   }
@@ -23723,21 +23815,15 @@ input[type='search'] {
   }
 
   .readers-club-dashboard .readers-club-header .readers-club-tablist {
-    float: right;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: end;
-    margin-top: 23px;
   }
 
-  .readers-club-dashboard .readers-club-content .reader-club-benefits .benefits-listing {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  .readers-club-dashboard .readers-club-content .reader-club-benefits .benefits-listing li {
-    width: initial;
+  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link {
+    width: 114px;
+    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   .readers-club-dashboard .readers-club-content .reader-club-benefits .readers-club-cta {
@@ -23760,6 +23846,10 @@ input[type='search'] {
   .readers-club-dashboard .reader-club-modal .modal-dialog {
     max-width: 290px;
     margin: 63px auto;
+  }
+
+  .readers-club-promo {
+    aspect-ratio: 2.4 / 1;
   }
 
   .readers-club-gift {
@@ -25198,20 +25288,70 @@ input[type='search'] {
     display: block;
   }
 
-  .readers-club-dashboard {
-    margin-bottom: initial;
-  }
-
   .readers-club-dashboard .readers-club-header .readers-club-header-content {
     padding-bottom: initial;
+  }
+
+  .readers-club-dashboard .readers-club-header .readers-club-tablist {
+    float: right;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    margin-top: 23px;
+  }
+
+  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link .arrow-down {
+    display: none;
+  }
+
+  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber .arrow-down {
+    display: none;
+  }
+
+  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active {
+    font-size: 19px;
+    font-size: 1.9rem;
+  }
+
+  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active .arrow-up {
+    display: none;
+  }
+
+  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.active {
+    font-size: 19px;
+    font-size: 1.9rem;
+  }
+
+  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.active .arrow-up {
+    display: none;
+  }
+
+  .readers-club-dashboard .readers-club-content .reader-club-benefits .benefits-listing li {
+    width: 75px;
+  }
+
+  .readers-club-dashboard .readers-club-content .reader-club-benefits .benefits-listing li:first-child {
+    margin-left: 0;
+  }
+
+  .readers-club-dashboard .readers-club-content .reader-club-benefits .benefits-listing li:last-child {
+    margin-right: 0;
+  }
+
+  .readers-club-dashboard .readers-club-content.readers-club-content-mobile {
+    display: block;
+  }
+
+  .readers-club-dashboard .readers-club-content .cta-cancel {
+    display: none;
   }
 
   .readers-club-dashboard .reader-club-modal .modal-dialog {
     margin: 63px auto;
   }
 
-  .readers-club-promo {
-    height: 306px;
+  .sec.readers-club-faq .readers-club-faq-content {
+    padding-top: 0;
   }
 
   .page-listing .category-filter-list {
@@ -26361,6 +26501,43 @@ input[type='search'] {
     margin: 15px 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+  }
+
+  .readers-club-dashboard .readers-club-header {
+    height: 73px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .readers-club-dashboard {
+    margin-bottom: initial;
+    height: 306px;
+  }
+
+  .readers-club-promo {
+    height: 306px;
+    aspect-ratio: unset;
+  }
+
+  .readers-club-promo .single-promo img {
+    height: 306px;
+    width: 100%;
+  }
+
+  .reader-promo-container {
+    padding: 0 10px 0 15px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  .reader-dashboard-container {
+    padding: 0 15px 0 10px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.66667%;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
   }
 }
 
