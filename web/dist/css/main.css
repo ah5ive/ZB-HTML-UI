@@ -13978,11 +13978,7 @@ input[type='search'] {
 
 [dir='rtl'] .slick-next:before {
   content: "←";
-}/* Dots */.slick-dotted.slick-slider {
-  margin-bottom: 30px;
-}
-
-.slick-dots {
+}/* Dots */.slick-dots {
   position: absolute;
   bottom: -25px;
   list-style: none;
@@ -19911,7 +19907,7 @@ input[type='search'] {
   display: inline-block;
   position: relative;
   margin-left: 4px;
-  top: -4px;
+  top: -2px;
 }
 
 .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber {
@@ -19927,7 +19923,7 @@ input[type='search'] {
   border-top: 5px solid #ffffff;
   display: inline-block;
   position: relative;
-  top: -4px;
+  top: -2px;
   margin-left: 4px;
 }
 
@@ -19969,7 +19965,7 @@ input[type='search'] {
   border-bottom: 5px solid #ff8bc6;
   display: inline-block;
   position: relative;
-  top: -4px;
+  top: -2px;
   margin-left: 4px;
 }
 
@@ -20053,7 +20049,7 @@ input[type='search'] {
   border-bottom: 5px solid #464646;
   display: inline-block;
   position: relative;
-  top: -4px;
+  top: -2px;
   margin-left: 4px;
 }
 
@@ -20136,6 +20132,10 @@ input[type='search'] {
   padding-bottom: 16px;
 }
 
+.readers-club-dashboard .readers-club-content .reader-club-benefits .readers-club-cta p.no-padding-bottom {
+  padding-bottom: 0;
+}
+
 .readers-club-dashboard .readers-club-content .reader-club-benefits .readers-club-cta .cta {
   font-size: 16px;
   font-size: 1.6rem;
@@ -20178,7 +20178,7 @@ input[type='search'] {
 .readers-club-dashboard .reader-club-modal .modal-dialog {
   background-color: rgba(43, 43, 43, 0.9);
   max-width: 100%;
-  margin: 200px 3.5rem;
+  margin: 40% 3.5rem;
   border-radius: 8px;
 }
 
@@ -20262,7 +20262,8 @@ input[type='search'] {
   border-radius: 8px;
   overflow: hidden;
   height: auto;
-  aspect-ratio: 1.6 / 1;
+  aspect-ratio: 1.77 / 1;
+  margin-bottom: 16px;
 }
 
 .readers-club-promo .single-promo {
@@ -20307,6 +20308,10 @@ input[type='search'] {
   margin-left: 8px;
 }
 
+.sec.readers-club-faq .heading-border.heading-border-primary h2 {
+  padding-top: 0;
+}
+
 .sec.readers-club-faq .readers-club-faq-content {
   padding-top: 20px;
 }
@@ -20330,6 +20335,10 @@ input[type='search'] {
 
 .sec.readers-club-faq .readers-club-faq-content .faq:last-child {
   padding-bottom: 0;
+}
+
+.sec.readers-club-enquiry .article-type {
+  padding-top: 20px;
 }
 
 .readers-club-gift {
@@ -23850,6 +23859,7 @@ input[type='search'] {
 
   .readers-club-promo {
     aspect-ratio: 2.4 / 1;
+    margin-bottom: 30px;
   }
 
   .readers-club-gift {
@@ -25311,6 +25321,7 @@ input[type='search'] {
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active {
     font-size: 19px;
     font-size: 1.9rem;
+    padding: 2px 1rem 0.5rem;
   }
 
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active .arrow-up {
@@ -25320,6 +25331,7 @@ input[type='search'] {
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.active {
     font-size: 19px;
     font-size: 1.9rem;
+    padding: 2px 1rem 0.5rem;
   }
 
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.active .arrow-up {

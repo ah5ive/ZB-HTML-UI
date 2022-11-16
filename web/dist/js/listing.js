@@ -11,6 +11,8 @@ App.page.readersClub = function () {
     if ($(window).width() < 992) {
       $('#subscriber-tab').removeClass('active');
       $('#subscriber-tab').children().removeClass('arrow-up').addClass('arrow-down');
+      $('#subscriber-tab').attr('aria-selected', false);
+      console.log('no tab are active');
     }
   });
   $(window).on('resize', function () {
@@ -20,18 +22,39 @@ App.page.readersClub = function () {
 
       $('.nav-link').each(function (i, item) {
         if ($(item).hasClass('active')) {
-          // let tabPane = $(item).attr('data-target')
           $('.readers-club-content-mobile').css('display', 'block');
         }
       });
     } else {
-      $('.tab-pane').each(function (i, tabcontent) {
-        if ($(tabcontent).hasClass('active show')) {
-          var targetPane = '#' + $(tabcontent).attr('aria-labelledby');
-          $(targetPane).addClass('active');
-          $(targetPane).children().removeClass('arrow-down').addClass('arrow-up');
+      console.log('window resize');
+      $('.nav-link').each(function (i, el) {
+        if (!$(el).hasClass('active')) {
+          if ($(el).attr('id') === 'subscriber-tab') {
+            $('#' + $(el).attr('id')).addClass('active');
+            var paneID = $(el).attr('data-target');
+            $(paneID).tab('show');
+            $('.readers-club-content-mobile').removeAttr('style');
+            $('.readers-club-dashboard').addClass('subscriber').removeClass('visitor').removeClass('resgisted-user'); // console.log($(el), paneID, 'which tab')
+          }
+
+          console.log($(el), 'no tab active');
+        } else {
+          // $('#' + $(tab).attr('id')).tab('show')
+          $('.nav-link').each(function (i, ele) {
+            if ($(ele).hasClass('active')) {
+              $('#subscriber-tab').removeClass('active');
+              $('#subscriber').removeClass('active show'); // console.log($(ele), 'fff')
+            }
+          });
         }
-      });
+      }); // $('.tab-pane').each((i, tabcontent) => {
+      //   if ($(tabcontent).hasClass('active show')) {
+      //     let targetPane = '#' + $(tabcontent).attr('aria-labelledby')
+      //     $(targetPane).tab('show')
+      //     console.log($(targetPane), 'tab pan true')
+      //     $(targetPane).children().removeClass('arrow-down').addClass('arrow-up')
+      //   } // $('#subscriber-tab').tab('show')
+      // })
     }
   }); // resize
 
@@ -43,10 +66,14 @@ App.page.readersClub = function () {
       $('.readers-club-dashboard').removeClass('subscriber');
     } else if ($('.readers-club-dashboard').hasClass('visitor')) {
       $('.readers-club-dashboard').removeClass('visitor');
-    }
+    } // console.log(e.relatedTarget, 'related')
+
   });
   $('#registered-subscriber-tab').on('show.bs.tab', function (e) {
     $('.readers-club-content').show();
+    var relatePaneID = $(e.relatedTarget).attr('data-target');
+    $(relatePaneID).removeClass('active show');
+    console.log(relatePaneID, 'register');
 
     if ($(e.target).find('arrow-down')) {
       $(e.target).children().removeClass('arrow-down');
@@ -81,6 +108,7 @@ App.page.readersClub = function () {
     }
   });
   $('#subscriber-tab').on('show.bs.tab', function (e) {
+    console.log(e.relatedTarget, 'subscriber');
     $('.readers-club-content').show();
 
     if ($(e.target).find('arrow-down')) {
@@ -111,6 +139,7 @@ App.page.readersClub = function () {
   });
   $('#visitor-tab').on('show.bs.tab', function (e) {
     $('.readers-club-content').show();
+    console.log(e.relatedTarget, 'visitor');
 
     if ($(e.target).find('arrow-down')) {
       $(e.target).children().removeClass('arrow-down');
@@ -144,7 +173,9 @@ App.page.readersClub = function () {
     }]
   }); // cancel
 
-  $('.cta-cancel').on('click', function () {
+  $('.cta-cancel').on('click', function (e) {
+    e.preventDefault();
+    console.log(e.relatedTarget, 'cancel');
     $('.tab-pane').each(function (i, tab) {
       if ($(tab).hasClass('active show')) {
         $(tab).removeClass('active show');
