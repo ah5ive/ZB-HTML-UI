@@ -25,47 +25,26 @@ App.page.readersClub = function () {
         }
       });
     } else {
-      console.log('window resize');
-      $('.nav-link').each(function (i, el) {
-        if (!$(el).hasClass('active')) {
-          if ($(el).attr('id') === 'subscriber-tab') {
-            $('#' + $(el).attr('id')).addClass('active');
-            var paneID = $(el).attr('data-target');
-            $(paneID).tab('show');
-            $('.readers-club-content-mobile').removeAttr('style');
-            $('.readers-club-dashboard').addClass('subscriber').removeClass('visitor').removeClass('resgisted-user');
-            console.log(el, paneID, 'which tab');
-          }
-
-          console.log($(el).attr('id'), 'no tab active');
-        } else {
-          $('.nav-link').each(function (i, ele) {
-            if ($(ele).hasClass('active')) {
-              $('#subscriber-tab').removeClass('active');
-              $('#subscriber').removeClass('active show');
-              console.log($(ele).attr('id'), 'fff');
-            }
-          });
-        }
-      });
+      if ($('.nav-link.active').length === 0) {
+        console.log('zero do something');
+        $('#subscriber-tab').tab('show');
+        $('.readers-club-content-mobile').removeAttr('style');
+      }
     }
   }); // resize
 
   $('#registered-subscriber-tab').on('click', function (e) {
     e.preventDefault();
-    $('.readers-club-dashboard').addClass('resgisted-user');
+    $('.readers-club-dashboard').addClass('registered-subscriber');
 
     if ($('.readers-club-dashboard').hasClass('subscriber')) {
       $('.readers-club-dashboard').removeClass('subscriber');
     } else if ($('.readers-club-dashboard').hasClass('visitor')) {
       $('.readers-club-dashboard').removeClass('visitor');
-    } // console.log(e.relatedTarget, 'related')
-
+    }
   });
   $('#registered-subscriber-tab').on('show.bs.tab', function (e) {
-    $('.readers-club-content').show(); // let relatePaneID = $(e.relatedTarget).attr('data-target')
-    // $(relatePaneID).removeClass('active show')
-    // console.log(relatePaneID, 'register')
+    $('.readers-club-content').show();
 
     if ($(e.target).find('arrow-down')) {
       $(e.target).children().removeClass('arrow-down');
@@ -93,14 +72,14 @@ App.page.readersClub = function () {
 
     $('.readers-club-dashboard').addClass('subscriber');
 
-    if ($('.readers-club-dashboard').hasClass('resgisted-user')) {
-      $('.readers-club-dashboard').removeClass('resgisted-user');
+    if ($('.readers-club-dashboard').hasClass('registered-subscriber')) {
+      $('.readers-club-dashboard').removeClass('registered-subscriber');
     } else if ($('.readers-club-dashboard').hasClass('visitor')) {
       $('.readers-club-dashboard').removeClass('visitor');
     }
   });
   $('#subscriber-tab').on('show.bs.tab', function (e) {
-    // console.log(e.relatedTarget, 'subscriber')
+    $('.readers-club-dashboard').attr('class', 'readers-club-dashboard subscriber');
     $('.readers-club-content').show();
 
     if ($(e.target).find('arrow-down')) {
@@ -123,8 +102,8 @@ App.page.readersClub = function () {
     e.preventDefault();
     $('.readers-club-dashboard').addClass('visitor');
 
-    if ($('.readers-club-dashboard').hasClass('resgisted-user')) {
-      $('.readers-club-dashboard').removeClass('resgisted-user');
+    if ($('.readers-club-dashboard').hasClass('registered-subscriber')) {
+      $('.readers-club-dashboard').removeClass('registered-subscriber');
     } else if ($('.readers-club-dashboard').hasClass('subscriber')) {
       $('.readers-club-dashboard').removeClass('subscriber');
     }

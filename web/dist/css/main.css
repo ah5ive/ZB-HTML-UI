@@ -19826,15 +19826,15 @@ input[type='search'] {
   letter-spacing: normal;
 }
 
-.readers-club-dashboard.resgisted-user {
+.readers-club-dashboard.registered-subscriber {
   background-image: url("./../images/common/register-user-bkg.jpg");
 }
 
-.readers-club-dashboard.resgisted-user h3 {
+.readers-club-dashboard.registered-subscriber h3 {
   color: #464646;
 }
 
-.readers-club-dashboard.resgisted-user p {
+.readers-club-dashboard.registered-subscriber p {
   color: #464646;
   letter-spacing: normal;
 }
