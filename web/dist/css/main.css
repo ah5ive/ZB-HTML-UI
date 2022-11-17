@@ -15369,6 +15369,15 @@ input[type='search'] {
   font-size: 1.1rem;
 }
 
+.topnavbar-mobile .topnavbar-header .cta-holder-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .topnavbar-mobile .topnavbar-header .cta-holder-subscribe a {
   min-width: 0;
   letter-spacing: normal;
@@ -19805,7 +19814,7 @@ input[type='search'] {
 
 .readers-club-dashboard {
   border-radius: 8px;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -20178,7 +20187,7 @@ input[type='search'] {
 .readers-club-dashboard .reader-club-modal .modal-dialog {
   background-color: rgba(43, 43, 43, 0.9);
   max-width: 100%;
-  margin: 40% 3.5rem;
+  margin: 48% 3.5rem;
   border-radius: 8px;
 }
 
@@ -20197,7 +20206,7 @@ input[type='search'] {
 }
 
 .readers-club-dashboard .reader-club-modal .modal-dialog .modal-content .modal-header p {
-  color: #ffffff;
+  color: #cccccc;
   border-bottom: 1px solid #cccccc;
   display: inline-block;
 }
@@ -20262,7 +20271,7 @@ input[type='search'] {
   border-radius: 8px;
   overflow: hidden;
   height: auto;
-  aspect-ratio: 1.77 / 1;
+  aspect-ratio: 1 / 0.62;
   margin-bottom: 16px;
 }
 
@@ -20295,6 +20304,10 @@ input[type='search'] {
   color: #808080;
 }
 
+.sec.readers-club-faq {
+  padding-top: 38px;
+}
+
 .sec.readers-club-faq .cta-faq {
   margin-right: 0;
 }
@@ -20309,6 +20322,10 @@ input[type='search'] {
 }
 
 .sec.readers-club-faq .heading-border.heading-border-primary h2 {
+  padding-top: 0;
+}
+
+.sec.readers-club-faq .heading-border .heading-border-right-content {
   padding-top: 0;
 }
 
@@ -20335,6 +20352,18 @@ input[type='search'] {
 
 .sec.readers-club-faq .readers-club-faq-content .faq:last-child {
   padding-bottom: 0;
+}
+
+.sec.readers-club-enquiry {
+  padding-top: 38px;
+}
+
+.sec.readers-club-enquiry .heading-border.heading-border-primary h2 {
+  padding-top: 0;
+}
+
+.sec.readers-club-enquiry .heading-border .heading-border-right-content {
+  padding-top: 0;
 }
 
 .sec.readers-club-enquiry .article-type {
@@ -20403,6 +20432,25 @@ input[type='search'] {
 
 .reader-club-listing .nav-tabs .nav-tab .heading-border-sublink.active {
   color: #464646;
+}
+
+.reader-club-listing .nav-tabs .nav-tab .heading-border.heading-border-primary h2 {
+  padding-top: 0;
+}
+
+.readers-club-activites .heading-border-mainlink:hover h2::before {
+  -webkit-transition: opacity 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), visibility 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), height 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: opacity 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), visibility 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), height 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), visibility 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), height 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  content: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #a50034;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
 }/*! paywall start here here *//*! paywall ends here *//*! home starts here */.page-home #app-cta {
   display: none;
 }
