@@ -20427,6 +20427,14 @@ input[type='search'] {
   align-items: flex-start;
 }
 
+.reader-club-listing .nav-tabs .nav-tab {
+  padding-top: 2px;
+}
+
+.reader-club-listing .nav-tabs .nav-tab:first-child {
+  padding-top: 0;
+}
+
 .reader-club-listing .nav-tabs .nav-tab .heading-border-sublink {
   color: #9e9e9e;
   padding-top: 2px;
@@ -20443,6 +20451,22 @@ input[type='search'] {
 .reader-club-listing .nav-tabs .nav-tab a {
   font-size: 16px;
   font-size: 1.6rem;
+}
+
+.readers-club-deals .heading-border .heading-border-right-content {
+  padding-top: 0;
+}
+
+.readers-club-activites {
+  padding-top: 38px;
+}
+
+.readers-club-activites .heading-border .heading-border-right-content {
+  padding-top: 0;
+}
+
+.readers-club-activites .heading-border-mainlink h2 {
+  padding-top: 0;
 }
 
 .readers-club-activites .heading-border-mainlink:hover h2::before {
@@ -22605,6 +22629,14 @@ input[type='search'] {
 
   .readers-club-dashboard .reader-club-modal .modal-dialog {
     margin: 200px 3.5rem;
+  }
+
+  .readers-club-deals .heading-border .heading-border-right-content {
+    padding-top: 6px;
+  }
+
+  .readers-club-activites .heading-border .heading-border-right-content {
+    padding-top: 6px;
   }
 }
 
