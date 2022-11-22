@@ -1567,8 +1567,7 @@ App.common.cancel = function (cta, page) {
   if (url.searchParams.get('global') === 'true') {
     $('.page').css('overflow', 'hidden');
     $('.overlay-global-page').css('visibility', 'visible');
-  } else {
-    return false;
+    $('.overlay-global-page').css('opacity', '1');
   }
 
   $(cta).on('click', function () {
