@@ -9,6 +9,7 @@
   -ms-transform: scale(1);
   transform: scale(1);
   max-width: 960px;
+  width: 960px;
 }
 
 .overlay-exit-intervention .overlay-wrap .cancel {
@@ -27,29 +28,34 @@
 
 .overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-image-container {
   padding: 0;
-  max-width: 56%;
-  overflow: hidden;
+  width: 62.5%;
 }
 
 .overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container {
-  width: 44%;
+  width: 37.5%;
   text-align: center;
   margin: auto;
 }
 
 .overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container p {
   color: #000;
+  font-size: 16px;
 }
 
 .overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container h1 {
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 8px;
+  color: #000;
 }
 
 .overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container .cta {
   letter-spacing: 0;
   width: 185px;
+  height: 40px;
+  border-radius: 40px;
+  font-size: 16px;
+  padding-top: 5px;
 }
 
 .overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container .overlay-cta-container {
@@ -59,6 +65,7 @@
 }
 
 .overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container .dismiss {
+  font-size: 16px;
   border-bottom: 1px solid #9e9e9e;
   color: #9e9e9e;
   text-decoration: none;
