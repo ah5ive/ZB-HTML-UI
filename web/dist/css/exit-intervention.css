@@ -40,6 +40,7 @@
 .overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container p {
   color: #000;
   font-size: 16px;
+  margin-bottom: 8px;
 }
 
 .overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container h1 {
