@@ -132,6 +132,7 @@ App.page.readersClub = function () {
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    // autoplay: true,
     arrows: false,
     infinite: true,
     adaptiveHeight: true,
