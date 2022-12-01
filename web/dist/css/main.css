@@ -20270,7 +20270,6 @@ input[type='search'] {
   border-radius: 8px;
   overflow: hidden;
   height: auto;
-  aspect-ratio: 1 / 0.62;
   margin-bottom: 16px;
 }
 
@@ -20283,6 +20282,8 @@ input[type='search'] {
 }
 
 .readers-club-promo .single-promo img {
+  -o-object-fit: contain;
+  object-fit: contain;
   width: 100%;
 }
 
@@ -23955,13 +23956,12 @@ input[type='search'] {
   }
 
   .readers-club-promo {
-    aspect-ratio: 2.4 / 1;
     margin-bottom: 30px;
   }
 
   .readers-club-promo .single-promo .gradient {
     height: 16%;
-    bottom: 36%;
+    bottom: 0;
   }
 
   .readers-club-promo .single-promo .gradient {
@@ -26638,6 +26638,8 @@ input[type='search'] {
   }
 
   .readers-club-promo .single-promo img {
+    -o-object-fit: fill;
+    object-fit: fill;
     height: 306px;
     width: 100%;
   }
