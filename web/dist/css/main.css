@@ -20270,6 +20270,7 @@ input[type='search'] {
   border-radius: 8px;
   overflow: hidden;
   height: auto;
+  aspect-ratio: 8 / 5;
   margin-bottom: 16px;
 }
 
@@ -20282,8 +20283,11 @@ input[type='search'] {
 }
 
 .readers-club-promo .single-promo img {
-  -o-object-fit: contain;
-  object-fit: contain;
+  -o-object-fit: fill;
+  object-fit: fill;
+  -o-object-position: center;
+  object-position: center;
+  display: block;
   width: 100%;
 }
 
@@ -23956,6 +23960,7 @@ input[type='search'] {
   }
 
   .readers-club-promo {
+    aspect-ratio: 8 / 5;
     margin-bottom: 30px;
   }
 
@@ -26640,6 +26645,8 @@ input[type='search'] {
   .readers-club-promo .single-promo img {
     -o-object-fit: fill;
     object-fit: fill;
+    -o-object-position: center;
+    object-position: center;
     height: 306px;
     width: 100%;
   }
