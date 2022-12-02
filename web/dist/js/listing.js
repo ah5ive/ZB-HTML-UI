@@ -1,10 +1,14 @@
 "use strict";
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 App.page = function () {// console.log('page listing')
 }; // var count = 0
 
 
 App.page.readersClub = function () {
+  var _$$slick;
+
   // browser size reaction
   $(window).on('load', function () {
     // check browser width
@@ -127,22 +131,21 @@ App.page.readersClub = function () {
     }
   }); // promo carousel
 
-  $('.readers-club-promo').slick({
+  $('.readers-club-promo').slick((_$$slick = {
     slide: '.single-promo',
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: false,
     // autoplay: true,
     arrows: false,
-    infinite: true,
-    adaptiveHeight: true,
-    responsive: [{
-      breakpoint: 1440,
-      settings: {
-        adaptiveHeight: true
-      }
-    }]
-  }); // cancel
+    infinite: true
+  }, _defineProperty(_$$slick, "adaptiveHeight", true), _defineProperty(_$$slick, "responsive", [{
+    breakpoint: 1440,
+    settings: {
+      adaptiveHeight: true
+    }
+  }]), _$$slick)); // cancel
 
   $('.cta-cancel').on('click', function (e) {
     e.preventDefault();

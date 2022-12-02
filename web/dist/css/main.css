@@ -20280,11 +20280,12 @@ input[type='search'] {
 
 .readers-club-promo .single-promo .single-promo-img {
   position: relative;
-  padding-top: 62.5%;
+  -o-object-position: center;
+  object-position: center;
+  overflow: hidden;
 }
 
 .readers-club-promo .single-promo .single-promo-img img {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -20306,8 +20307,12 @@ input[type='search'] {
   padding-top: 1rem;
 }
 
+.readers-club-promo .single-promo figcaption p {
+  margin-bottom: 0;
+}
+
 .readers-club-promo .slick-dots {
-  bottom: 48px;
+  top: 79%;
 }
 
 .readers-club-promo .slick-dots li {
@@ -21313,6 +21318,18 @@ input[type='search'] {
 @media only screen and (min-width: 360px) {
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs {
     width: 99px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .readers-club-promo .slick-dots {
+    top: 72%;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .readers-club-promo .slick-dots {
+    top: 74%;
   }
 }
 
@@ -22651,6 +22668,10 @@ input[type='search'] {
     margin: 200px 3.5rem;
   }
 
+  .readers-club-promo .slick-dots {
+    top: 77%;
+  }
+
   .readers-club-deals .heading-border .heading-border-right-content {
     padding-top: 6px;
   }
@@ -23975,6 +23996,10 @@ input[type='search'] {
 
   .readers-club-promo .single-promo .gradient {
     height: 20%;
+  }
+
+  .readers-club-promo .slick-dots {
+    top: 82%;
   }
 
   .readers-club-gift {
@@ -25477,6 +25502,10 @@ input[type='search'] {
     margin: 63px auto;
   }
 
+  .readers-club-promo .slick-dots {
+    top: 84%;
+  }
+
   .sec.readers-club-faq .readers-club-faq-content {
     padding-top: 0;
   }
@@ -26635,15 +26664,29 @@ input[type='search'] {
   }
 }
 
+@media only screen and (min-width: 1280px) {
+  .readers-club-promo .slick-dots {
+    top: 90%;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .readers-club-dashboard {
     margin-bottom: initial;
     height: 306px;
   }
 
+  .readers-club-promo .single-promo {
+    height: 306px;
+  }
+
   .readers-club-promo .single-promo .gradient {
     bottom: 0;
     height: 20%;
+  }
+
+  .readers-club-promo .slick-dots {
+    top: 71%;
   }
 
   .reader-promo-container {
@@ -27665,6 +27708,12 @@ input[type='search'] {
 
   .cxense .logo-zaobao {
     max-width: 90px;
+  }
+}
+
+@media only screen and (min-width: 1680px) {
+  .readers-club-promo .single-promo .single-promo-img {
+    height: 254px;
   }
 }
 
