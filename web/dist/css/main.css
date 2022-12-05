@@ -19900,8 +19900,27 @@ input[type='search'] {
   font-weight: 400;
   position: relative;
   width: 83px;
+  height: 34px;
   max-height: 34px;
   color: #9e9e9e;
+  font-size: 12px;
+  font-size: 1.2rem;
+  padding: 7px 5px 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link p {
+  color: #9e9e9e;
+  margin-bottom: 0;
+  line-height: 1;
   font-size: 12px;
   font-size: 1.2rem;
 }
@@ -19921,6 +19940,11 @@ input[type='search'] {
 .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber {
   background: #ff8bc6;
   color: #ffffff;
+}
+
+.readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber p {
+  color: #ffffff;
+  margin-bottom: 0;
 }
 
 .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber .arrow-down {
@@ -19963,6 +19987,12 @@ input[type='search'] {
 
 .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active {
   color: #ff8bc6;
+}
+
+.readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active p {
+  color: #ff8bc6;
+  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active .arrow-up {
@@ -20019,7 +20049,6 @@ input[type='search'] {
 
 .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.active {
   background: #ffffff;
-  color: #464646;
   font-weight: 600;
 }
 
@@ -20059,6 +20088,14 @@ input[type='search'] {
   position: relative;
   top: -2px;
   margin-left: 4px;
+}
+
+.readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.active p {
+  color: #464646;
+}
+
+.readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs p {
+  font-size: 14px;
 }
 
 .readers-club-dashboard .readers-club-content {
@@ -22655,6 +22692,10 @@ input[type='search'] {
     width: 130px;
   }
 
+  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link {
+    width: 114px;
+  }
+
   .readers-club-dashboard .readers-club-content .reader-club-benefits {
     padding: 30px 30px 24px;
   }
@@ -23955,12 +23996,6 @@ input[type='search'] {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: end;
-  }
-
-  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link {
-    width: 114px;
-    font-size: 16px;
-    font-size: 1.6rem;
   }
 
   .readers-club-dashboard .readers-club-content .reader-club-benefits .readers-club-cta {
@@ -25450,6 +25485,22 @@ input[type='search'] {
     margin-top: 23px;
   }
 
+  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link {
+    height: unset;
+    padding: 7px 0 6px;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+
+  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link p {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: normal;
+  }
+
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link .arrow-down {
     display: none;
   }
@@ -25458,10 +25509,15 @@ input[type='search'] {
     display: none;
   }
 
+  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active p {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active {
-    font-size: 19px;
-    font-size: 1.9rem;
-    padding: 2px 1rem 0.5rem;
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding: 7px 1rem 6px;
   }
 
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active .arrow-up {
@@ -25469,9 +25525,9 @@ input[type='search'] {
   }
 
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.active {
-    font-size: 19px;
-    font-size: 1.9rem;
-    padding: 2px 1rem 0.5rem;
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding: 7px 0 6px;
   }
 
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.active .arrow-up {
