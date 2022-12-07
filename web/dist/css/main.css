@@ -13669,6 +13669,109 @@ input[type='search'] {
   border-bottom: 1px solid #a50034;
 }
 
+.search-query-result-header {
+  padding-top: 30px;
+}
+
+.search-query-result-header h1 {
+  font-weight: 500;
+  color: #464646;
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+.search-query-result-header h1 span {
+  color: #a50034;
+}
+
+.search-results .nav-tabs {
+  border: 0;
+}
+
+.search-results .nav-tabs .nav-tab {
+  position: relative;
+}
+
+.search-results .nav-tabs .nav-tab:first-child::after {
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  height: 50%;
+  background-color: #cccccc;
+}
+
+.search-results .nav-tabs .nav-tab .nav-link {
+  border: none;
+  color: #9e9e9e;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.search-results .nav-tabs .nav-tab .nav-link.active {
+  color: #464646;
+}
+
+.search-results .heading-border.heading-border-secondary h2 {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 0;
+}
+
+.search-results .tab-content {
+  padding-top: 30px;
+}
+
+.search-results .tab-content .tab-pane ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.search-results .tab-content .tab-pane ol .single-search-result {
+  padding-bottom: 20px;
+  margin: 0 0 20px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.search-results .tab-content .tab-pane ol .single-search-result:last-child {
+  border-bottom: none;
+}
+
+.search-results .tab-content .tab-pane ol .single-search-result .search-thumbnail {
+  padding-left: 15px;
+}
+
+.search-results .tab-content .tab-pane ol .single-search-result .search-thumbnail img {
+  width: 100%;
+}
+
+.search-results .tab-content .tab-pane ol .single-search-result .search-content {
+  padding-top: 20px;
+}
+
+.search-results .tab-content .tab-pane ol .single-search-result .search-content h3 {
+  font-weight: bold;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.search-results .tab-content .tab-pane ol .single-search-result .search-content .search-blurb {
+  margin-top: 15px;
+  color: #6f6f6f;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.search-results .tab-content .tab-pane ol .single-search-result .search-content .search-info {
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: #6f6f6f;
+  margin-top: 10px;
+}
+
 .search-loadmore {
   text-align: center;
   margin: 30px 0;
@@ -14588,6 +14691,42 @@ input[type='search'] {
 
 .sec.sec-search-results {
   padding-top: 50px;
+}
+
+.sec.sec-search-results .pager {
+  margin-top: 2rem;
+  list-style-type: none;
+  padding: 0;
+  font-size: 14px;
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-bottom: 3px solid #999;
+}
+
+.sec.sec-search-results .pager .pager-current {
+  color: #a50034;
+  padding: 8px;
+}
+
+.sec.sec-search-results .pager li {
+  margin-bottom: 1rem;
+}
+
+.sec.sec-search-results .pager .pager-item {
+  margin-bottom: 1rem;
+  padding: 8px;
+}
+
+.sec.sec-search-results .pager .pager-item a {
+  color: #464646;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-decoration: none;
 }
 
 .sec.sec-freeform {
@@ -19900,12 +20039,10 @@ input[type='search'] {
   font-weight: 400;
   position: relative;
   width: 83px;
-  height: 34px;
   max-height: 34px;
   color: #9e9e9e;
   font-size: 12px;
   font-size: 1.2rem;
-  padding: 7px 5px 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19915,14 +20052,6 @@ input[type='search'] {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link p {
-  color: #9e9e9e;
-  margin-bottom: 0;
-  line-height: 1;
-  font-size: 12px;
-  font-size: 1.2rem;
 }
 
 .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link .arrow-down {
@@ -19940,11 +20069,6 @@ input[type='search'] {
 .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber {
   background: #ff8bc6;
   color: #ffffff;
-}
-
-.readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber p {
-  color: #ffffff;
-  margin-bottom: 0;
 }
 
 .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber .arrow-down {
@@ -19987,12 +20111,6 @@ input[type='search'] {
 
 .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active {
   color: #ff8bc6;
-}
-
-.readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active p {
-  color: #ff8bc6;
-  font-size: 12px;
-  font-size: 1.2rem;
 }
 
 .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active .arrow-up {
@@ -20049,6 +20167,7 @@ input[type='search'] {
 
 .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.active {
   background: #ffffff;
+  color: #464646;
   font-weight: 600;
 }
 
@@ -20088,14 +20207,6 @@ input[type='search'] {
   position: relative;
   top: -2px;
   margin-left: 4px;
-}
-
-.readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.active p {
-  color: #464646;
-}
-
-.readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs p {
-  font-size: 14px;
 }
 
 .readers-club-dashboard .readers-club-content {
@@ -22692,10 +22803,6 @@ input[type='search'] {
     width: 130px;
   }
 
-  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link {
-    width: 114px;
-  }
-
   .readers-club-dashboard .readers-club-content .reader-club-benefits {
     padding: 30px 30px 24px;
   }
@@ -23714,6 +23821,28 @@ input[type='search'] {
     max-width: 120px;
   }
 
+  .search-query-result-header {
+    padding-top: 60px;
+  }
+
+  .search-query-result-header h1 {
+    font-size: 36px;
+    font-size: 3.6rem;
+  }
+
+  .search-results .tab-content .tab-pane ol .single-search-result .search-thumbnail {
+    padding-left: 0;
+  }
+
+  .search-results .tab-content .tab-pane ol .single-search-result .search-content {
+    padding-top: 0;
+  }
+
+  .search-results .tab-content .tab-pane ol .single-search-result .search-content h3 {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+
   .is-scrolled-down .header.js-is-sticky .topnavbar-mobile .logotype,.is-scrolled-down .header.js-is-stuck .topnavbar-mobile .logotype {
     -webkit-transform: translate3d(-290px, -50%, 0);
     transform: translate3d(-290px, -50%, 0);
@@ -23996,6 +24125,12 @@ input[type='search'] {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: end;
+  }
+
+  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link {
+    width: 114px;
+    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   .readers-club-dashboard .readers-club-content .reader-club-benefits .readers-club-cta {
@@ -25485,22 +25620,6 @@ input[type='search'] {
     margin-top: 23px;
   }
 
-  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link {
-    height: unset;
-    padding: 7px 0 6px;
-    -webkit-box-align: unset;
-    -ms-flex-align: unset;
-    align-items: unset;
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
-
-  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link p {
-    font-size: 14px;
-    font-size: 1.4rem;
-    line-height: normal;
-  }
-
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link .arrow-down {
     display: none;
   }
@@ -25509,15 +25628,10 @@ input[type='search'] {
     display: none;
   }
 
-  .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active p {
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
-
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active {
-    font-size: 14px;
-    font-size: 1.4rem;
-    padding: 7px 1rem 6px;
+    font-size: 19px;
+    font-size: 1.9rem;
+    padding: 2px 1rem 0.5rem;
   }
 
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.subscriber.active .arrow-up {
@@ -25525,9 +25639,9 @@ input[type='search'] {
   }
 
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.active {
-    font-size: 14px;
-    font-size: 1.4rem;
-    padding: 7px 0 6px;
+    font-size: 19px;
+    font-size: 1.9rem;
+    padding: 2px 1rem 0.5rem;
   }
 
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.active .arrow-up {

@@ -565,41 +565,24 @@
       <main class="main">
         <!-- section - START-->
         <section class="sec">
-          <!-- search-query - START-->
-          <div class="search-query">
-            <form action="" method="post" onsubmit="return false;">
-              <div class="container">
-                <div class="row">
-                  <div class="col-12 col-lg-8 offset-lg-2">
-                    <div class="row align-items-center">
-                      <div class="col">
-                        <div class="searchbar">
-                          <svg class="svg svg-icon-search" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-                            <g fill="#FFF" fill-rule="evenodd">
-                              <path d="M8.643 15.64a7.004 7.004 0 0 1-6.997-6.997 7.004 7.004 0 0 1 6.997-6.997 7.004 7.004 0 0 1 6.996 6.997 7.004 7.004 0 0 1-6.996 6.996M8.643 0C3.877 0 0 3.877 0 8.643c0 4.766 3.877 8.643 8.643 8.643 4.766 0 8.643-3.877 8.643-8.643C17.286 3.877 13.409 0 8.643 0"></path>
-                              <path d="M20 19.433l-.567.567c-.102.003-.24-.039-.283-.081L15 15.767l.767-.767 4.15 4.152c.046.047.088.173.083.281m1.423-1.222l-4.733-4.74A1.653 1.653 0 0 0 15.523 13c-.442 0-.867.172-1.166.471l-.875.876a1.655 1.655 0 0 0 0 2.335l4.733 4.74c.362.362.91.578 1.467.578.28 0 .553-.056.788-.161l.07-.031 1.182-1.145.117-.194c.324-.725.145-1.696-.416-2.258"></path>
-                            </g>
-                          </svg>
-                          <input type="search" placeholder="输入搜索词" value="人民行动党"/>
-                        </div>
-                      </div>
-                      <div class="col-auto">
-                        <button class="cta cta-solid cta-gradient-red" type="submit">搜索</button>
-                      </div>
-                    </div>
-                  </div>
+          <!-- search-query-result-header - START-->
+          <div class="search-query-result-header">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-12">
+                  <h1><span>世界杯</span>的搜索结果</h1>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
-          <!-- search-query - END-->
+          <!-- search-query-result-header - END-->
         </section>
         <!-- section - END-->
         <!-- section - START-->
         <section class="sec sec-search-results">
           <div class="container">
             <div class="row">
-              <div class="col-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+              <div class="col-12">
                 <!-- content-primary - START-->
                 <div class="content content-primary">
                   <!-- search-results - START-->
@@ -722,7 +705,14 @@
                     </div>
                   </div>
                   <!-- search-results - END-->
-                  <div class="search-loadmore"><a class="link link-underline" href="#">显示更多</a></div>
+                  <div id="search-results-pager-zb-item-list">
+                    <ul class="pager">
+                      <li class="pager-current">1</li>
+                      <li class="pager-item"><a class="search-page-url" href="#">2</a></li>
+                      <li class="pager-item"><a class="search-page-url" href="#">3</a></li>
+                      <li class="pager-item"><a class="search-page-url" href="#">4</a></li>
+                    </ul>
+                  </div>
                 </div>
                 <!-- content-primary - END-->
               </div>

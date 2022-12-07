@@ -10,7 +10,7 @@ App.page.readersClub = function () {
     // check browser width
     if ($(window).width() < 992) {
       $('#subscriber-tab').removeClass('active');
-      $('#subscriber-tab').children().eq(1).removeClass('arrow-up').addClass('arrow-down');
+      $('#subscriber-tab').children().removeClass('arrow-up').addClass('arrow-down');
       $('#subscriber-tab').attr('aria-selected', false); // console.log('no tab are active')
     }
   });
@@ -47,18 +47,18 @@ App.page.readersClub = function () {
     $('.readers-club-content').show();
 
     if ($(e.target).find('arrow-down')) {
-      $(e.target).children().eq(1).removeClass('arrow-down');
-      $(e.target).children().eq(1).addClass('arrow-up');
+      $(e.target).children().removeClass('arrow-down');
+      $(e.target).children().addClass('arrow-up');
     }
 
     if ($('#subscriber-tab').find('arrow-up')) {
-      $('#subscriber-tab').children().eq(1).removeClass('arrow-up');
-      $('#subscriber-tab').children().eq(1).addClass('arrow-down');
+      $('#subscriber-tab').children().removeClass('arrow-up');
+      $('#subscriber-tab').children().addClass('arrow-down');
     }
 
     if ($('#visitor-tab').find('arrow-up')) {
-      $('#visitor-tab').children().eq(1).removeClass('arrow-up');
-      $('#visitor-tab').children().eq(1).addClass('arrow-down');
+      $('#visitor-tab').children().removeClass('arrow-up');
+      $('#visitor-tab').children().addClass('arrow-down');
     }
   }); // #subscriber-tab
 
@@ -66,8 +66,8 @@ App.page.readersClub = function () {
     e.preventDefault(); // console.log(count)
 
     if ($(e.target).find('arrow-down')) {
-      $(e.target).children().eq(1).removeClass('arrow-down');
-      $(e.target).children().eq(1).addClass('arrow-up');
+      $(e.target).children().removeClass('arrow-down');
+      $(e.target).children().addClass('arrow-up');
     }
 
     $('.readers-club-dashboard').addClass('subscriber');
@@ -83,18 +83,18 @@ App.page.readersClub = function () {
     $('.readers-club-content').show();
 
     if ($(e.target).find('arrow-down')) {
-      $(e.target).children().eq(1).removeClass('arrow-down');
-      $(e.target).children().eq(1).addClass('arrow-up');
+      $(e.target).children().removeClass('arrow-down');
+      $(e.target).children().addClass('arrow-up');
     }
 
     if ($('#registered-subscriber-tab').find('arrow-up')) {
-      $('#registered-subscriber-tab').children().eq(1).removeClass('arrow-up');
-      $('#registered-subscriber-tab').children().eq(1).addClass('arrow-down');
+      $('#registered-subscriber-tab').children().removeClass('arrow-up');
+      $('#registered-subscriber-tab').children().addClass('arrow-down');
     }
 
     if ($('#visitor-tab').find('arrow-up')) {
-      $('#visitor-tab').children().eq(1).removeClass('arrow-up');
-      $('#visitor-tab').children().eq(1).addClass('arrow-down');
+      $('#visitor-tab').children().removeClass('arrow-up');
+      $('#visitor-tab').children().addClass('arrow-down');
     }
   }); // #visitor
 
@@ -112,18 +112,18 @@ App.page.readersClub = function () {
     $('.readers-club-content').show(); // console.log(e.relatedTarget, 'visitor')
 
     if ($(e.target).find('arrow-down')) {
-      $(e.target).children().eq(1).removeClass('arrow-down');
-      $(e.target).children().eq(1).addClass('arrow-up');
+      $(e.target).children().removeClass('arrow-down');
+      $(e.target).children().addClass('arrow-up');
     }
 
     if ($('#subscriber-tab').find('arrow-up')) {
-      $('#subscriber-tab').children().eq(1).removeClass('arrow-up');
-      $('#subscriber-tab').children().eq(1).addClass('arrow-down');
+      $('#subscriber-tab').children().removeClass('arrow-up');
+      $('#subscriber-tab').children().addClass('arrow-down');
     }
 
     if ($('#registered-subscriber-tab').find('arrow-up')) {
-      $('#registered-subscriber-tab').children().eq(1).removeClass('arrow-up');
-      $('#registered-subscriber-tab').children().eq(1).addClass('arrow-down');
+      $('#registered-subscriber-tab').children().removeClass('arrow-up');
+      $('#registered-subscriber-tab').children().addClass('arrow-down');
     }
   }); // promo carousel
 
@@ -153,7 +153,8 @@ App.page.readersClub = function () {
         $('.readers-club-content-mobile').hide();
         $('.nav-link').each(function (i, link) {
           if ($(link).hasClass('active')) {
-            $(link).removeClass('active'); // $(link).children().removeClass('arrow-up').addClass('arrow-down')
+            $(link).removeClass('active');
+            $(link).children().removeClass('arrow-up').addClass('arrow-down');
           }
         });
       }
