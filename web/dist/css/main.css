@@ -20002,7 +20002,7 @@ input[type='search'] {
 .readers-club-dashboard .readers-club-header {
   border-radius: 8px 8px 0 0;
   color: #ffffff;
-  padding: 16px 16px 0;
+  padding: 5px 16px 0;
   position: relative;
 }
 
@@ -20014,6 +20014,19 @@ input[type='search'] {
 
 .readers-club-dashboard .readers-club-header .readers-club-header-content p {
   margin: 0 21%;
+}
+
+.readers-club-dashboard .readers-club-header .readers-club-header-content .readers-club-header-content-img-container {
+  text-align: center;
+  padding-bottom: 4px;
+}
+
+.readers-club-dashboard .readers-club-header .readers-club-header-content .readers-club-header-content-img-container img {
+  width: 110px;
+}
+
+.readers-club-dashboard .readers-club-header .readers-club-header-content .readers-club-header-content-img-container .reader-club-img {
+  display: none;
 }
 
 .readers-club-dashboard .readers-club-header .readers-club-tablist {
@@ -22797,6 +22810,10 @@ input[type='search'] {
 
   .readers-club-dashboard .readers-club-header .readers-club-header-content p {
     margin: initial;
+  }
+
+  .readers-club-dashboard .readers-club-header .readers-club-header-content .readers-club-header-content-img-container {
+    text-align: left;
   }
 
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs {
@@ -25612,12 +25629,16 @@ input[type='search'] {
     padding-bottom: initial;
   }
 
+  .readers-club-dashboard .readers-club-header .readers-club-header-content .readers-club-header-content-img-container img {
+    width: 113px;
+  }
+
   .readers-club-dashboard .readers-club-header .readers-club-tablist {
     float: right;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: end;
-    margin-top: 23px;
+    margin-top: 34px;
   }
 
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link .arrow-down {

@@ -60,6 +60,9 @@ App.page.readersClub = function () {
       $('#visitor-tab').children().removeClass('arrow-up');
       $('#visitor-tab').children().addClass('arrow-down');
     }
+
+    $('.reader-club-img').show();
+    $('.reader-club-img-subscriber').hide();
   }); // #subscriber-tab
 
   $('#subscriber-tab').on('click', function (e) {
@@ -96,6 +99,9 @@ App.page.readersClub = function () {
       $('#visitor-tab').children().removeClass('arrow-up');
       $('#visitor-tab').children().addClass('arrow-down');
     }
+
+    $('.reader-club-img-subscriber').show();
+    $('.reader-club-img').hide();
   }); // #visitor
 
   $('#visitor-tab').on('click', function (e) {
@@ -125,6 +131,9 @@ App.page.readersClub = function () {
       $('#registered-subscriber-tab').children().removeClass('arrow-up');
       $('#registered-subscriber-tab').children().addClass('arrow-down');
     }
+
+    $('.reader-club-img').show();
+    $('.reader-club-img-subscriber').hide();
   }); // promo carousel
 
   $('.readers-club-promo').slick({
