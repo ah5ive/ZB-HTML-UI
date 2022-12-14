@@ -34,21 +34,41 @@
 .overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container {
   width: 37.5%;
   text-align: center;
-  margin: auto;
-  padding: 0 26px;
+  margin: 70px auto 0;
+  padding: 0 25px 20px;
 }
 
 .overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container p {
   color: #000;
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container p.xs {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container p.light-grey {
+  color: #9e9e9e;
+}
+
+.overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container p.padding-xs-top {
+  padding-top: 10px;
 }
 
 .overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container h1 {
   font-size: 32px;
   font-weight: 500;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   color: #000;
+}
+
+.overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 140%;
 }
 
 .overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container .cta {
@@ -62,15 +82,43 @@
 
 .overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container .overlay-cta-container {
   width: 100%;
-  padding-top: 36px;
-  padding-bottom: 16px;
+  padding-top: 30px;
+  padding-bottom: 70px;
 }
 
 .overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container .dismiss {
-  font-size: 16px;
+  font-size: 12px;
+  margin-bottom: 10px;
   border-bottom: 1px solid #9e9e9e;
   color: #9e9e9e;
   text-decoration: none;
+}
+
+.overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #a50034;
+}
+
+.overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container .price sup {
+  top: 0;
+  font-size: 24px;
+}
+
+.overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container .price span {
+  padding-top: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #9E9E9E;
 }
 
 /*# sourceMappingURL=exit-intervention.css.map */
