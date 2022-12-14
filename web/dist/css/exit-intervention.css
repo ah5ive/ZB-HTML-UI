@@ -35,6 +35,7 @@
   width: 37.5%;
   text-align: center;
   margin: auto;
+  padding: 0 26px;
 }
 
 .overlay-exit-intervention .overlay-wrap .overlay-content-container .overlay-text-container p {
