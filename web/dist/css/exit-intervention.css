@@ -21,7 +21,7 @@
   display: -ms-flexbox;
   display: flex;
   padding: 0;
-  max-height: 54vh;
+  height: 536px;
   overflow: hidden;
   background-color: #fff8f8;
 }
