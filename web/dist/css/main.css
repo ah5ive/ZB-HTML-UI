@@ -20028,6 +20028,15 @@ input[type='search'] {
   display: block;
 }
 
+.readers-club-dashboard .readers-club-header .readers-club-header-content .welcome-note::after {
+  content: '';
+  width: 100px;
+  background-color: white;
+  height: 1px;
+  display: block;
+  margin: 4px auto;
+}
+
 .readers-club-dashboard .readers-club-header .readers-club-header-content .welcome-note.for-subscriber {
   display: block;
 }
@@ -22839,6 +22848,10 @@ input[type='search'] {
 
   .redirect-banner-container {
     height: 86px;
+  }
+
+  .readers-club-dashboard .readers-club-header .readers-club-header-content .welcome-note::after {
+    display: none;
   }
 
   .readers-club-dashboard .readers-club-header .readers-club-header-content .welcome-note.for-subscriber {
