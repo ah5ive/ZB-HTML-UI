@@ -99,7 +99,6 @@ App.page.tourDesktop = function () {
       }]
     }]
   });
-
   var forceExpandTopnavbar = function forceExpandTopnavbar() {
     if (!$('body').hasClass('is-scrolled-up')) {
       App.selector.BODY.removeClass('is-scrolled-down');
@@ -113,7 +112,6 @@ App.page.tourDesktop = function () {
       });
     }
   };
-
   tour.on('cancel', function () {
     App["var"].isTourStarted = false;
   });
@@ -134,7 +132,6 @@ App.page.tourDesktop = function () {
     }, 300);
   });
 };
-
 if (App.util.getViewport().w >= App["var"].breakpoints.lg.min) {
   App.page.tourDesktop();
 }

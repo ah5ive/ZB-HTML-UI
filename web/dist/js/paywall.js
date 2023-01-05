@@ -6,5 +6,4 @@ App.page.paywall = function () {
     $(this).find('.arrow').toggleClass('down up');
   });
 };
-
 App.page.paywall();

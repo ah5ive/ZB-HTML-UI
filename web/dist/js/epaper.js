@@ -24,19 +24,16 @@ App.page = function () {
     console.log(epaper, 'data');
   });
 };
-
 App.page.toggleAd = function () {
   $('#toggle-epaper-ad-btn').on('click', function () {
     $('#epaper-ad-header').slideUp();
     $('#epaper-ad-container').slideUp();
     var offset;
-
     if ($('.epaper-content-deskstop').css('display') === 'none') {
       offset = $('.sec-epaper').offset().top * 0.85;
     } else {
       offset = $('.sec-epaper').offset().top * 0.8;
     }
-
     $('html, body').animate({
       scrollTop: $('.sec-epaper').offset().top - offset
     }, 0);
@@ -50,6 +47,5 @@ App.page.toggleAd = function () {
     }
   });
 };
-
 App.page();
 App.page.toggleAd();
