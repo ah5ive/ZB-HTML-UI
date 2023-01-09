@@ -20037,7 +20037,7 @@ input[type='search'] {
   margin: 4px auto;
 }
 
-.readers-club-dashboard .readers-club-header .readers-club-header-content .welcome-note.for-subscriber {
+.readers-club-dashboard .readers-club-header .readers-club-header-content .welcome-note.for-subscriber,.readers-club-dashboard .readers-club-header .readers-club-header-content .welcome-note.for-member {
   display: block;
 }
 
@@ -22854,7 +22854,7 @@ input[type='search'] {
     display: none;
   }
 
-  .readers-club-dashboard .readers-club-header .readers-club-header-content .welcome-note.for-subscriber {
+  .readers-club-dashboard .readers-club-header .readers-club-header-content .welcome-note.for-subscriber,.readers-club-dashboard .readers-club-header .readers-club-header-content .welcome-note.for-member {
     display: none;
   }
 
@@ -25728,10 +25728,6 @@ input[type='search'] {
 
   .readers-club-dashboard .readers-club-header .readers-club-tablist .nav-tabs .nav-link.active .arrow-up {
     display: none;
-  }
-
-  .readers-club-dashboard .readers-club-header .readers-club-tablist.member-note {
-    margin-top: 63px;
   }
 
   .readers-club-dashboard .readers-club-content {
