@@ -18840,7 +18840,7 @@ input[type='search'] {
 }
 
 .overlay-global-page {
-  visibility: hidden;
+  display: none;
   opacity: 0;
   z-index: 4;
 }
@@ -20026,6 +20026,7 @@ input[type='search'] {
 
 .readers-club-dashboard .readers-club-header .readers-club-header-content .welcome-note {
   display: block;
+  font-weight: 500;
 }
 
 .readers-club-dashboard .readers-club-header .readers-club-header-content .welcome-note::after {

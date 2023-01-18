@@ -955,7 +955,7 @@ App.common.keyUp = function () {
       }
     }
   };
-  $(document).keyup(onKeyUp);
+  $(document).on('keyup', onKeyUp);
 };
 App.common.fontSizing = function () {
   var setFontSize = function setFontSize(fontSize) {
@@ -1420,7 +1420,8 @@ App.common.cancel = function (cta, page) {
   var url = new URL(window.location.href);
   if (url.searchParams.get('global') === 'true') {
     $('.page').css('overflow', 'hidden');
-    $('.overlay-global-page').css('visibility', 'visible');
+    $('.overlay-global-page').show();
+    // $('.overlay-global-page').css('visibility', 'visible')
     $('.overlay-global-page').css('opacity', '1');
   }
   $(cta).on('click', function () {
