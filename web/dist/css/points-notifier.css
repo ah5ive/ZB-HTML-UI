@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700");
+
 .point-notifier {
   -webkit-transition: background-color 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: background-color 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -9,7 +11,7 @@
   bottom: 15px;
   width: 100px;
   height: 100px;
-  background-color: #a50034;
+  background-color: #a80034;
   border-radius: 50%;
   text-align: center;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
@@ -19,7 +21,7 @@
 }
 
 .point-notifier:hover {
-  background-color: #8c002c;
+  background-color: #8f002c;
 }
 
 .point-notifier.is-minimized {
@@ -90,7 +92,8 @@
   margin-bottom: 8px;
 }
 
-.point-notifier .point-notifier-cancel::before,.point-notifier .point-notifier-cancel::after {
+.point-notifier .point-notifier-cancel::before,
+.point-notifier .point-notifier-cancel::after {
   top: calc(50% - (1px));
   content: '';
   position: absolute;
@@ -112,18 +115,21 @@
   transform: rotate(-45deg);
 }
 
-.point-notifier .point-notifier-cancel::before,.point-notifier .point-notifier-cancel::after {
+.point-notifier .point-notifier-cancel::before,
+.point-notifier .point-notifier-cancel::after {
   -webkit-transition: background-color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   -o-transition: background-color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: background-color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.point-notifier .point-notifier-cancel:hover::before,.point-notifier .point-notifier-cancel:hover::after {
+.point-notifier .point-notifier-cancel:hover::before,
+.point-notifier .point-notifier-cancel:hover::after {
   background-color: #eaeaea;
 }
 
-.point-notifier p,.point-notifier a {
-  font-family: 'Noto Sans SC', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.point-notifier p,
+.point-notifier a {
+  font-family: 'Noto Sans SC', Arial, sans-serif;
   font-weight: 500;
   color: #ffffff;
 }
@@ -170,7 +176,7 @@
   top: 70px;
   width: 100px;
   height: 100px;
-  background-color: #a50034;
+  background-color: #a80034;
   border-radius: 50%;
   text-align: center;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
@@ -180,7 +186,7 @@
 }
 
 .point-notifier-mobile:hover {
-  background-color: #8c002c;
+  background-color: #8f002c;
 }
 
 .point-notifier-mobile.is-minimized {
@@ -251,7 +257,8 @@
   margin-bottom: 8px;
 }
 
-.point-notifier-mobile .point-notifier-cancel::before,.point-notifier-mobile .point-notifier-cancel::after {
+.point-notifier-mobile .point-notifier-cancel::before,
+.point-notifier-mobile .point-notifier-cancel::after {
   top: calc(50% - (1px));
   content: '';
   position: absolute;
@@ -273,18 +280,21 @@
   transform: rotate(-45deg);
 }
 
-.point-notifier-mobile .point-notifier-cancel::before,.point-notifier-mobile .point-notifier-cancel::after {
+.point-notifier-mobile .point-notifier-cancel::before,
+.point-notifier-mobile .point-notifier-cancel::after {
   -webkit-transition: background-color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   -o-transition: background-color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: background-color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.point-notifier-mobile .point-notifier-cancel:hover::before,.point-notifier-mobile .point-notifier-cancel:hover::after {
+.point-notifier-mobile .point-notifier-cancel:hover::before,
+.point-notifier-mobile .point-notifier-cancel:hover::after {
   background-color: #eaeaea;
 }
 
-.point-notifier-mobile p,.point-notifier-mobile a {
-  font-family: 'Noto Sans SC', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.point-notifier-mobile p,
+.point-notifier-mobile a {
+  font-family: 'Noto Sans SC', Arial, sans-serif;
   font-weight: 500;
   color: #ffffff;
 }
@@ -320,6 +330,50 @@
   color: #eaeaea;
 }
 
+@-webkit-keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    -webkit-transform: translate3d(1px, 0, 0);
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%, 60% {
+    -webkit-transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    -webkit-transform: translate3d(1px, 0, 0);
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%, 60% {
+    -webkit-transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
 @media (min-width: 992px) {
   .point-notifier {
     display: block;
@@ -329,49 +383,4 @@
     display: none;
   }
 }
-
-@-webkit-keyframes shake {
-  10%,90% {
-    -webkit-transform: translate3d(-1px, 0, 0);
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  20%,80% {
-    -webkit-transform: translate3d(1px, 0, 0);
-    transform: translate3d(1px, 0, 0);
-  }
-
-  30%,50%,70% {
-    -webkit-transform: translate3d(-2px, 0, 0);
-    transform: translate3d(-2px, 0, 0);
-  }
-
-  40%,60% {
-    -webkit-transform: translate3d(2px, 0, 0);
-    transform: translate3d(2px, 0, 0);
-  }
-}
-
-@keyframes shake {
-  10%,90% {
-    -webkit-transform: translate3d(-1px, 0, 0);
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  20%,80% {
-    -webkit-transform: translate3d(1px, 0, 0);
-    transform: translate3d(1px, 0, 0);
-  }
-
-  30%,50%,70% {
-    -webkit-transform: translate3d(-2px, 0, 0);
-    transform: translate3d(-2px, 0, 0);
-  }
-
-  40%,60% {
-    -webkit-transform: translate3d(2px, 0, 0);
-    transform: translate3d(2px, 0, 0);
-  }
-}
-
 /*# sourceMappingURL=points-notifier.css.map */

@@ -418,7 +418,12 @@ table {
 }
 
 @media only screen and (max-width: 630px) {
-  table,thead,tbody,th,td,tr {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
     margin: 0;
     padding: 0;
   }
@@ -432,7 +437,8 @@ table {
     display: block;
   }
 
-  td,tr {
+  td,
+  tr {
     border-collapse: collapse;
     vertical-align: top;
     border: 0;
@@ -564,5 +570,4 @@ table {
     height: fit-content;
   }
 }
-
 /*# sourceMappingURL=mailer.css.map */

@@ -208,7 +208,8 @@
   padding: 0 40px 26px;
 }
 
-.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .epaper-carousel .slick-prev,.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .epaper-carousel .slick-next {
+.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .epaper-carousel .slick-prev,
+.page-epaper .epaper.epaper-subscribed .epaper-content .epaper-carousel-container .epaper-carousel .slick-next {
   top: 33%;
 }
 
@@ -265,7 +266,9 @@
 }
 
 @media (min-width: 576px) {
-  .sec .sec-epaper::-webkit-scrollbar,.sec .sec-epaper -ms-overflow-style,.sec .sec-epaper scrollbar-width {
+  .sec .sec-epaper::-webkit-scrollbar,
+  .sec .sec-epaper -ms-overflow-style,
+  .sec .sec-epaper scrollbar-width {
     display: none;
   }
 
@@ -360,5 +363,4 @@
     padding-top: 16%;
   }
 }
-
 /*# sourceMappingURL=zb-epaper.css.map */

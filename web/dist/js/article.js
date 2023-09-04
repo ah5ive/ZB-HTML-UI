@@ -1,31 +1,24 @@
 "use strict";
 
 App.page = function () {
-  $('.point-notifier-cancel').click(function () {
+  $('.point-notifier-cancel').on('click', function () {
     $('.point-notifier').fadeOut(300);
   });
-  // let onClickMicrotransactionAdPlay = (event) => {
-  //   event.preventDefault()
-  //   if (!$('#js-overlay-microtransaction .overlay-text').hasClass('d-none')) {
-  //     $('#js-overlay-microtransaction .overlay-text').addClass('d-none')
-  //   }
-  //   $('#js-overlay-microtransaction .overlay-content').append('<div id="dfp-ad-midarticlespecial"></div>')
-  // }
-
-  // // ad microtransaction ad test
-  // let receiveMessage = (evt) => {
-  //   console.log('Video Complete')
-  // }
-  // window.addEventListener('videocompleted', receiveMessage, false)
-
-  // $('#js-cta-play-ad').on('click', onClickMicrotransactionAdPlay)
-  // console.log('page article - scripts init')
 };
 
-// App.page.func = () => {
-//   // console.log('page func init')
-// }
-
+// toggle show hide for byline
+App.page.showDatePublished = function () {
+  $('.published-date').on('click', function (e) {
+    e.preventDefault();
+    $('.date-published').toggle('fast', function () {
+      if ($('.arrow-down').length > 0) {
+        $('.arrow-down').addClass('arrow-up').removeClass('arrow-down');
+      } else {
+        $('.arrow-up').addClass('arrow-down').removeClass('arrow-up');
+      }
+    });
+  });
+};
 App.page.microtransaction = function () {
   var onClickMicrotransactionOpen = function onClickMicrotransactionOpen(event) {
     event.preventDefault();
@@ -65,9 +58,7 @@ App.page.mobileSocial = function () {
     }
   };
   $('#js-mobile-social-handle').on('click', onClickMobileSocial);
-  // console.log('page mobileSocial init')
 };
-
 App.page.outbrain = function () {
   $('div.OUTBRAIN').each(function (index) {
     $(this).attr('data-src', 'https://www.zaobao.com.sg/znews/singapore/story20190423-950918');
@@ -76,79 +67,90 @@ App.page.outbrain = function () {
   // console.log('page outbrain init')
 };
 
-// App.page.ads = () => {
-//   /* eslint-disable */
-
-//   let mapping = googletag.sizeMapping()
-//     .addSize([1024, 0], [[970, 90], [728, 90]])
-//     .addSize([740, 0], [728, 90])
-//     .addSize([320, 0], [[320, 50], [320, 100]])
-//     .addSize([0, 0], [320, 50])
-//     .build()
-
-//   googletag.slots['lb1'] = googletag.defineSlot('/5908/ZB_SG/lb1/znews/singapore', [728, 90], 'dfp-ad-lb1')
-//     .addService(googletag.pubads())
-//     .setTargeting('pos', '1')
-//     .setTargeting('zbtags', '小贩文化申遗')
-//     .setTargeting('weight', '1')
-//     .defineSizeMapping(mapping)
-
-//   googletag.slots['megalb'] = googletag.defineSlot('/5908/ZB_SG/megalb/znews/singapore', [970, 250], 'dfp-ad-megalb')
-//     .addService(googletag.pubads())
-//     .setTargeting('weight', '3')
-
-//   googletag.slots['skinning'] = googletag.defineSlot('/5908/ZB_SG/skinning/znews/singapore', [1, 1], 'dfp-ad-skinning')
-//     .addService(googletag.pubads())
-//     .setTargeting('zbtags', '小贩文化申遗')
-//     .setTargeting('weight', '5')
-
-//   googletag.slots['topoverlay'] = googletag.defineSlot('/5908/ZB_SG/topoverlay/znews/singapore', [1, 1], 'dfp-ad-topoverlay')
-//     .addService(googletag.pubads())
-//     .setTargeting('weight', '7')
-
-//   googletag.slots['midarticlespecial'] = googletag.defineSlot('/5908/ZB_SG/midarticlespecial/znews/singapore', [[1, 1], [10, 10], 'fluid', [640, 480], [300, 169], [300, 225], [480, 270], [480, 360], [640, 360]], 'dfp-ad-midarticlespecial')
-//     .addService(googletag.pubads())
-//     .setTargeting('pos', '50')
-//     .setTargeting('zbtags', '小贩文化申遗')
-//     .setTargeting('weight', '9')
-
-//   googletag.slots['imu1'] = googletag.defineSlot('/5908/ZB_SG/imu1/znews/singapore', [[1, 1], [300, 250], [336, 280], 'fluid'], 'dfp-ad-imu1')
-//     .addService(googletag.pubads())
-//     .setTargeting('pos', '1')
-//     .setTargeting('zbtags', '小贩文化申遗')
-//     .setTargeting('weight', '11')
-
-//   googletag.slots['imu2'] = googletag.defineSlot('/5908/ZB_SG/imu2/znews/singapore', [[300, 250], [300, 600]], 'dfp-ad-imu2')
-//     .addService(googletag.pubads())
-//     .setTargeting('pos', '2')
-//     .setTargeting('zbtags', '小贩文化申遗')
-//     .setTargeting('weight', '13')
-
-//   googletag.slots['imu3'] = googletag.defineSlot('/5908/ZB_SG/imu3/znews/singapore', [300, 250], 'dfp-ad-imu3')
-//     .addService(googletag.pubads())
-//     .setTargeting('pos', '3')
-//     .setTargeting('zbtags', '小贩文化申遗')
-//     .setTargeting('weight', '15')
-
-//   googletag.slots['bi1'] = googletag.defineSlot('/5908/ZB_SG/bi1/znews/singapore', [[1, 1], [115, 82], [202, 126], 'fluid'], 'dfp-ad-bi1')
-//     .addService(googletag.pubads())
-//     .setTargeting('pos', '1')
-//     .setTargeting('zbtags', '小贩文化申遗')
-//     .setTargeting('weight', '17')
-
-//   googletag.slots['bi2'] = googletag.defineSlot('/5908/ZB_SG/bi2/znews/singapore', [[1, 1], [115, 82], [202, 126], 'fluid'], 'dfp-ad-bi2')
-//     .addService(googletag.pubads())
-//     .setTargeting('pos', '2')
-//     .setTargeting('zbtags', '小贩文化申遗')
-//     .setTargeting('weight', '19')
-
-//   /* eslint-enable */
-
-//   // console.log('page article - ads init')
-// }
-
+App.page.scroll = function (classEle) {
+  var height;
+  // let arry = []
+  // console.log(height, 'HEIGHT')
+  $(window).on('load', function () {
+    console.log($(window).width(), 'width');
+    if ($(window).width() >= 992) {
+      if ($('.' + classEle).length <= 1) {
+        height = $('.' + classEle).children().height() * 2.5;
+        $('.' + classEle).css('height', height + 'px');
+      } else {
+        $('.' + classEle).each(function (i, item) {
+          // arry.push($(item).height() * 2.5)
+          // console.log(arry, "XXXXXARRRYXXXXX")
+          $(item).css('height', $(item).height() * 2.5 + 'px');
+          console.log(i, $(item).height(), 'this height');
+        });
+      }
+    } else {
+      // arry = []
+      $('.' + classEle).removeAttr('style');
+    }
+  });
+  $(window).on('resize', function (e) {
+    if ($(window).width() <= 991) {
+      $('.' + classEle).removeAttr('style');
+    } else {
+      $('.' + classEle).each(function (i, item) {
+        // arry.push($(item).height() * 2.5)
+        // console.log(arry, "XXXXXARRRYXXXXX")
+        $(item).removeAttr('style');
+        $(item).css('height', $(item).height() * 2.5 + 'px');
+        console.log(i, $(item).height(), 'this height');
+      });
+    }
+  });
+};
+App.page.articleslider = function () {
+  $('.overlay-wrap > .cancel').on('click', function (e) {
+    console.log('click');
+    e.preventDefault();
+    $('.overlay-article-gallery').css({
+      'visibility': 'hidden',
+      'opacity': '0',
+      'display': 'none'
+    });
+    $('body').removeClass('overflow-hidden');
+  });
+  // load article slider
+  $('.js-article-gallery').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $('.overlay-content-pagination').html('<p>' + i + '/' + slick.slideCount + '</p>');
+  });
+  $('.js-article-gallery').slick({
+    dots: false,
+    infinite: false,
+    slidesToShow: 1,
+    arrows: true,
+    rows: 0,
+    prevArrow: "<button type='button' class='slick-prev'><img src=./dist/images/icon/arrow-prev-white.svg></button>",
+    nextArrow: "<button type='button' class='slick-next'><img src=./dist/images/icon/arrow-next-white.svg></button>"
+  });
+  var index;
+  var sliderGallery = $('.overlay.js-overlay.overlay-article-gallery');
+  $('.inline-figure').on('click', function (e) {
+    e.preventDefault();
+    index = $(e.currentTarget).data('slide');
+    console.log(index, 'inline-figure click');
+    sliderGallery.css({
+      'visibility': 'visible',
+      'opacity': '1',
+      'display': 'block'
+    });
+    $('.js-article-gallery').slick('slickSetOption', 'speed', 0);
+    $('.js-article-gallery').slick('slickGoTo', index);
+    $('.js-article-gallery').slick('slickSetOption', 'speed', 500);
+    $('body').addClass('overflow-hidden');
+  });
+};
+App.page.scroll('inline-scroll-container');
+App.page.scroll('aside-set');
 App.page();
 App.page.microtransaction();
 App.page.mobileSocial();
 App.page.outbrain();
-// App.page.ads()
+App.page.showDatePublished();
+App.page.articleslider();

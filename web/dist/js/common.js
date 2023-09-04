@@ -97,19 +97,20 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
 // for breakpoint-js in IE 11
 // https://stackoverflow.com/questions/31119300/ie11-object-doesnt-support-property-or-method-includes-javascript-window
-if (!String.prototype.includes) {
-  String.prototype.includes = function (search, start) {
-    // eslint-disable-line no-extend-native
-    if (typeof start !== 'number') {
-      start = 0;
-    }
-    if (start + search.length > this.length) {
-      return false;
-    } else {
-      return this.indexOf(search, start) !== -1;
-    }
-  };
-}
+// if (!String.prototype.includes) {
+//   String.prototype.includes = function (search, start) { // eslint-disable-line no-extend-native
+//     if (typeof start !== 'number') {
+//       start = 0
+//     }
+
+//     if (start + search.length > this.length) {
+//       return false
+//     } else {
+//       return this.indexOf(search, start) !== -1
+//     }
+//   }
+// }
+
 var App = {
   // http://help.omnystudio.com/advanced-features-and-tips-and-tricks/developer-documentation/consumer-api
   // https://omnystudio.com/p/zaobaosg/clips
@@ -185,15 +186,17 @@ var App = {
       }
       return rangeWithDots;
     },
-    getMobileDrawerRetriggerPointTop: function getMobileDrawerRetriggerPointTop() {
-      var top;
-      if ($('.page-article').length > 0 && $('.page-styleguide').length === 0) {
-        top = parseInt(($('.article-content').offset().top + $('.article-content').outerHeight()).toFixed(0));
-      } else {
-        top = parseInt(($('.main').offset().top + $('.main').outerHeight()).toFixed(0));
-      }
-      return top;
-    },
+    // getMobileDrawerRetriggerPointTop: () => {
+    //   let top
+
+    //   if ($('.page-article').length > 0 && $('.page-styleguide').length === 0) {
+    //     top = parseInt(($('.article-content').offset().top + $('.article-content').outerHeight()).toFixed(0))
+    //   } else {
+    //     top = parseInt(($('.main').offset().top + $('.main').outerHeight()).toFixed(0))
+    //   }
+
+    //   return top
+    // },
     setCookie: function setCookie(cname, cvalue, exdays) {
       var d = new Date();
       d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
@@ -325,8 +328,8 @@ var App = {
 };
 App.common.stickies = function () {
   var asidePrimaries = [];
-  var isScrollingUp = false;
-  var stickyBitsOffsetTopPrimarySecondaryTiertiaryTotalHeight = 164; // agaration
+  // let isScrollingUp = false
+  // let stickyBitsOffsetTopPrimarySecondaryTiertiaryTotalHeight = 164 // agaration
   var stickyHeaderHandleDesktop;
   var stickyHeaderHandleMobile;
   var stickyAsideSecondaryHandle;
@@ -345,28 +348,10 @@ App.common.stickies = function () {
       return false;
     }
   };
-
-  // close banner
-
-  var closeBanner = function closeBanner() {
-    $('.redirect-cancel').on('click', function () {
-      $('.redirect-banner-container').toggle();
-    });
-  };
-  closeBanner();
   var getStickyBitsOffsetTop = function getStickyBitsOffsetTop() {
     var offset = App.selector.BODY.hasClass('page-home') ? $('.topnavbar-secondary').outerHeight() + $('.newsticker').outerHeight() + 4 // agaration
     : $('.topnavbar-secondary').outerHeight() + 14; // agaration
     return offset;
-  };
-  var checkToShowDrawer = function checkToShowDrawer(st) {
-    var top = App.util.getMobileDrawerRetriggerPointTop();
-    // console.log(st, top, 'checkToShowDrawer')
-    if (st > top) {
-      if (App.selector.MOBILE_DRAWER_HANDLE.hasClass('is-hidden')) {
-        App.selector.MOBILE_DRAWER_HANDLE.removeClass('is-hidden');
-      }
-    }
   };
   var checkMobileSocial = function checkMobileSocial(st) {
     if (App.selector.MOBILE_SOCIAL.hasClass('is-active') && !App.selector.MOBILE_SOCIAL.hasClass('is-sidelined')) {
@@ -392,6 +377,17 @@ App.common.stickies = function () {
       }
     }
   };
+
+  // let checkToShowDrawer = (st) => {
+  //   let top = App.util.getMobileDrawerRetriggerPointTop()
+  //   // console.log(st, top, 'checkToShowDrawer')
+  //   if (st > top) {
+  //     if (App.selector.MOBILE_DRAWER_HANDLE.hasClass('is-hidden')) {
+  //       App.selector.MOBILE_DRAWER_HANDLE.removeClass('is-hidden')
+  //     }
+  //   }
+  // }
+
   var updateAsideActive = function updateAsideActive(st) {
     if (asidePrimaries.length > 0) {
       _.forEach(asidePrimaries, function (item) {
@@ -417,131 +413,158 @@ App.common.stickies = function () {
   };
   var checkToExpandTopnavbar = function checkToExpandTopnavbar(st) {
     // console.log(st, 'check st')
-    var threshold = 2; // threshold for IE 11
-    var isThresholdDown = st - lastScrollTop > threshold;
-    var isThresholdUp = lastScrollTop - st > threshold;
+    // let threshold = 2 // threshold for IE 11
+    var navbarPrimaryHeight = $('#js-topnavbar-primary').offset().top;
+    var mobileNavHeight = $('#js-header-mobile').offset().top;
+    // let isThresholdDown = st - lastScrollTop > threshold
+    // let isThresholdUp = lastScrollTop - st > threshold
     // console.log($('.newsticker').eq(1), 'newsticker')
-
     if (!ieDetect()) {
-      // console.log('I AM IN')
-      // let x = $('#js-topnavbar-tertiary').offset().top
-      // let y = $(window).scrollTop()
-      // console.log(x, y, isThresholdUp, isThresholdDown, 'hhshs')
+      var distance = st - navbarPrimaryHeight;
+      var mobileDistance = st - mobileNavHeight;
+      // console.log(distance, mobileDistance, '<------')
+      if (distance >= 108) {
+        // header desktop logic
+        if ($('#js-header-desktop').is(':visible')) {
+          App.selector.BODY.addClass('is-scrolled-down');
+          App.selector.BODY.removeClass('is-scrolled-up');
+          $('#js-header-desktop').addClass('is-sticky js-is-sticky');
+          $('.topnavbar-primary').hide();
+          // console.log('header-destop visible')
+        }
+      } else {
+        App.selector.BODY.addClass('is-scrolled-up');
+        App.selector.BODY.removeClass('is-scrolled-down');
+        if ($('#js-header-desktop').is(':visible')) {
+          $('#js-header-desktop').removeClass('is-sticky js-is-sticky');
+          $('.topnavbar-primary').show();
+        }
+      }
+      // mobile header anomation logic
+      if (mobileDistance >= 0) {
+        if ($('#js-header-mobile').is(':visible')) {
+          App.selector.BODY.addClass('is-scrolled-down');
+          App.selector.BODY.removeClass('is-scrolled-up');
+          $('#js-header-mobile').addClass('js-is-sticky');
+          console.log('header-mobile visible');
+        }
+      } else {
+        App.selector.BODY.addClass('is-scrolled-up');
+        App.selector.BODY.removeClass('is-scrolled-down');
+        if ($('#js-header-mobile').is(':visible')) {
+          $('#js-header-mobile').removeClass('js-is-sticky');
+        }
+      }
+      // $('#js-topnavbar-primary').headroom({
+      //   offset: App.selector.WRAP.offset().top + 50,
+      //   tolerance: {
+      //     up: 200,
+      //     down: 0
+      //   },
+      //   classes: {
+      //     initial: 'animated',
+      //     pinned: 'primaryslideDown',
+      //     unpinned: 'headroom--unpinned is-slide-down forSticker'
+      //   }
+      // })
 
-      // if (y > 50) {
-      //   console.log(isThresholdUp, 'moving up')
-      // }
+      // $('#js-topnavbar-tertiary').headroom({
+      //   offset: 0,
+      //   tolerance: {
+      //     up: 200,
+      //     down: 0
+      //   },
+      //   classes: {
+      //     initial: 'animated',
+      //     pinned: 'slideDown',
+      //     unpinned: 'headroom--unpinned slideUp'
+      //   }
+      // })
 
-      $('#js-topnavbar-primary').headroom({
-        offset: App.selector.WRAP.offset().top,
-        tolerance: {
-          up: 200,
-          down: 0
-        },
-        classes: {
-          initial: 'animated',
-          pinned: 'primaryslideDown',
-          unpinned: 'headroom--unpinned is-slide-down forSticker'
-        }
-      });
-      $('#js-topnavbar-tertiary').headroom({
-        offset: 0,
-        tolerance: {
-          up: 200,
-          down: 0
-        },
-        classes: {
-          initial: 'animated',
-          pinned: 'slideDown',
-          unpinned: 'headroom--unpinned slideUp'
-        }
-      });
-      $('#js-topnavbar-tertiary-mobile').headroom({
-        offset: App.selector.WRAP.offset().top,
-        tolerance: {
-          up: 200,
-          down: 0
-        },
-        classes: {
-          initial: 'animated',
-          pinned: 'slideDown',
-          unpinned: 'headroom--unpinned forSticker'
-        }
-      });
-      $('.newsticker').headroom({
-        offset: 0,
-        tolerance: {
-          up: 200,
-          down: 0
-        },
-        classes: {
-          initial: 'animated',
-          pinned: 'slideDown',
-          unpinned: 'headroom--unpinned forSticker'
-        }
-      });
-      $('#redirect-banner').headroom({
-        offset: 0,
-        tolerance: {
-          up: 200,
-          down: 0
-        },
-        classes: {
-          initial: 'animated',
-          pinned: 'slideDown',
-          unpinned: 'headroom--unpinned slideUp'
-        }
-      });
+      // $('#js-topnavbar-tertiary-mobile').headroom({
+      //   offset: App.selector.WRAP.offset().top,
+      //   tolerance: {
+      //     up: 200,
+      //     down: 0
+      //   },
+      //   classes: {
+      //     initial: 'animated',
+      //     pinned: 'slideDown',
+      //     unpinned: 'headroom--unpinned forSticker'
+      //   }
+      // })
+
+      // $('.newsticker').headroom({
+      //   offset: 0,
+      //   tolerance: {
+      //     up: 200,
+      //     down: 0
+      //   },
+      //   classes: {
+      //     initial: 'animated',
+      //     pinned: 'slideDown',
+      //     unpinned: 'headroom--unpinned forSticker'
+      //   }
+      // })
+
+      // $('#redirect-banner').headroom({
+      //   offset: 0,
+      //   tolerance: {
+      //     up: 200,
+      //     down: 0
+      //   },
+      //   classes: {
+      //     initial: 'animated',
+      //     pinned: 'slideDown',
+      //     unpinned: 'headroom--unpinned slideUp'
+      //   }
+      // })
 
       // add class on the body tag
-      if ($('.topnavbar-primary').hasClass('is-slide-down')) {
-        App.selector.BODY.addClass('is-scrolled-down');
-        App.selector.BODY.removeClass('is-scrolled-up');
-        $('.animated.slideUp').hide();
-      } else {
-        App.selector.BODY.removeClass('is-scrolled-down');
-        App.selector.BODY.addClass('is-scrolled-up');
-        $('.animated.slideUp').show();
-      }
+      // if ($('.topnavbar-primary').hasClass('is-slide-down')) {
+      //   App.selector.BODY.addClass('is-scrolled-down')
+      //   App.selector.BODY.removeClass('is-scrolled-up')
+      //   $('#js-header-desktop').css('max-height', '42px')
+      //   $('.js-stickybits-usefixed-spacer').css('height', '45px')
+      //   // $('.animated.slideUp').hide()
+      // } else {
+      //   App.selector.BODY.removeClass('is-scrolled-down')
+      //   App.selector.BODY.addClass('is-scrolled-up')
+      //   // $('.animated.slideUp').show()
+      //   if ($(window).scrollTop() > 1) {
+      //     $('#js-header-desktop').css('max-height', '144px')
+      //   } else {
+      //     $('#js-header-desktop').css('max-height', '226px')
+      //   }
+      // }
     } else {
       if (st >= App.selector.WRAP.offset().top) {
-        if (st > lastScrollTop) {
-          if (!App.selector.BODY.hasClass('is-scrolled-down') && isThresholdDown) {
-            App.selector.BODY.removeClass('is-scrolled-up');
-            App.selector.BODY.addClass('is-scrolled-down');
-            isScrollingUp = false;
-            TweenMax.to('#js-topnavbar-primary, #js-topnavbar-tertiary', 0.5, {
-              height: 0,
-              ease: Expo.easeOut
-            });
-            console.log('downscroll code');
-          }
-        } else {
-          if (!App.selector.BODY.hasClass('is-scrolled-up') && isThresholdUp) {
-            App.selector.BODY.removeClass('is-scrolled-down');
-            App.selector.BODY.addClass('is-scrolled-up');
-            isScrollingUp = true;
-            TweenMax.set('#js-topnavbar-primary, #js-topnavbar-tertiary', {
-              height: 'auto'
-            });
-            TweenMax.from('#js-topnavbar-primary, #js-topnavbar-tertiary', 0.5, {
-              height: 0,
-              ease: Expo.easeOut
-            });
-            console.log('upscroll code');
-          }
-        }
+        // if (st > lastScrollTop) {
+        //   if (!App.selector.BODY.hasClass('is-scrolled-down') && isThresholdDown) {
+        //     App.selector.BODY.removeClass('is-scrolled-up')
+        //     App.selector.BODY.addClass('is-scrolled-down')
+
+        //     isScrollingUp = false
+        //     TweenMax.to('#js-topnavbar-primary, #js-topnavbar-tertiary', 0.5, { height: 0, ease: Expo.easeOut })
+        //     console.log('downscroll code')
+        //   }
+        // } else {
+        //   if (!App.selector.BODY.hasClass('is-scrolled-up') && isThresholdUp) {
+        //     App.selector.BODY.removeClass('is-scrolled-down')
+        //     App.selector.BODY.addClass('is-scrolled-up')
+
+        //     isScrollingUp = true
+        //     TweenMax.set('#js-topnavbar-primary, #js-topnavbar-tertiary', { height: 'auto' })
+        //     TweenMax.from('#js-topnavbar-primary, #js-topnavbar-tertiary', 0.5, { height: 0, ease: Expo.easeOut })
+        //     console.log('upscroll code')
+        //   }
+        // }
       } else {
-        if (App.selector.HEADER_DESKTOP.css('position') === 'fixed') {
-          App.selector.BODY.removeClass('is-scrolled-up is-scrolled-down');
-          TweenMax.set('#js-topnavbar-primary, #js-topnavbar-tertiary', {
-            height: 'auto'
-          });
-          TweenMax.from('#js-topnavbar-primary, #js-topnavbar-tertiary', 0.5, {
-            height: 0,
-            ease: Expo.easeOut
-          });
-        }
+        // if (App.selector.HEADER_DESKTOP.css('position') === 'fixed') {
+        //   App.selector.BODY.removeClass('is-scrolled-up is-scrolled-down')
+        //   TweenMax.set('#js-topnavbar-primary, #js-topnavbar-tertiary', { height: 'auto' })
+        //   TweenMax.from('#js-topnavbar-primary, #js-topnavbar-tertiary', 0.5, { height: 0, ease: Expo.easeOut })
+        // }
       }
     }
   };
@@ -551,192 +574,62 @@ App.common.stickies = function () {
       // console.log('check top nav bar function')
       checkToExpandTopnavbar(st);
     }
-    checkToShowDrawer(st);
+
+    // checkToShowDrawer(st)
     checkMobileSocial(st);
     updateAsideActive(st);
     updateStickiesPos();
     lastScrollTop = st < 0 ? 0 : st;
-    // console.log(st, lastScrollTop, 'What is ST')
   };
-
   var updateStickiesPos = function updateStickiesPos() {
     // to cater to 3rd party widget heights that is loaded async
-    var stickyBitsOffsetTop = getStickyBitsOffsetTop();
+    // let stickyBitsOffsetTop = getStickyBitsOffsetTop()
+
     if (stickyHeaderHandleDesktop) {
       stickyHeaderHandleDesktop.update();
     }
     if (stickyHeaderHandleMobile) {
       stickyHeaderHandleMobile.update();
     }
-
-    // // set up right rail logic - START
-    // if (asidePrimaries.length > 0) {
-    //   _.forEach(asidePrimaries, (item) => {
-    //     item.handler.update()
-    //     if (isScrollingUp) {
-    //       TweenMax.to(item.asidePrimary, 0.6, { top: stickyBitsOffsetTop + stickyBitsOffsetTopPrimarySecondaryTiertiaryTotalHeight, ease: Expo.easeOut })
-    //     } else {
-    //       TweenMax.to(item.asidePrimary, 0.6, { top: $('.header-desktop .topnavbar-secondary').outerHeight() + 10, ease: Expo.easeOut })
-    //     }
-    //   })
-    // }
-    // // set up right rail logic - END
-
     if (stickyAsideSecondaryHandle) {
       stickyAsideSecondaryHandle.update();
-      if (isScrollingUp) {
-        TweenMax.to(App.selector.ASIDE_SECONDARY, 0.6, {
-          top: stickyBitsOffsetTop + stickyBitsOffsetTopPrimarySecondaryTiertiaryTotalHeight,
-          ease: Expo.easeOut
-        });
-      } else {
-        TweenMax.to(App.selector.ASIDE_SECONDARY, 0.6, {
-          top: $('.header-desktop .topnavbar-secondary').outerHeight() + 10,
-          ease: Expo.easeOut
-        });
-      }
+
+      // if (isScrollingUp) {
+      //   TweenMax.to(App.selector.ASIDE_SECONDARY, 0.6, { top: stickyBitsOffsetTop + stickyBitsOffsetTopPrimarySecondaryTiertiaryTotalHeight, ease: Expo.easeOut })
+      // } else {
+      //   TweenMax.to(App.selector.ASIDE_SECONDARY, 0.6, { top: $('.header-desktop .topnavbar-secondary').outerHeight() + 10, ease: Expo.easeOut })
+      // }
     }
   };
+
   var triggerStickyBehavior = function triggerStickyBehavior() {
     updateStickiesPos();
     $(window).scrollTop($(window).scrollTop() - 1);
     $(window).scrollTop($(window).scrollTop() + 1);
   };
-  if ($('#js-header-desktop').length > 0) {
-    stickyHeaderHandleDesktop = stickybits($('#js-header-desktop').get(0), {
-      useFixed: true // use fixed to prevent height animating conflicting with scroll events
-    });
-  }
 
-  if ($('#js-header-mobile').length > 0) {
-    stickyHeaderHandleMobile = stickybits($('#js-header-mobile').get(0), {
-      useFixed: true
-    });
-  }
-
-  // // set up right rail logic - START
-  // let updateAsideTriggerPointsPos = () => {
-  //   _.forEach(asidePrimaries, (item) => {
-  //     let topDist = parseInt(App.util.getElHeight(item.contentPrimary) / item.triggers.length)
-
-  //     for (let i = 0; i < item.triggers.length; i++) {
-  //       let topStart = topDist * i
-  //       let topEnd = (topStart + topDist) - 1
-  //       item.triggers[i].start = topStart
-  //       item.triggers[i].end = topEnd
-
-  //       if (App.var.isTriggersDebug) {
-  //         item.contentPrimary.find('.trigger-start.trigger-' + i).css({
-  //           top: topStart + 'px'
-  //         })
-  //         item.contentPrimary.find('.trigger-end.trigger-' + i).css({
-  //           top: topEnd + 'px'
-  //         })
-  //       }
-  //     }
-
-  //     item.asidePrimary.find('.aside-content').scrollTop(0)
+  // if ($('#js-header-desktop').length > 0) {
+  //   stickyHeaderHandleDesktop = stickybits($('#js-header-desktop').get(0), {
+  //     useFixed: true // use fixed to prevent height animating conflicting with scroll events
   //   })
   // }
 
-  // let addTriggerPoint = (contentPrimary, i, topStart, topEnd) => {
-  //   contentPrimary.append('<div class="trigger trigger-start trigger-' + i + '" style="top: ' + topStart + 'px"></div>')
-  //   contentPrimary.append('<div class="trigger trigger-end trigger-' + i + '" style="top: ' + topEnd + 'px"></div>')
-  // }
-
-  // if (App.selector.ASIDE_PRIMARY.length > 0) {
-  //   App.selector.ASIDE_PRIMARY.each((i, el) => {
-  //     let stickyBitsOffsetTop = getStickyBitsOffsetTop()
-  //     let asidePrimary = $(el)
-  //     let stickyAsideHandle = stickybits(asidePrimary.get(0), {
-  //       useStickyClasses: true,
-  //       stickyBitStickyOffset: stickyBitsOffsetTop
-  //     })
-
-  //     let contentPrimary = asidePrimary.closest('.sec').find('.content-primary')
-  //     let asideSetLen = asidePrimary.find('.js-aside-set').length
-  //     let topDist = parseInt(App.util.getElHeight(contentPrimary) / asideSetLen)
-
-  //     let asideContent = asidePrimary.find('.aside-content')
-  //     let asideContentH = asidePrimary.find('.js-aside-set.is-active').outerHeight()
-  //     TweenMax.to(asideContent, 0.4, { height: asideContentH, ease: Expo.easeOut })
-
-  //     let triggers = []
-
-  //     for (let i = 0; i < asideSetLen; i++) {
-  //       let topStart = topDist * i
-  //       let topEnd = (topStart + topDist) - 1
-
-  //       triggers.push({
-  //         start: topStart,
-  //         end: topEnd
-  //       })
-
-  //       if (App.var.isTriggersDebug) {
-  //         addTriggerPoint(contentPrimary, i, topStart, topEnd)
-  //       }
-  //     }
-
-  //     let roContentPrimary = new ResizeObserver((entries, observer) => {
-  //       updateAsideTriggerPointsPos()
-  //     })
-  //     roContentPrimary.observe(contentPrimary.get(0))
-
-  //     let callback = (entries, observer) => {
-  //       entries.forEach(entry => {
-  //         if (entry.isIntersecting) {
-  //           if (!$(entry.target).hasClass('is-active')) {
-  //             $(entry.target).addClass('is-active')
-  //           }
-  //         } else {
-  //           if ($(entry.target).hasClass('is-active')) {
-  //             $(entry.target).removeClass('is-active')
-  //           }
-  //         }
-  //       })
-  //     }
-  //     let io = new IntersectionObserver(callback)
-  //     io.observe(asidePrimary.find('.aside-content').get(0))
-
-  //     asidePrimaries.push({
-  //       asidePrimary: asidePrimary,
-  //       contentPrimary: contentPrimary,
-  //       handler: stickyAsideHandle,
-  //       triggers: triggers,
-  //       indexCurr: 0,
-  //       indexLast: 0
-  //     })
-
-  //     if (App.var.isTriggersDebug) {
-  //       $('.aside-content').css('border', 'solid 1px red')
-  //     }
-  //   })
-
-  //   watch(App.var, 'isTriggersDebug', () => {
-  //     if (App.var.isTriggersDebug) {
-  //       _.forEach(asidePrimaries, (item) => {
-  //         for (let i = 0; i < item.triggers.length; i++) {
-  //           addTriggerPoint(item.contentPrimary, i, item.triggers[i].start, item.triggers[i].end)
-  //         }
-  //         $('.aside-content').css('border', 'solid 1px red')
-  //       })
-  //     } else {
-  //       $('.trigger').remove()
-  //       $('.aside-content').css('border', '0')
-  //     }
+  // if ($('#js-header-mobile').length > 0) {
+  //   stickyHeaderHandleMobile = stickybits($('#js-header-mobile').get(0), {
+  //     useFixed: true
   //   })
   // }
-  // // set up right rail logic - END
 
-  if (App.selector.ASIDE_SECONDARY.length > 0) {
-    var stickyBitsOffsetTop = getStickyBitsOffsetTop();
-    stickyAsideSecondaryHandle = stickybits(App.selector.ASIDE_SECONDARY.get(0), {
-      useStickyClasses: true,
-      stickyBitStickyOffset: stickyBitsOffsetTop
-    });
-  }
+  // if (App.selector.ASIDE_SECONDARY.length > 0) {
+  //   let stickyBitsOffsetTop = getStickyBitsOffsetTop()
+  //   stickyAsideSecondaryHandle = stickybits(App.selector.ASIDE_SECONDARY.get(0), {
+  //     useStickyClasses: true,
+  //     stickyBitStickyOffset: stickyBitsOffsetTop
+  //   })
+  // }
+
   $(window).on('scroll', App.util.throttle(updateScrollPosition, 50));
-  $(document).ready(function () {
+  $(document).on('ready', function () {
     App.selector.BODY.addClass('is-ready');
     setTimeout(function () {
       App.selector.BODY.addClass('is-loaded');
@@ -756,128 +649,18 @@ App.common.stickies = function () {
   };
   var resizeThrottled = App.util.throttle(onWindowResize, 100);
   $(window).on('resize', resizeThrottled);
+
+  // close banner
+
+  // let closeBanner = () => {
+  //   $('.redirect-cancel').on('click', () => {
+  //     $('.redirect-banner-container').toggle()
+  //   })
+  // }
+
+  // closeBanner()
 };
-App.common.mobileDrawer = function () {
-  var mobileSlickEl = $('#js-mobile-drawer .aside-mobile .aside-content');
-  var onClickMobileDrawerHandleCollapse = function onClickMobileDrawerHandleCollapse() {
-    var st = window.pageYOffset || document.documentElement.scrollTop;
-    var top = App.util.getMobileDrawerRetriggerPointTop();
-    if (st > top) {
-      if (!App.selector.MOBILE_DRAWER_HANDLE.hasClass('is-hidden')) {
-        App.selector.MOBILE_DRAWER_HANDLE.addClass('is-hidden-perma');
-      }
-    } else {
-      if (!App.selector.MOBILE_DRAWER_HANDLE.hasClass('is-hidden')) {
-        App.selector.MOBILE_DRAWER_HANDLE.addClass('is-hidden');
-      }
-    }
-  };
-  var showDrawer = function showDrawer() {
-    TweenMax.to('#js-mobile-drawer', 0.9, {
-      y: '0%',
-      ease: Expo.easeOut
-    });
-    if (!$('#js-mobile-drawer-bg').hasClass('is-active')) {
-      $('#js-mobile-drawer-bg').addClass('is-active');
-      $('#js-mobile-drawer').addClass('is-active');
-    }
-    App.util.disablePageScroll($('.mobile-drawer .mobile-drawer-content').get(0));
-  };
-  var hideDrawer = function hideDrawer() {
-    TweenMax.to('#js-mobile-drawer', 0.9, {
-      y: '100%',
-      ease: Expo.easeOut
-    });
-    if ($('#js-mobile-drawer-bg').hasClass('is-active')) {
-      $('#js-mobile-drawer-bg').removeClass('is-active');
-      $('#js-mobile-drawer').removeClass('is-active is-scrolled');
-      setTimeout(function () {
-        mobileSlickEl.slick('slickGoTo', 0);
-        $('#js-mobile-drawer .aside-set').scrollTop(0);
-      }, 700);
-    }
-    App.util.enablePageScroll($('.mobile-drawer .mobile-drawer-content').get(0));
-  };
-  var drawerBounceThreshold = 0.1;
-  var drawerBounce = function drawerBounce(direction, percent) {
-    if (direction === 'down') {
-      if (percent > drawerBounceThreshold) {
-        hideDrawer();
-      } else {
-        showDrawer();
-      }
-    }
-  };
-  var onClickMobileDrawerArrow = function onClickMobileDrawerArrow() {
-    hideDrawer();
-  };
-  var onClickMobileDrawerHandle = function onClickMobileDrawerHandle(event) {
-    event.preventDefault();
-    if (!$(event.target).hasClass('mobile-drawer-cancel')) {
-      if ($('#js-mobile-drawer').hasClass('is-active')) {
-        hideDrawer();
-      } else {
-        showDrawer();
-      }
-    }
-  };
-  if ($('#js-mobile-drawer').length > 0) {
-    $('#js-mobile-drawer-arrow').swipe({
-      swipeStatus: function swipeStatus(event, phase, direction, distance, duration, fingers, fingerData, currentDirection) {
-        var containH = parseInt((0.5 * App.util.getViewport().h).toFixed(0)); // to tally with css
-        var percentDrag = parseFloat((distance / containH).toFixed(2));
-        if (direction === 'down') {
-          TweenMax.set('#js-mobile-drawer', {
-            y: distance
-          });
-        }
-        if (phase === 'cancel') {
-          drawerBounce(direction, percentDrag);
-        }
-        if (phase === 'end') {
-          drawerBounce(direction, percentDrag);
-        }
-      },
-      threshold: 200,
-      maxTimeThreshold: 5000,
-      fingers: 'all'
-    });
-    App.selector.MOBILE_DRAWER_HANDLE.on('click', onClickMobileDrawerHandle);
-    $('#js-mobile-drawer-arrow').on('click', onClickMobileDrawerArrow);
-    $('#js-mobile-drawer-cancel').on('click', onClickMobileDrawerHandleCollapse);
-    mobileSlickEl.on('init', function (event, slick) {
-      $('#js-mobile-drawer .mobile-drawer-content .aside-set').each(function (index, value) {
-        new PerfectScrollbar($(value).get(0), {
-          // eslint-disable-line no-new
-          wheelSpeed: 2,
-          suppressScrollX: true
-        });
-      });
-    });
-    $('#js-mobile-drawer .mobile-drawer-content .aside-set').scroll(function () {
-      if ($('#js-mobile-drawer-bg').hasClass('is-active') && !$('#js-mobile-drawer').hasClass('is-scrolled')) {
-        $('#js-mobile-drawer').addClass('is-scrolled');
-        TweenMax.to('#js-mobile-drawer .mobile-drawer-content', 0.8, {
-          scrollTop: 0,
-          ease: Expo.easeOut
-        });
-      }
-    });
-    mobileSlickEl.slick({
-      rows: 0,
-      slidesToShow: 1,
-      infinite: false,
-      arrows: false,
-      adaptiveHeight: false,
-      waitForAnimate: false,
-      slide: '.aside-set'
-    });
-    $('#js-mobile-drawer .aside-item-next-link').on('click', function (event) {
-      event.preventDefault();
-      mobileSlickEl.slick('slickGoTo', 1);
-    });
-  }
-};
+
 App.common.hamburger = function () {
   var mobileNavBody = $('#js-header-mobile .js-topnavbar-body');
   var setMobileNavBodyMaxH = function setMobileNavBodyMaxH() {
@@ -887,6 +670,7 @@ App.common.hamburger = function () {
     });
   };
   var onClickHam = function onClickHam(event) {
+    console.log(event, 'ham');
     if (App.util.getViewport().w < App["var"].breakpoints.md.min) {
       var isHamCollapsed = $(event.currentTarget).attr('aria-expanded');
       if (isHamCollapsed === 'true') {
@@ -897,13 +681,23 @@ App.common.hamburger = function () {
       } else {
         if (!App.selector.BODY.hasClass('is-hamburger-expanded')) {
           App.selector.BODY.addClass('is-hamburger-expanded');
-          setMobileNavBodyMaxH();
+          $('html, body').animate({
+            scrollTop: $('.header-mobile').offset().top
+          }, 300);
+          $('.js-topnavbar-body > .dropdown-menu.collapse').each(function (i, item) {
+            console.log($(item), 'ttt');
+            if ($(item).hasClass('show')) {
+              $(item).removeClass('show');
+              $('body').removeClass('overflow-hidden');
+            }
+          });
         }
         App.util.disablePageScroll(mobileNavBody.get(0));
       }
     }
   };
   var showDropDownMenu = function showDropDownMenu(event) {
+    console.log('dropdown');
     var el = $(event.currentTarget);
     var dropdownMenu = el.find('.dropdown-menu');
     TweenMax.set(dropdownMenu, {
@@ -917,6 +711,7 @@ App.common.hamburger = function () {
     });
   };
   var hideDropDownMenu = function hideDropDownMenu(event) {
+    console.log('hide dropdown');
     var el = $(event.currentTarget);
     var dropdownMenu = el.find('.dropdown-menu');
     TweenMax.set(dropdownMenu, {
@@ -933,8 +728,8 @@ App.common.hamburger = function () {
     });
   };
 
-  $('#js-header-mobile').find('.dropdown').on('show.bs.dropdown', showDropDownMenu);
-  $('#js-header-mobile').find('.dropdown').on('hidden.bs.dropdown', hideDropDownMenu);
+  // $('#js-header-mobile').find('.dropdown').on('show.bs.dropdown', showDropDownMenu)
+  // $('#js-header-mobile').find('.dropdown').on('hidden.bs.dropdown', hideDropDownMenu)
   $('.js-ham').on('click', onClickHam);
   console.log('common hamburger init');
 };
@@ -959,6 +754,7 @@ App.common.keyUp = function () {
 };
 App.common.fontSizing = function () {
   var setFontSize = function setFontSize(fontSize) {
+    console.log('font-sizing');
     $('.js-fontsizing li').removeClass('is-active');
     $('.js-fontsizing li[data-fontsize=' + fontSize + ']').addClass('is-active');
     $('.js-fontsizing li').find('.cta').removeClass('cta-solid cta-solid-white').addClass('cta-bordered cta-white');
@@ -1240,6 +1036,7 @@ App.common.mobileTextLinks = function () {
   }
 };
 App.common.figureMediaGallery = function () {
+  console.log('MEDIA GALLERY');
   if ($('.js-figure-media-gallery').length > 0) {
     $('.js-figure-media-gallery').each(function (index, el) {
       var target = $(el);
@@ -1280,15 +1077,17 @@ App.common.groupShowMore = function () {
     }
   });
 };
-App.common.headingBorder = function () {
-  $('.heading-border-right-content').each(function (index, el) {
-    new PerfectScrollbar($(el).get(0), {
-      // eslint-disable-line no-new
-      wheelSpeed: 2,
-      suppressScrollY: true
-    });
-  });
-};
+
+// App.common.headingBorder = () => {
+//   $('.heading-border-right-content').each((index, el) => {
+//     console.log('heading border')
+//     new PerfectScrollbar($(el).get(0), { // eslint-disable-line no-new
+//       wheelSpeed: 2,
+//       suppressScrollY: true
+//     })
+//   })
+// }
+
 App.common.updatePagination = function () {
   $('.pagination').each(function (index, el) {
     var url = window.location.href.split('?')[0];
@@ -1416,62 +1215,84 @@ App.common.filterCategory = function () {
     setActiveCategories();
   }
 };
-App.common.cancel = function (cta, page) {
-  var url = new URL(window.location.href);
-  if (url.searchParams.get('global') === 'true') {
-    $('.page').css('overflow', 'hidden');
-    $('.overlay-global-page').show();
-    // $('.overlay-global-page').css('visibility', 'visible')
-    $('.overlay-global-page').css('opacity', '1');
-  }
-  $(cta).on('click', function () {
-    $('.page').removeAttr('style');
-    $(page).hide();
+App.common.userMenu = function () {
+  var mobileNavBody = $('#js-header-mobile .js-topnavbar-body');
+  $('.topnav-link').on('click', function (e) {
+    var id = $(e.currentTarget).data('target');
+    console.log(id, 'jskajjskajsksjkajs');
+    $(id).on('show.bs.collapse', function () {
+      if (id === '#mobile-user-not-login' || id === '#mobile-user-login' || id === 'mobile-registered-user') {
+        $('html, body').animate({
+          scrollTop: $('.header-mobile').offset().top
+        }, 300);
+        $('body').addClass('overflow-hidden');
+      }
+      $('#topnavbar-toggler-mobile').removeClass('show');
+      $('.js-ham').attr('aria-expanded', 'false');
+      App.util.enablePageScroll(mobileNavBody.get(0));
+      if (App.selector.BODY.hasClass('is-hamburger-expanded')) {
+        App.selector.BODY.removeClass('is-hamburger-expanded');
+      }
+    });
+    $(id).on('hide.bs.collapse', function () {
+      console.log('hide');
+      $('body').removeClass('overflow-hidden');
+    });
+  });
+  $('.js-topnavbar-body').on('click', function () {
+    if ($('body').hasClass('overflow-hidden')) {
+      $('body').removeClass('overflow-hidden');
+    }
+    if ($('.js-topnavbar-body > .dropdown-menu, .collapse').hasClass('show')) {
+      var menuId = $('.js-topnavbar-body > .dropdown-menu, .collapse').attr('id').replace('mobile-', '.');
+      $(menuId).attr('aria-expanded', 'false');
+      $('.js-topnavbar-body > .dropdown-menu, .collapse').removeClass('show');
+    }
   });
 };
-App.common.setscrollleft = function () {
-  var padW = $('.single-global-container').innerWidth() - $('.single-global-container').width();
-  var marginW = $('.single-global-container').outerWidth(true) - $('.single-global-container').outerWidth();
-  var overlayW = $('.overlay-body-container').innerWidth() - $('.overlay-body-container').width();
-  var total = marginW + overlayW + padW;
-  console.log(overlayW, 'overlay XXXXXXX');
-  var pos = $('.highlight').position().left + total || $(window).on('resize', function () {
-    return $('.highlight').position().left + total;
-  });
-  var currentScroll = $('.overlay-body-container').scrollLeft();
-  var containerWidth = $('.overlay-body-container').width() || $(window).on('resize', function () {
-    return $('.overlay-body-container').width();
-  });
-  var newPos = pos + currentScroll - containerWidth / 2;
-
-  // $('.page-home').css('overflow', 'hidden')
-
-  $('.overlay-body-container').animate({
-    scrollLeft: newPos + padW
+App.common.toggleMenu = function () {
+  console.log('menu toggle');
+  // let textId = $('#version-toggle').text()
+  $('#version-toggle-list > .topnav-link, .js-toggle-version').on('click', function (e) {
+    e.preventDefault();
+    var textId = $('#version-toggle').text();
+    var string = $(e.currentTarget).text();
+    switch (string) {
+      case '国际版':
+        window.open('https://www.zaobao.com.sg/global', '_self');
+        break;
+      case '新加坡版':
+        window.open('https://www.zaobao.com.sg/?ref=global', '_self');
+        break;
+      case '中国版':
+        window.open('https://www.zaobao.com.sg/cn', '_self');
+        break;
+      default:
+        console.log('what are you looking for?');
+    }
+    $(e.currentTarget).text(textId);
+    $('#version-toggle').text(string);
+    $('#mobile-version-toggle > .topnav-link').html(string += '<div class="fas fa-caret-down"></div>');
+    console.log(e.currentTarget, string, textId, 'ononon');
   });
 };
 
-// App.common.devTests = () => {
-//   // stimulate ads - START
-//   if (App.selector.BODY.hasClass('is-dev')) {
-//     let imu = {
-//       'avt-imu1': [[300, 250], [336, 280]], // [1, 1]
-//       'avt-imu2': [[300, 250], [300, 600]],
-//       'avt-imu3': [[300, 250]]
-//     }
-//     $('.avt-imu').each((i, el) => {
-//       $.each(imu, (key, value) => {
-//         if ($(el).hasClass(key)) {
-//           let randomItem = value[Math.floor(Math.random() * value.length)]
-//           $(el).find('.advertisement').css({
-//             width: randomItem[0] + 'px',
-//             height: randomItem[1] + 'px'
-//           })
-//         }
-//       })
-//     })
-//   }
-//   // stimulate ads - END
+// App.common.setscrollleft = () => {
+//   var padW = $('.single-global-container').innerWidth() - $('.single-global-container').width()
+//   var marginW = $('.single-global-container').outerWidth(true) - $('.single-global-container').outerWidth()
+//   var overlayW = $('.overlay-body-container').innerWidth() - $('.overlay-body-container').width()
+//   var total = marginW + overlayW + padW
+//   console.log(overlayW, 'overlay XXXXXXX')
+//   var pos = $('.highlight').position().left + total || $(window).on('resize', () => { return $('.highlight').position().left + total })
+//   let currentScroll = $('.overlay-body-container').scrollLeft()
+//   let containerWidth = $('.overlay-body-container').width() || $(window).on('resize', () => { return $('.overlay-body-container').width() })
+//   let newPos = (pos + currentScroll) - (containerWidth / 2)
+
+//   // $('.page-home').css('overflow', 'hidden')
+
+//   $('.overlay-body-container').animate({
+//     scrollLeft: newPos + padW
+//   })
 // }
 
 App.common();
@@ -1479,21 +1300,22 @@ if ($('.page-blank').length === 0) {
   // not load topnavbar behaviour for blank template
   App.common.stickies();
 }
-App.common.setscrollleft();
+// App.common.setscrollleft()
 App.common.fontSizing();
 App.common.keyUp();
-// App.common.overlaySearch()
+App.common.overlaySearch();
 // App.common.overlayOnboarding()
 App.common.hamburger();
-App.common.mobileDrawer();
 App.common.onboardingGallery();
 App.common.onboardingTour();
 App.common.mobileTextLinks();
 App.common.figureMediaGallery();
 App.common.groupShowMore();
-App.common.headingBorder();
+// App.common.headingBorder()
 App.common.pagination();
 App.common.selectpicker();
 App.common.filterCategory();
-App.common.cancel('.overlay-global-page .overlay-wrap .cancel', '.overlay-global-page');
+App.common.userMenu();
+App.common.toggleMenu();
+// App.common.mobileDrawer()
 // App.common.devTests() // to remove later when done

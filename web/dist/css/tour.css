@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700");
+
 .tour {
   -webkit-transition: background-color 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: background-color 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -9,7 +11,7 @@
   bottom: 15px;
   width: 100px;
   height: 100px;
-  background-color: #a50034;
+  background-color: #a80034;
   border-radius: 50%;
   text-align: center;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
@@ -19,7 +21,7 @@
 }
 
 .tour:hover {
-  background-color: #8c002c;
+  background-color: #8f002c;
 }
 
 .tour.is-minimized {
@@ -83,7 +85,8 @@
   margin-bottom: 8px;
 }
 
-.tour .cancel::before,.tour .cancel::after {
+.tour .cancel::before,
+.tour .cancel::after {
   top: calc(50% - (1px));
   content: '';
   position: absolute;
@@ -105,18 +108,21 @@
   transform: rotate(-45deg);
 }
 
-.tour .cancel::before,.tour .cancel::after {
+.tour .cancel::before,
+.tour .cancel::after {
   -webkit-transition: background-color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   -o-transition: background-color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: background-color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.tour .cancel:hover::before,.tour .cancel:hover::after {
+.tour .cancel:hover::before,
+.tour .cancel:hover::after {
   background-color: #eaeaea;
 }
 
-.tour p,.tour a {
-  font-family: 'Noto Sans SC', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.tour p,
+.tour a {
+  font-family: 'Noto Sans SC', Arial, sans-serif;
   font-weight: 500;
   color: #ffffff;
 }
@@ -157,5 +163,4 @@
     display: block;
   }
 }
-
 /*# sourceMappingURL=tour.css.map */
